@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>版本 on Envoy Gateway</title><link>/zh/latest/releases/</link><description>Recent content in 版本 on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="/zh/latest/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.2</title><link>/zh/latest/releases/v1.0.2/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><guid>/zh/latest/releases/v1.0.2/</guid><description>&lt;p>日期：2024 年 6 月 12 日&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>版本 on Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/</link><description>Recent content in 版本 on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.2</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.2/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.2/</guid><description>&lt;p>日期：2024 年 6 月 12 日&lt;/p>
 &lt;h2 id="installation">安装&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>更新 EnvoyProxy 至 1.29.5&lt;/li>
@@ -24,7 +24,7 @@
 &lt;li>修复了具有不同类型但相同名称和命名空间的路线扩展过滤器无法正确缓存的问题&lt;/li>
 &lt;li>通过删除 generationChanged 谓词修复了 secrets/configmap 更新以触发控制器调协的问题&lt;/li>
 &lt;li>移除了 EnvoyProxy parametersRef 的命名空间限制&lt;/li>
-&lt;/ul></description></item><item><title>v1.0.1</title><link>/zh/latest/releases/v1.0.1/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>/zh/latest/releases/v1.0.1/</guid><description>&lt;p>日期：2024 年 4 月 9 日&lt;/p>
+&lt;/ul></description></item><item><title>v1.0.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.1/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.1/</guid><description>&lt;p>日期：2024 年 4 月 9 日&lt;/p>
 &lt;h2 id="installation">安装&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>将 EnvoyProxy 版本更新至 v1.29.3&lt;/li>
@@ -47,7 +47,7 @@
 &lt;h2 id="infra-manager">Infra-manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>当 InfraIR 具有空侦听器时跳过创建基础设施资源&lt;/li>
-&lt;/ul></description></item><item><title>v1.0.0</title><link>/zh/latest/releases/v1.0.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>/zh/latest/releases/v1.0.0/</guid><description>&lt;p>日期：2024 年 3 月 13 日&lt;/p>
+&lt;/ul></description></item><item><title>v1.0.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.0/</guid><description>&lt;p>日期：2024 年 3 月 13 日&lt;/p>
 &lt;h2 id="documentation">文档&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>新增了本地限流（Local Ratelimit）的用户指南&lt;/li>

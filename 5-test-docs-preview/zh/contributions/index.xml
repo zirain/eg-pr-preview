@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>参与其中 on Envoy Gateway</title><link>/zh/contributions/</link><description>Recent content in 参与其中 on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="/zh/contributions/index.xml" rel="self" type="application/rss+xml"/><item><title>路线图</title><link>/zh/contributions/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/roadmap/</guid><description>&lt;p>本文档可作为 Envoy Gateway 用户和贡献者了解项目方向的高级参考。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>参与其中 on Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/</link><description>Recent content in 参与其中 on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/index.xml" rel="self" type="application/rss+xml"/><item><title>路线图</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/roadmap/</guid><description>&lt;p>本文档可作为 Envoy Gateway 用户和贡献者了解项目方向的高级参考。&lt;/p>
 &lt;h2 id="contributing-to-the-roadmap">为路线图做出贡献&lt;a class="td-heading-self-link" href="#contributing-to-the-roadmap" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>要将功能添加到路线图中，请创建 &lt;a href="https://github.com/envoyproxy/gateway/issues">Issue&lt;/a> 或加入&lt;a href="https://docs.google.com/document/d/1leqwsHX8N-XxNEyTflYjRur462ukFxd19Rnk3Uzy55I/edit?usp=sharing">社区会议&lt;/a>来讨论您的用例。
@@ -47,7 +47,7 @@
 &lt;li>计算并记录 Envoy Gateway 性能 &lt;a href="https://github.com/envoyproxy/gateway/issues/1365">Issue #1365&lt;/a>。&lt;/li>
 &lt;li>添加 TrafficPolicy API 以实现高级功能 &lt;a href="https://github.com/envoyproxy/gateway/issues/1492">Issue #1492&lt;/a>。&lt;/li>
 &lt;li>Envoy Gateway 满足就绪标准 &lt;a href="https://github.com/envoyproxy/gateway/issues/1160">Issue #1160&lt;/a>。&lt;/li>
-&lt;/ul></description></item><item><title>开发者指南</title><link>/zh/contributions/develop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/develop/</guid><description>&lt;p>Envoy Gateway 使用基于 &lt;a href="https://www.gnu.org/software/make/">make&lt;/a> 的构建系统进行构建。我们的 CI 使用基于 &lt;a href="https://docs.github.com/en/actions">Github Actions&lt;/a> 的&lt;a href="https://github.com/envoyproxy/gateway/tree/main/.github/workflows">工作流&lt;/a>建设。&lt;/p>
+&lt;/ul></description></item><item><title>开发者指南</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/develop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/develop/</guid><description>&lt;p>Envoy Gateway 使用基于 &lt;a href="https://www.gnu.org/software/make/">make&lt;/a> 的构建系统进行构建。我们的 CI 使用基于 &lt;a href="https://docs.github.com/en/actions">Github Actions&lt;/a> 的&lt;a href="https://github.com/envoyproxy/gateway/tree/main/.github/workflows">工作流&lt;/a>建设。&lt;/p>
 &lt;h2 id="prerequisites">先决条件&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="go">go&lt;a class="td-heading-self-link" href="#go" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
@@ -81,7 +81,7 @@
 &lt;li>运行 &lt;code>make build BINS=&amp;quot;envoy-gateway&amp;quot;&lt;/code> 来构建 Envoy Gateway 二进制文件。&lt;/li>
 &lt;li>运行 &lt;code>make build BINS=&amp;quot;egctl&amp;quot;&lt;/code> 来构建 egctl 二进制文件。&lt;/li>
 &lt;/ul>
-&lt;p>**注意：**二进制文件在 &lt;code>bin/$OS/$ARCH&lt;/code> 目录中生成，例如，&lt;code>bin/linux/amd64/&lt;/code>。&lt;/p></description></item><item><title>贡献</title><link>/zh/contributions/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/contributing/</guid><description>&lt;p>我们欢迎来自社区的贡献。请仔细查看&lt;a href="/zh/about">项目目标&lt;/a>和以下指南，以简化您的贡献流程。&lt;/p>
+&lt;p>**注意：**二进制文件在 &lt;code>bin/$OS/$ARCH&lt;/code> 目录中生成，例如，&lt;code>bin/linux/amd64/&lt;/code>。&lt;/p></description></item><item><title>贡献</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/contributing/</guid><description>&lt;p>我们欢迎来自社区的贡献。请仔细查看&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/about">项目目标&lt;/a>和以下指南，以简化您的贡献流程。&lt;/p>
 &lt;h2 id="communication">沟通&lt;a class="td-heading-self-link" href="#communication" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>在开始开发主要功能之前，请通过 GitHub 或 Slack 联系我们。
@@ -121,7 +121,7 @@
 &lt;li>PR 预计对添加的代码具有 100% 的测试覆盖率。这可以通过覆盖范围构建来验证。
 如果您的 PR 由于某种原因无法被 100% 覆盖，请在创建时明确解释原因。&lt;/li>
 &lt;li>任何更改面向用户行为的 PR &lt;strong>必须&lt;/strong>在仓库中的
-&lt;a href="https://github.com/envoyproxy/gateway/tree/main/site">docs&lt;/a> 文件夹中具有关联的文档以及&lt;a href="/zh/contributions/releasing/">变更日志&lt;/a>。&lt;/li>
+&lt;a href="https://github.com/envoyproxy/gateway/tree/main/site">docs&lt;/a> 文件夹中具有关联的文档以及&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/">变更日志&lt;/a>。&lt;/li>
 &lt;li>所有代码注释和文档均应具有正确的英语语法和标点符号。
 如果您的英语不流利（或者是一个糟糕的写作者 ;-)），请告诉我们，我们会尽力为您寻求帮助，但不能保证。&lt;/li>
 &lt;li>您的 PR 标题应该是描述性的，通常以包含子系统名称的类型开头，
@@ -149,7 +149,7 @@
 &lt;/ul>
 &lt;h2 id="maintainer-pr-review-policy">维护者 PR 审查策略&lt;a class="td-heading-self-link" href="#maintainer-pr-review-policy" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
-&lt;li>请参阅 &lt;a href="/zh/contributions/codeowners/">CODEOWNERS.md&lt;/a> 了解当前的维护者列表。&lt;/li>
+&lt;li>请参阅 &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/codeowners/">CODEOWNERS.md&lt;/a> 了解当前的维护者列表。&lt;/li>
 &lt;li>需要由代表与 PR 所有者不同的隶属关系的维护者来审查和批准 PR。&lt;/li>
 &lt;li>当项目成熟时，预计 PR 涉及代码的“领域专家”应该对 PR 进行审查。
 此人不需要提交权限，只需要领域知识。&lt;/li>
@@ -164,7 +164,7 @@
 &lt;/ul>
 &lt;h2 id="decision-making">决策&lt;a class="td-heading-self-link" href="#decision-making" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>这是一个新的、复杂的项目，我们需要很快做出很多决定。
-为此，我们确定了做出（可能有争议的）决定的流程：&lt;/p></description></item><item><title>参与 Envoy Gateway 文档工作</title><link>/zh/contributions/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/docs/</guid><description>&lt;p>Envoy Gateway 的文档位于 &lt;code>site/content/en&lt;/code> 目录中（中文内容位于 &lt;code>site/content/zh&lt;/code> 目录中）。
+为此，我们确定了做出（可能有争议的）决定的流程：&lt;/p></description></item><item><title>参与 Envoy Gateway 文档工作</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/docs/</guid><description>&lt;p>Envoy Gateway 的文档位于 &lt;code>site/content/en&lt;/code> 目录中（中文内容位于 &lt;code>site/content/zh&lt;/code> 目录中）。
 任何单独的文档都可以使用 &lt;a href="https://daringfireball.net/projects/markdown/syntax">Markdown&lt;/a> 编写。&lt;/p>
 &lt;h2 id="documentation-structure">文档结构&lt;a class="td-heading-self-link" href="#documentation-structure" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>我们现在支持版本化的文档，文档下的目录名代表了文档的版本。
@@ -175,7 +175,7 @@
 通常不需要对其进行更改，除非您发现当前发布页面有一些不正确的内容。
 如果是这样，您应该提交 PR 来一并更新 &lt;code>site/content/en/latest&lt;/code> 和 &lt;code>site/content/en/v0.5.0&lt;/code> 的内容。&lt;/p>
 &lt;p>您可以默认访问代表当前版本的网站内容，
-也可以在&lt;a href="/zh/latest">此处&lt;/a>或页面的页脚处访问包含最新版本变更的网站。&lt;/p>
+也可以在&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest">此处&lt;/a>或页面的页脚处访问包含最新版本变更的网站。&lt;/p>
 &lt;h2 id="documentation-workflow">文档工作流程&lt;a class="td-heading-self-link" href="#documentation-workflow" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>要参与文档工作，只需编辑 &lt;code>site/content/en/latest&lt;/code> 中的 Markdown 文件，然后运行：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>make docs
@@ -188,20 +188,20 @@
 其中包含 v0.6.0 的文档，如 &lt;code>/api&lt;/code>、&lt;code>/install&lt;/code> 等。&lt;/p>
 &lt;h2 id="publishing-docs">发布文档&lt;a class="td-heading-self-link" href="#publishing-docs" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>每当文档被推送到 &lt;code>main&lt;/code> 分支时，CI 都会将构建的文档发布到 GitHub Pages。
-有关更多详细信息，请参阅 &lt;code>.github/workflows/docs.yaml&lt;/code>。&lt;/p></description></item><item><title>发布流程</title><link>/zh/contributions/releasing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/releasing/</guid><description>&lt;p>本文档指导维护人员完成创建 Envoy Gateway 版本的过程。&lt;/p>
+有关更多详细信息，请参阅 &lt;code>.github/workflows/docs.yaml&lt;/code>。&lt;/p></description></item><item><title>发布流程</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/</guid><description>&lt;p>本文档指导维护人员完成创建 Envoy Gateway 版本的过程。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="/zh/contributions/releasing/#release-candidate">候选版本&lt;/a>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#release-candidate">候选版本&lt;/a>
 &lt;ul>
-&lt;li>&lt;a href="/zh/contributions/releasing/#prerequisites">先决条件&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/contributions/releasing/#setup-cherry-picker-action">设置 Cherry Picker Action&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#prerequisites">先决条件&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#setup-cherry-picker-action">设置 Cherry Picker Action&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;a href="/zh/contributions/releasing/#minor-release">次要版本&lt;/a>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#minor-release">次要版本&lt;/a>
 &lt;ul>
-&lt;li>&lt;a href="/zh/contributions/releasing/#prerequisites-1">先决条件&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#prerequisites-1">先决条件&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;a href="/zh/contributions/releasing/#announce-the-release">公告发布&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#announce-the-release">公告发布&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="release-candidate">候选版本&lt;a class="td-heading-self-link" href="#release-candidate" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>应使用以下步骤创建候选版本。&lt;/p>
@@ -240,7 +240,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>创建主题分支，用于将 Envoy Proxy 镜像和 Envoy Ratelimit 镜像更新为版本支持的 Tag。
-有关更新镜像 Tag 的更多详细信息，请参阅 &lt;a href="https://github.com/envoyproxy/gateway/pull/2098">PR #2098&lt;/a>。&lt;/p></description></item><item><title>维护者</title><link>/zh/contributions/codeowners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/codeowners/</guid><description>&lt;h2 id="the-following-maintainers-listed-in-alphabetical-order-own-everything">以下是拥有所有权限的维护者（按字母顺序排列）&lt;a class="td-heading-self-link" href="#the-following-maintainers-listed-in-alphabetical-order-own-everything" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+有关更新镜像 Tag 的更多详细信息，请参阅 &lt;a href="https://github.com/envoyproxy/gateway/pull/2098">PR #2098&lt;/a>。&lt;/p></description></item><item><title>维护者</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/codeowners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/codeowners/</guid><description>&lt;h2 id="the-following-maintainers-listed-in-alphabetical-order-own-everything">以下是拥有所有权限的维护者（按字母顺序排列）&lt;a class="td-heading-self-link" href="#the-following-maintainers-listed-in-alphabetical-order-own-everything" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>@arkodg&lt;/li>
 &lt;li>@qicz&lt;/li>
@@ -256,7 +256,7 @@
 &lt;li>@skriss&lt;/li>
 &lt;li>@youngnick&lt;/li>
 &lt;li>@Alice-Lilith&lt;/li>
-&lt;/ul></description></item><item><title>文档内容编写规范（中文）</title><link>/zh/contributions/docs_standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/docs_standard/</guid><description>&lt;p>中文内容的位置在 &lt;code>site/content/zh&lt;/code> 目录中，具体内容和结构应与英文版本保持一致。&lt;/p>
+&lt;/ul></description></item><item><title>文档内容编写规范（中文）</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/docs_standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/docs_standard/</guid><description>&lt;p>中文内容的位置在 &lt;code>site/content/zh&lt;/code> 目录中，具体内容和结构应与英文版本保持一致。&lt;/p>
 &lt;h2 id="standard">规范&lt;a class="td-heading-self-link" href="#standard" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>以下定义了一些编写规范，并提供示例和对应 Markdown 写法。&lt;/p>
 &lt;h3 id="mixed-chinese-and-english">中英文混排&lt;a class="td-heading-self-link" href="#mixed-chinese-and-english" aria-label="Heading self-link">&lt;/a>&lt;/h3>
@@ -264,7 +264,7 @@
 中文与中文之间无需空格（即使某个中文是链路的一部分也不需要空格）：&lt;/p>
 &lt;p>&lt;strong>示例：&lt;/strong>&lt;/p>
 &lt;p>这里有中文和 English 混排。
-可以跳转到&lt;a href="/zh/contributions/docs_standard/#standard">规范&lt;/a>处重新阅读。&lt;/p>
+可以跳转到&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/docs_standard/#standard">规范&lt;/a>处重新阅读。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-md" data-lang="md">&lt;span style="display:flex;">&lt;span>这里有中文和 English 混排。
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>可以跳转到[规范](#standard)处重新阅读。
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="bold">粗体&lt;a class="td-heading-self-link" href="#bold" aria-label="Heading self-link">&lt;/a>&lt;/h3>
@@ -289,5 +289,5 @@
 &lt;p>如果内容中的英文是命令，特定专有名词，如 CRD 名称，协议名称等，请保持大小写与原本定义一致：&lt;/p>
 &lt;p>&lt;strong>示例：&lt;/strong>&lt;/p>
 &lt;p>使用 curl 命令发起 HTTP 请求。
-在 kind 集群中添加 Gateway 资源，创建 Service 和 Deployment。&lt;/p></description></item><item><title>行为准则</title><link>/zh/contributions/code_of_conduct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/code_of_conduct/</guid><description>&lt;p>Envoy Gateway 遵循
+在 kind 集群中添加 Gateway 资源，创建 Service 和 Deployment。&lt;/p></description></item><item><title>行为准则</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/code_of_conduct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/code_of_conduct/</guid><description>&lt;p>Envoy Gateway 遵循
 &lt;a href="https://github.com/cncf/foundation/blob/main/code-of-conduct-languages/zh.md">CNCF 行为准则&lt;/a>。&lt;/p></description></item></channel></rss>

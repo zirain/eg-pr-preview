@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Get Involved on Envoy Gateway</title><link>/v0.5/contributions/</link><description>Recent content in Get Involved on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/v0.5/contributions/index.xml" rel="self" type="application/rss+xml"/><item><title>Roadmap</title><link>/v0.5/contributions/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/contributions/roadmap/</guid><description>&lt;p>This document serves as a high-level reference for Envoy Gateway users and contributors to understand the direction of
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Get Involved on Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/</link><description>Recent content in Get Involved on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/index.xml" rel="self" type="application/rss+xml"/><item><title>Roadmap</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/roadmap/</guid><description>&lt;p>This document serves as a high-level reference for Envoy Gateway users and contributors to understand the direction of
 the project.&lt;/p>
 &lt;h2 id="contributing-to-the-roadmap">Contributing to the Roadmap&lt;a class="td-heading-self-link" href="#contributing-to-the-roadmap" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
@@ -11,7 +11,7 @@ maintainer will submit a &lt;a href="https://github.com/envoyproxy/gateway/compa
 discussed in an issue or a community meeting before implementing it.&lt;/li>
 &lt;/ul>
 &lt;p>If you don&amp;rsquo;t know where to start contributing, help is needed to reduce technical, automation, and documentation debt.
-Look for issues with the &lt;code>help wanted&lt;/code> label to get started.&lt;/p></description></item><item><title>Developer Guide</title><link>/v0.5/contributions/develop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/contributions/develop/</guid><description>&lt;p>Envoy Gateway is built using a &lt;a href="https://www.gnu.org/software/make/">make&lt;/a>-based build system. Our CI is based on &lt;a href="https://docs.github.com/en/actions">Github Actions&lt;/a> using &lt;a href="https://github.com/envoyproxy/gateway/tree/main/.github/workflows">workflows&lt;/a>.&lt;/p>
+Look for issues with the &lt;code>help wanted&lt;/code> label to get started.&lt;/p></description></item><item><title>Developer Guide</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/develop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/develop/</guid><description>&lt;p>Envoy Gateway is built using a &lt;a href="https://www.gnu.org/software/make/">make&lt;/a>-based build system. Our CI is based on &lt;a href="https://docs.github.com/en/actions">Github Actions&lt;/a> using &lt;a href="https://github.com/envoyproxy/gateway/tree/main/.github/workflows">workflows&lt;/a>.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="go">go&lt;a class="td-heading-self-link" href="#go" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
@@ -47,7 +47,7 @@ separately.&lt;/li>
 &lt;li>Run &lt;code>make build BINS=&amp;quot;envoy-gateway&amp;quot;&lt;/code> to build the Envoy Gateway binary.&lt;/li>
 &lt;li>Run &lt;code>make build BINS=&amp;quot;egctl&amp;quot;&lt;/code> to build the egctl binary.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Note:&lt;/strong> The binaries get generated in the &lt;code>bin/$OS/$ARCH&lt;/code> directory, for example, &lt;code>bin/linux/amd64/&lt;/code>.&lt;/p></description></item><item><title>Contributing</title><link>/v0.5/contributions/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/contributions/contributing/</guid><description>&lt;p>We welcome contributions from the community. Please carefully review the &lt;a href="/about/">project goals&lt;/a>
+&lt;p>&lt;strong>Note:&lt;/strong> The binaries get generated in the &lt;code>bin/$OS/$ARCH&lt;/code> directory, for example, &lt;code>bin/linux/amd64/&lt;/code>.&lt;/p></description></item><item><title>Contributing</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/contributing/</guid><description>&lt;p>We welcome contributions from the community. Please carefully review the &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/about/">project goals&lt;/a>
 and following guidelines to streamline your contributions.&lt;/p>
 &lt;h2 id="communication">Communication&lt;a class="td-heading-self-link" href="#communication" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
@@ -64,7 +64,7 @@ location.&lt;/li>
 &lt;/ul>
 &lt;h2 id="inclusivity">Inclusivity&lt;a class="td-heading-self-link" href="#inclusivity" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Envoy Gateway community has an explicit goal to be inclusive to all. As such, all PRs must adhere
-to the following guidelines for all code, APIs, and documentation:&lt;/p></description></item><item><title>Code of Conduct</title><link>/v0.5/contributions/code_of_conduct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/contributions/code_of_conduct/</guid><description>&lt;p>Envoy Gateway follows the &lt;a href="https://github.com/cncf/foundation/blob/main/code-of-conduct.md">CNCF Code of Conduct&lt;/a>.&lt;/p></description></item><item><title>Maintainers</title><link>/v0.5/contributions/codeowners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/contributions/codeowners/</guid><description>&lt;h2 id="the-following-maintainers-listed-in-alphabetical-order-own-everything">The following maintainers, listed in alphabetical order, own everything&lt;a class="td-heading-self-link" href="#the-following-maintainers-listed-in-alphabetical-order-own-everything" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+to the following guidelines for all code, APIs, and documentation:&lt;/p></description></item><item><title>Code of Conduct</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/code_of_conduct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/code_of_conduct/</guid><description>&lt;p>Envoy Gateway follows the &lt;a href="https://github.com/cncf/foundation/blob/main/code-of-conduct.md">CNCF Code of Conduct&lt;/a>.&lt;/p></description></item><item><title>Maintainers</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/codeowners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/codeowners/</guid><description>&lt;h2 id="the-following-maintainers-listed-in-alphabetical-order-own-everything">The following maintainers, listed in alphabetical order, own everything&lt;a class="td-heading-self-link" href="#the-following-maintainers-listed-in-alphabetical-order-own-everything" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>@Alice-Lilith&lt;/li>
 &lt;li>@arkodg&lt;/li>
@@ -78,11 +78,11 @@ to the following guidelines for all code, APIs, and documentation:&lt;/p></descr
 &lt;li>@alexgervais&lt;/li>
 &lt;li>@skriss&lt;/li>
 &lt;li>@youngnick&lt;/li>
-&lt;/ul></description></item><item><title>Release Process</title><link>/v0.5/contributions/releasing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/contributions/releasing/</guid><description>&lt;p>This document guides maintainers through the process of creating an Envoy Gateway release.&lt;/p>
+&lt;/ul></description></item><item><title>Release Process</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/releasing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/releasing/</guid><description>&lt;p>This document guides maintainers through the process of creating an Envoy Gateway release.&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="/v0.5/contributions/releasing/#release-candidate">Release Candidate&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/v0.5/contributions/releasing/#minor-release">Minor Release&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/v0.5/contributions/releasing/#announce-the-release">Announce the Release&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/v0.5/contributions/releasing/#release-candidate">Release Candidate&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/v0.5/contributions/releasing/#minor-release">Minor Release&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/v0.5/contributions/releasing/#announce-the-release">Announce the Release&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="release-candidate">Release Candidate&lt;a class="td-heading-self-link" href="#release-candidate" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The following steps should be used for creating a release candidate.&lt;/p>
@@ -97,11 +97,11 @@ to the following guidelines for all code, APIs, and documentation:&lt;/p></descr
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">GITHUB_REMOTE&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>origin
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol>
 &lt;li>
-&lt;p>Clone the repo, checkout the &lt;code>main&lt;/code> branch, ensure it’s up-to-date, and your local branch is clean.&lt;/p></description></item><item><title>Working on Envoy Gateway Docs</title><link>/v0.5/contributions/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/contributions/docs/</guid><description>&lt;div class="alert alert-warning" role="alert">
+&lt;p>Clone the repo, checkout the &lt;code>main&lt;/code> branch, ensure it’s up-to-date, and your local branch is clean.&lt;/p></description></item><item><title>Working on Envoy Gateway Docs</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/contributions/docs/</guid><description>&lt;div class="alert alert-warning" role="alert">
 &lt;h4 class="alert-heading">Note&lt;/h4>
 
  &lt;p>We migrated from &lt;em>&lt;strong>Sphinx&lt;/strong>&lt;/em> to &lt;em>&lt;strong>Hugo&lt;/strong>&lt;/em> for Envoy Gateway Documents.&lt;/p>
-&lt;p>Read blog: &lt;a href="/news/blogs/new-website/new-website/">Welcome to new website!&lt;/a>&lt;/p>
+&lt;p>Read blog: &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/blogs/new-website/new-website/">Welcome to new website!&lt;/a>&lt;/p>
 
 
 &lt;/div>

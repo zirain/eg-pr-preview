@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Envoy Gateway</title><link>/zh/</link><description>Recent content on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Helm 安装</title><link>/zh/latest/install/install-helm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/install-helm/</guid><description>&lt;p>&lt;a href="https://helm.sh">Helm&lt;/a> 是 Kubernetes 的包管理器，可自动在 Kubernetes 上发布和管理软件。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/</link><description>Recent content on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Helm 安装</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-helm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-helm/</guid><description>&lt;p>&lt;a href="https://helm.sh">Helm&lt;/a> 是 Kubernetes 的包管理器，可自动在 Kubernetes 上发布和管理软件。&lt;/p>
 &lt;p>Envoy Gateway 可以通过 Helm Chart 经过几个简单的步骤进行安装，
 具体取决于您是首次部署、从现有安装升级 Envoy Gateway 还是从 Envoy Gateway 迁移。&lt;/p>
 &lt;h2 id="before-you-begin">开始之前&lt;a class="td-heading-self-link" href="#before-you-begin" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -7,7 +7,7 @@
 &lt;div class="alert alert-warning" role="alert">
 &lt;h4 class="alert-heading">兼容性矩阵&lt;/h4>
 
- 请参阅&lt;a href="/zh/latest/install/matrix/">版本兼容性矩阵&lt;/a>了解更多信息。
+ 请参阅&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/install/matrix/">版本兼容性矩阵&lt;/a>了解更多信息。
 
 &lt;/div>
 
@@ -31,14 +31,14 @@
 &lt;div class="alert alert-primary" role="alert">
 &lt;h4 class="alert-heading">开发者指南&lt;/h4>
 
- 请参阅&lt;a href="/zh/contributions/develop/">开发者指南&lt;/a>了解更多信息。
+ 请参阅&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/develop/">开发者指南&lt;/a>了解更多信息。
 
 &lt;/div>
 
 &lt;p>安装 Gateway API CRD 和 Envoy Gateway：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>helm install eg oci://docker.io/envoyproxy/gateway-helm --version v0.0.0-latest -n envoy-gateway-system --create-namespace
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>等待 Envoy Gateway 变为可用：&lt;/p></description></item><item><title>使用 Kubernetes YAML 安装</title><link>/zh/latest/install/install-yaml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/install-yaml/</guid><description>&lt;p>此任务将引导您完成在 Kubernetes 集群中安装 Envoy Gateway。&lt;/p>
-&lt;p>手动安装过程不允许像 &lt;a href="/zh/latest/install/install-helm/">Helm 安装方法&lt;/a>那样对配置进行更多控制，
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>等待 Envoy Gateway 变为可用：&lt;/p></description></item><item><title>使用 Kubernetes YAML 安装</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-yaml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-yaml/</guid><description>&lt;p>此任务将引导您完成在 Kubernetes 集群中安装 Envoy Gateway。&lt;/p>
+&lt;p>手动安装过程不允许像 &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-helm/">Helm 安装方法&lt;/a>那样对配置进行更多控制，
 因此如果您需要对 Envoy Gateway 安装进行更多控制，建议您使用 Helm。&lt;/p>
 &lt;h2 id="before-you-begin">开始之前&lt;a class="td-heading-self-link" href="#before-you-begin" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Envoy Gateway 设计为在 Kubernetes 中运行以进行生产。最重要的要求是：&lt;/p>
@@ -51,7 +51,7 @@
 &lt;div class="alert alert-warning" role="alert">
 &lt;h4 class="alert-heading">兼容性矩阵&lt;/h4>
 
- 请参阅&lt;a href="/zh/latest/install/matrix/">版本兼容性矩阵&lt;/a>了解更多信息。
+ 请参阅&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/install/matrix/">版本兼容性矩阵&lt;/a>了解更多信息。
 
 &lt;/div>
 
@@ -62,7 +62,7 @@
 &lt;div class="alert alert-primary" role="alert">
 &lt;h4 class="alert-heading">开发者指南&lt;/h4>
 
- 请参阅&lt;a href="/zh/contributions/develop/">开发者指南&lt;/a>了解更多信息。
+ 请参阅&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/develop/">开发者指南&lt;/a>了解更多信息。
 
 &lt;/div>
 
@@ -73,9 +73,9 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>后续步骤&lt;/p>
-&lt;p>Envoy Gateway 现在应该已成功安装并运行，但是为了体验 Envoy Gateway 的更多功能，您可以参考&lt;a href="/zh/latest/tasks/">任务&lt;/a>。&lt;/p>
+&lt;p>Envoy Gateway 现在应该已成功安装并运行，但是为了体验 Envoy Gateway 的更多功能，您可以参考&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/">任务&lt;/a>。&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>使用自定义证书的控制平面身份验证</title><link>/zh/latest/install/custom-cert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/custom-cert/</guid><description>&lt;p>Envoy Gateway 为 Envoy Gateway Pod 和 Envoy 代理队列之间的控制平面通信建立了安全的 TLS 连接。
+&lt;/ol></description></item><item><title>使用自定义证书的控制平面身份验证</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/custom-cert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/custom-cert/</guid><description>&lt;p>Envoy Gateway 为 Envoy Gateway Pod 和 Envoy 代理队列之间的控制平面通信建立了安全的 TLS 连接。
 此处使用的 TLS 证书是自签名的，并使用在创建 Envoy Gateway 之前运行的 Job 生成，
 并且这些证书被安装到 Envoy Gateway 和 Envoy 代理 Pod 上。&lt;/p>
 &lt;p>此任务将引导您完成为控制平面身份验证配置自定义证书。&lt;/p>
@@ -128,7 +128,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">EOF&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
-&lt;p>为 Envoy Gateway 控制器创建一个证书，该证书将存储在 &lt;code>envoy-gatewy&lt;/code> Secret 中。&lt;/p></description></item><item><title>路线图</title><link>/zh/contributions/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/roadmap/</guid><description>&lt;p>本文档可作为 Envoy Gateway 用户和贡献者了解项目方向的高级参考。&lt;/p>
+&lt;p>为 Envoy Gateway 控制器创建一个证书，该证书将存储在 &lt;code>envoy-gatewy&lt;/code> Secret 中。&lt;/p></description></item><item><title>路线图</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/roadmap/</guid><description>&lt;p>本文档可作为 Envoy Gateway 用户和贡献者了解项目方向的高级参考。&lt;/p>
 &lt;h2 id="contributing-to-the-roadmap">为路线图做出贡献&lt;a class="td-heading-self-link" href="#contributing-to-the-roadmap" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>要将功能添加到路线图中，请创建 &lt;a href="https://github.com/envoyproxy/gateway/issues">Issue&lt;/a> 或加入&lt;a href="https://docs.google.com/document/d/1leqwsHX8N-XxNEyTflYjRur462ukFxd19Rnk3Uzy55I/edit?usp=sharing">社区会议&lt;/a>来讨论您的用例。
@@ -177,10 +177,10 @@
 &lt;li>计算并记录 Envoy Gateway 性能 &lt;a href="https://github.com/envoyproxy/gateway/issues/1365">Issue #1365&lt;/a>。&lt;/li>
 &lt;li>添加 TrafficPolicy API 以实现高级功能 &lt;a href="https://github.com/envoyproxy/gateway/issues/1492">Issue #1492&lt;/a>。&lt;/li>
 &lt;li>Envoy Gateway 满足就绪标准 &lt;a href="https://github.com/envoyproxy/gateway/issues/1160">Issue #1160&lt;/a>。&lt;/li>
-&lt;/ul></description></item><item><title>快速入门</title><link>/zh/latest/tasks/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/tasks/quickstart/</guid><description>&lt;p>本指南将帮助您通过几个简单的步骤开始使用 Envoy Gateway。&lt;/p>
+&lt;/ul></description></item><item><title>快速入门</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/quickstart/</guid><description>&lt;p>本指南将帮助您通过几个简单的步骤开始使用 Envoy Gateway。&lt;/p>
 &lt;h2 id="prerequisites">前置条件&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>一个 Kubernetes 集群。&lt;/p>
-&lt;p>&lt;strong>注意：&lt;/strong> 请参考&lt;a href="/zh/latest/install/matrix/">兼容性表格&lt;/a>来查看所支持的 Kubernetes 版本。&lt;/p>
+&lt;p>&lt;strong>注意：&lt;/strong> 请参考&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/install/matrix/">兼容性表格&lt;/a>来查看所支持的 Kubernetes 版本。&lt;/p>
 &lt;p>&lt;strong>注意：&lt;/strong> 如果您的 Kubernetes 集群没有负载均衡器实现，我们建议安装一个
 ，以便 Gateway 资源能够关联一个地址。我们推荐使用 &lt;a href="https://metallb.universe.tf/installation/">MetalLB&lt;/a>。&lt;/p>
 &lt;h2 id="installation">安装&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -193,7 +193,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>注意：&lt;/strong>&lt;a href="https://github.com/envoyproxy/gateway/releases/download/latest/quickstart.yaml">&lt;code>quickstart.yaml&lt;/code>&lt;/a> 定义了 Envoy Gateway 将侦听其全局可路由 IP 地址上端口
 80 上的流量，以便轻松使用浏览器测试 Envoy Gateway。当 Envoy Gateway 看到它的侦听器使用特权端口（&amp;lt;1024），
 它将在内部映射到非特权端口，因此 Envoy Gateway 不需要额外的特权。
-了解此映射很重要，当您调试时您可能需要将其考虑在内。&lt;/p></description></item><item><title>开发者指南</title><link>/zh/contributions/develop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/develop/</guid><description>&lt;p>Envoy Gateway 使用基于 &lt;a href="https://www.gnu.org/software/make/">make&lt;/a> 的构建系统进行构建。我们的 CI 使用基于 &lt;a href="https://docs.github.com/en/actions">Github Actions&lt;/a> 的&lt;a href="https://github.com/envoyproxy/gateway/tree/main/.github/workflows">工作流&lt;/a>建设。&lt;/p>
+了解此映射很重要，当您调试时您可能需要将其考虑在内。&lt;/p></description></item><item><title>开发者指南</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/develop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/develop/</guid><description>&lt;p>Envoy Gateway 使用基于 &lt;a href="https://www.gnu.org/software/make/">make&lt;/a> 的构建系统进行构建。我们的 CI 使用基于 &lt;a href="https://docs.github.com/en/actions">Github Actions&lt;/a> 的&lt;a href="https://github.com/envoyproxy/gateway/tree/main/.github/workflows">工作流&lt;/a>建设。&lt;/p>
 &lt;h2 id="prerequisites">先决条件&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="go">go&lt;a class="td-heading-self-link" href="#go" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
@@ -227,7 +227,7 @@
 &lt;li>运行 &lt;code>make build BINS=&amp;quot;envoy-gateway&amp;quot;&lt;/code> 来构建 Envoy Gateway 二进制文件。&lt;/li>
 &lt;li>运行 &lt;code>make build BINS=&amp;quot;egctl&amp;quot;&lt;/code> 来构建 egctl 二进制文件。&lt;/li>
 &lt;/ul>
-&lt;p>**注意：**二进制文件在 &lt;code>bin/$OS/$ARCH&lt;/code> 目录中生成，例如，&lt;code>bin/linux/amd64/&lt;/code>。&lt;/p></description></item><item><title>贡献</title><link>/zh/contributions/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/contributing/</guid><description>&lt;p>我们欢迎来自社区的贡献。请仔细查看&lt;a href="/zh/about">项目目标&lt;/a>和以下指南，以简化您的贡献流程。&lt;/p>
+&lt;p>**注意：**二进制文件在 &lt;code>bin/$OS/$ARCH&lt;/code> 目录中生成，例如，&lt;code>bin/linux/amd64/&lt;/code>。&lt;/p></description></item><item><title>贡献</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/contributing/</guid><description>&lt;p>我们欢迎来自社区的贡献。请仔细查看&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/about">项目目标&lt;/a>和以下指南，以简化您的贡献流程。&lt;/p>
 &lt;h2 id="communication">沟通&lt;a class="td-heading-self-link" href="#communication" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>在开始开发主要功能之前，请通过 GitHub 或 Slack 联系我们。
@@ -267,7 +267,7 @@
 &lt;li>PR 预计对添加的代码具有 100% 的测试覆盖率。这可以通过覆盖范围构建来验证。
 如果您的 PR 由于某种原因无法被 100% 覆盖，请在创建时明确解释原因。&lt;/li>
 &lt;li>任何更改面向用户行为的 PR &lt;strong>必须&lt;/strong>在仓库中的
-&lt;a href="https://github.com/envoyproxy/gateway/tree/main/site">docs&lt;/a> 文件夹中具有关联的文档以及&lt;a href="/zh/contributions/releasing/">变更日志&lt;/a>。&lt;/li>
+&lt;a href="https://github.com/envoyproxy/gateway/tree/main/site">docs&lt;/a> 文件夹中具有关联的文档以及&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/">变更日志&lt;/a>。&lt;/li>
 &lt;li>所有代码注释和文档均应具有正确的英语语法和标点符号。
 如果您的英语不流利（或者是一个糟糕的写作者 ;-)），请告诉我们，我们会尽力为您寻求帮助，但不能保证。&lt;/li>
 &lt;li>您的 PR 标题应该是描述性的，通常以包含子系统名称的类型开头，
@@ -295,7 +295,7 @@
 &lt;/ul>
 &lt;h2 id="maintainer-pr-review-policy">维护者 PR 审查策略&lt;a class="td-heading-self-link" href="#maintainer-pr-review-policy" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
-&lt;li>请参阅 &lt;a href="/zh/contributions/codeowners/">CODEOWNERS.md&lt;/a> 了解当前的维护者列表。&lt;/li>
+&lt;li>请参阅 &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/codeowners/">CODEOWNERS.md&lt;/a> 了解当前的维护者列表。&lt;/li>
 &lt;li>需要由代表与 PR 所有者不同的隶属关系的维护者来审查和批准 PR。&lt;/li>
 &lt;li>当项目成熟时，预计 PR 涉及代码的“领域专家”应该对 PR 进行审查。
 此人不需要提交权限，只需要领域知识。&lt;/li>
@@ -310,7 +310,7 @@
 &lt;/ul>
 &lt;h2 id="decision-making">决策&lt;a class="td-heading-self-link" href="#decision-making" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>这是一个新的、复杂的项目，我们需要很快做出很多决定。
-为此，我们确定了做出（可能有争议的）决定的流程：&lt;/p></description></item><item><title>v1.0.2</title><link>/zh/latest/releases/v1.0.2/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><guid>/zh/latest/releases/v1.0.2/</guid><description>&lt;p>日期：2024 年 6 月 12 日&lt;/p>
+为此，我们确定了做出（可能有争议的）决定的流程：&lt;/p></description></item><item><title>v1.0.2</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.2/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.2/</guid><description>&lt;p>日期：2024 年 6 月 12 日&lt;/p>
 &lt;h2 id="installation">安装&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>更新 EnvoyProxy 至 1.29.5&lt;/li>
@@ -336,7 +336,7 @@
 &lt;li>修复了具有不同类型但相同名称和命名空间的路线扩展过滤器无法正确缓存的问题&lt;/li>
 &lt;li>通过删除 generationChanged 谓词修复了 secrets/configmap 更新以触发控制器调协的问题&lt;/li>
 &lt;li>移除了 EnvoyProxy parametersRef 的命名空间限制&lt;/li>
-&lt;/ul></description></item><item><title>v1.0.1</title><link>/zh/latest/releases/v1.0.1/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>/zh/latest/releases/v1.0.1/</guid><description>&lt;p>日期：2024 年 4 月 9 日&lt;/p>
+&lt;/ul></description></item><item><title>v1.0.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.1/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.1/</guid><description>&lt;p>日期：2024 年 4 月 9 日&lt;/p>
 &lt;h2 id="installation">安装&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>将 EnvoyProxy 版本更新至 v1.29.3&lt;/li>
@@ -359,7 +359,7 @@
 &lt;h2 id="infra-manager">Infra-manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>当 InfraIR 具有空侦听器时跳过创建基础设施资源&lt;/li>
-&lt;/ul></description></item><item><title>v1.0.0</title><link>/zh/latest/releases/v1.0.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>/zh/latest/releases/v1.0.0/</guid><description>&lt;p>日期：2024 年 3 月 13 日&lt;/p>
+&lt;/ul></description></item><item><title>v1.0.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/releases/v1.0.0/</guid><description>&lt;p>日期：2024 年 3 月 13 日&lt;/p>
 &lt;h2 id="documentation">文档&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>新增了本地限流（Local Ratelimit）的用户指南&lt;/li>
@@ -532,33 +532,33 @@
 &lt;li>添加了对 egctl experimental dashboard envoy-proxy 命令的支持&lt;/li>
 &lt;li>添加了对 egctl config ratelimit 命令的支持&lt;/li>
 &lt;li>添加了对从 gateway-api 资源到 IR 的 gctl translate from gateway-api 命令的支持&lt;/li>
-&lt;/ul></description></item><item><title>API Reference</title><link>/zh/latest/api/extension_types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/api/extension_types/</guid><description>&lt;h2 id="packages">Packages&lt;a class="td-heading-self-link" href="#packages" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;/ul></description></item><item><title>API Reference</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/</guid><description>&lt;h2 id="packages">Packages&lt;a class="td-heading-self-link" href="#packages" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#gatewayenvoyproxyiov1alpha1">gateway.envoyproxy.io/v1alpha1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#gatewayenvoyproxyiov1alpha1">gateway.envoyproxy.io/v1alpha1&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="gatewayenvoyproxyiov1alpha1">gateway.envoyproxy.io/v1alpha1&lt;a class="td-heading-self-link" href="#gatewayenvoyproxyiov1alpha1" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Package v1alpha1 contains API schema definitions for the gateway.envoyproxy.io
 API group.&lt;/p>
 &lt;h3 id="resource-types">Resource Types&lt;a class="td-heading-self-link" href="#resource-types" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#backend">Backend&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#backendtrafficpolicy">BackendTrafficPolicy&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#clienttrafficpolicy">ClientTrafficPolicy&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#envoyextensionpolicy">EnvoyExtensionPolicy&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#envoygateway">EnvoyGateway&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#envoypatchpolicy">EnvoyPatchPolicy&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#envoyproxy">EnvoyProxy&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#httproutefilter">HTTPRouteFilter&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#securitypolicy">SecurityPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#backend">Backend&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#backendtrafficpolicy">BackendTrafficPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#clienttrafficpolicy">ClientTrafficPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#envoyextensionpolicy">EnvoyExtensionPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#envoygateway">EnvoyGateway&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#envoypatchpolicy">EnvoyPatchPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#envoyproxy">EnvoyProxy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#httproutefilter">HTTPRouteFilter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#securitypolicy">SecurityPolicy&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h4 id="alpnprotocol">ALPNProtocol&lt;a class="td-heading-self-link" href="#alpnprotocol" aria-label="Heading self-link">&lt;/a>&lt;/h4>
 &lt;p>&lt;em>Underlying type:&lt;/em> &lt;em>string&lt;/em>&lt;/p>
 &lt;p>ALPNProtocol specifies the protocol to be negotiated using ALPN&lt;/p>
 &lt;p>&lt;em>Appears in:&lt;/em>&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#backendtlsconfig">BackendTLSConfig&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#clienttlssettings">ClientTLSSettings&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/latest/api/extension_types/#tlssettings">TLSSettings&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#backendtlsconfig">BackendTLSConfig&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#clienttlssettings">ClientTLSSettings&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/api/extension_types/#tlssettings">TLSSettings&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;table>
  &lt;thead>
@@ -587,7 +587,7 @@ API group.&lt;/p>
 The service must implement the Envoy gRPC Access Log Service streaming API:
 &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/api-v3/service/accesslog/v3/als.proto">https://www.envoyproxy.io/docs/envoy/latest/api-v3/service/accesslog/v3/als.proto&lt;/a>
 Access log format information is passed in the form of gRPC metadata when the
-stream is established.&lt;/p></description></item><item><title>Gateway Addons Helm Chart</title><link>/zh/latest/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/gateway-addons-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+stream is established.&lt;/p></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-addons-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
 &lt;p>An Add-ons Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -1281,7 +1281,7 @@ stream is established.&lt;/p></description></item><item><title>Gateway Addons He
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>/zh/latest/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/gateway-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -1616,10 +1616,10 @@ stream is established.&lt;/p></description></item><item><title>Gateway Addons He
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>GRPC 路由</title><link>/zh/latest/tasks/traffic/grpc-routing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/tasks/traffic/grpc-routing/</guid><description>&lt;p>&lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute/">GRPCRoute&lt;/a> 资源允许用户通过匹配 HTTP/2 流量并将其转发到后端 gRPC 服务器来配置 gRPC 路由。
+&lt;/table></description></item><item><title>GRPC 路由</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/traffic/grpc-routing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/traffic/grpc-routing/</guid><description>&lt;p>&lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute/">GRPCRoute&lt;/a> 资源允许用户通过匹配 HTTP/2 流量并将其转发到后端 gRPC 服务器来配置 gRPC 路由。
 要了解有关 gRPC 路由的更多信息，请参阅&lt;a href="https://gateway-api.sigs.k8s.io/">Gateway API 文档&lt;/a>。&lt;/p>
 &lt;h2 id="prerequisites">先决条件&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>按照&lt;a href="/zh/latest/tasks/quickstart/">快速入门&lt;/a>中的步骤安装 Envoy Gateway 和示例清单。
+&lt;p>按照&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/quickstart/">快速入门&lt;/a>中的步骤安装 Envoy Gateway 和示例清单。
 在继续之前，您应该能够使用 HTTP 查询示例程序后端。&lt;/p>
 &lt;h2 id="installation">安装&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>安装 gRPC 路由示例资源：&lt;/p>
@@ -1632,22 +1632,22 @@ GatewayClass 是集群范围的资源，表示可以被实例化的一类 Gatewa
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>kubectl get gc --selector&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">example&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>grpc-routing
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>状态应反映为 &lt;code>Accepted=True&lt;/code>，表示 Envoy Gateway 正在管理 GatewayClass。&lt;/p>
 &lt;p>Gateway 代表基础设施的配置。创建 Gateway 时，&lt;a href="https://www.envoyproxy.io/">Envoy 代理&lt;/a>基础设施由 Envoy Gateway 预配或配置。
-&lt;code>gatewayClassName&lt;/code> 定义此 Gateway 使用的 GatewayClass 的名称。检查 Gateway 状态：&lt;/p></description></item><item><title>JWT 身份验证</title><link>/zh/latest/tasks/security/jwt-authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/tasks/security/jwt-authentication/</guid><description>&lt;p>此任务提供有关配置 &lt;a href="https://tools.ietf.org/html/rfc7519">JSON Web Token（JWT）&lt;/a>身份验证的说明。
+&lt;code>gatewayClassName&lt;/code> 定义此 Gateway 使用的 GatewayClass 的名称。检查 Gateway 状态：&lt;/p></description></item><item><title>JWT 身份验证</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/security/jwt-authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/security/jwt-authentication/</guid><description>&lt;p>此任务提供有关配置 &lt;a href="https://tools.ietf.org/html/rfc7519">JSON Web Token（JWT）&lt;/a>身份验证的说明。
 JWT 身份验证在将请求路由到后端服务之前检查传入请求是否具有有效的 JWT。
 目前，Envoy Gateway 仅支持通过 HTTP 标头验证 JWT，例如 &lt;code>Authorization: Bearer &amp;lt;token&amp;gt;&lt;/code>。&lt;/p>
-&lt;p>Envoy Gateway 引入了一个名为 &lt;a href="/zh/contributions/design/security-policy/">SecurityPolicy&lt;/a> 的新 CRD，允许用户配置 JWT 身份验证。
+&lt;p>Envoy Gateway 引入了一个名为 &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/design/security-policy/">SecurityPolicy&lt;/a> 的新 CRD，允许用户配置 JWT 身份验证。
 该实例化资源可以链接到 &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway">Gateway&lt;/a>、&lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute">HTTPRoute&lt;/a> 或 &lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute">GRPCRoute&lt;/a> 资源。&lt;/p>
 &lt;h2 id="prerequisites">先决条件&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>按照&lt;a href="/zh/latest/tasks/quickstart/">快速入门&lt;/a>中的步骤安装 Envoy Gateway 和示例清单。
-对于 GRPC - 请按照 &lt;a href="/zh/latest/tasks/traffic/grpc-routing/">GRPC 路由&lt;/a>示例中的步骤操作。
+&lt;p>按照&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/quickstart/">快速入门&lt;/a>中的步骤安装 Envoy Gateway 和示例清单。
+对于 GRPC - 请按照 &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/traffic/grpc-routing/">GRPC 路由&lt;/a>示例中的步骤操作。
 在继续之前，您应该能够使用 HTTP 或 GRPC 查询示例程序后端。&lt;/p>
 &lt;h2 id="configuration">配置&lt;a class="td-heading-self-link" href="#configuration" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>通过创建 &lt;a href="/zh/contributions/design/security-policy/">SecurityPolicy&lt;/a> 并将其附加到示例 HTTPRoute 或 GRPCRoute，允许使用具有有效 JWT 的请求。&lt;/p>
+&lt;p>通过创建 &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/design/security-policy/">SecurityPolicy&lt;/a> 并将其附加到示例 HTTPRoute 或 GRPCRoute，允许使用具有有效 JWT 的请求。&lt;/p>
 &lt;h3 id="httproute">HTTPRoute&lt;a class="td-heading-self-link" href="#httproute" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>kubectl apply -f https://raw.githubusercontent.com/envoyproxy/gateway/latest/examples/kubernetes/jwt/jwt.yaml
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>已创建两个 HTTPRoute，一个用于 &lt;code>/foo&lt;/code>，另一个用于 &lt;code>/bar&lt;/code>。
 已创建 SecurityPolicy 并以 HTTPRoute foo 为目标来验证对 &lt;code>/foo&lt;/code> 的请求。
-HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验证的请求发送到 &lt;code>/bar&lt;/code>。&lt;/p></description></item><item><title>SecurityPolicy</title><link>/zh/contributions/design/security-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/design/security-policy/</guid><description>&lt;h2 id="overview">概述&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验证的请求发送到 &lt;code>/bar&lt;/code>。&lt;/p></description></item><item><title>SecurityPolicy</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/design/security-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/design/security-policy/</guid><description>&lt;h2 id="overview">概述&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>本设计文档引入了 &lt;code>SecurityPolicy&lt;/code> API，允许系统管理员为进入网关的流量配置身份验证和鉴权策略。&lt;/p>
 &lt;h2 id="goals">目标&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
@@ -1719,7 +1719,7 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">name&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">eg&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">namespace&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">default&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="features-api-fields">功能及 API 字段&lt;a class="td-heading-self-link" href="#features-api-fields" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>以下是此 API 中包含的功能列表：&lt;/p></description></item><item><title>参与 Envoy Gateway 文档工作</title><link>/zh/contributions/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/docs/</guid><description>&lt;p>Envoy Gateway 的文档位于 &lt;code>site/content/en&lt;/code> 目录中（中文内容位于 &lt;code>site/content/zh&lt;/code> 目录中）。
+&lt;p>以下是此 API 中包含的功能列表：&lt;/p></description></item><item><title>参与 Envoy Gateway 文档工作</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/docs/</guid><description>&lt;p>Envoy Gateway 的文档位于 &lt;code>site/content/en&lt;/code> 目录中（中文内容位于 &lt;code>site/content/zh&lt;/code> 目录中）。
 任何单独的文档都可以使用 &lt;a href="https://daringfireball.net/projects/markdown/syntax">Markdown&lt;/a> 编写。&lt;/p>
 &lt;h2 id="documentation-structure">文档结构&lt;a class="td-heading-self-link" href="#documentation-structure" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>我们现在支持版本化的文档，文档下的目录名代表了文档的版本。
@@ -1730,7 +1730,7 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
 通常不需要对其进行更改，除非您发现当前发布页面有一些不正确的内容。
 如果是这样，您应该提交 PR 来一并更新 &lt;code>site/content/en/latest&lt;/code> 和 &lt;code>site/content/en/v0.5.0&lt;/code> 的内容。&lt;/p>
 &lt;p>您可以默认访问代表当前版本的网站内容，
-也可以在&lt;a href="/zh/latest">此处&lt;/a>或页面的页脚处访问包含最新版本变更的网站。&lt;/p>
+也可以在&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest">此处&lt;/a>或页面的页脚处访问包含最新版本变更的网站。&lt;/p>
 &lt;h2 id="documentation-workflow">文档工作流程&lt;a class="td-heading-self-link" href="#documentation-workflow" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>要参与文档工作，只需编辑 &lt;code>site/content/en/latest&lt;/code> 中的 Markdown 文件，然后运行：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>make docs
@@ -1743,20 +1743,20 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
 其中包含 v0.6.0 的文档，如 &lt;code>/api&lt;/code>、&lt;code>/install&lt;/code> 等。&lt;/p>
 &lt;h2 id="publishing-docs">发布文档&lt;a class="td-heading-self-link" href="#publishing-docs" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>每当文档被推送到 &lt;code>main&lt;/code> 分支时，CI 都会将构建的文档发布到 GitHub Pages。
-有关更多详细信息，请参阅 &lt;code>.github/workflows/docs.yaml&lt;/code>。&lt;/p></description></item><item><title>发布流程</title><link>/zh/contributions/releasing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/releasing/</guid><description>&lt;p>本文档指导维护人员完成创建 Envoy Gateway 版本的过程。&lt;/p>
+有关更多详细信息，请参阅 &lt;code>.github/workflows/docs.yaml&lt;/code>。&lt;/p></description></item><item><title>发布流程</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/</guid><description>&lt;p>本文档指导维护人员完成创建 Envoy Gateway 版本的过程。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="/zh/contributions/releasing/#release-candidate">候选版本&lt;/a>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#release-candidate">候选版本&lt;/a>
 &lt;ul>
-&lt;li>&lt;a href="/zh/contributions/releasing/#prerequisites">先决条件&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/zh/contributions/releasing/#setup-cherry-picker-action">设置 Cherry Picker Action&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#prerequisites">先决条件&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#setup-cherry-picker-action">设置 Cherry Picker Action&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;a href="/zh/contributions/releasing/#minor-release">次要版本&lt;/a>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#minor-release">次要版本&lt;/a>
 &lt;ul>
-&lt;li>&lt;a href="/zh/contributions/releasing/#prerequisites-1">先决条件&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#prerequisites-1">先决条件&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;a href="/zh/contributions/releasing/#announce-the-release">公告发布&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/releasing/#announce-the-release">公告发布&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="release-candidate">候选版本&lt;a class="td-heading-self-link" href="#release-candidate" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>应使用以下步骤创建候选版本。&lt;/p>
@@ -1795,15 +1795,15 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>创建主题分支，用于将 Envoy Proxy 镜像和 Envoy Ratelimit 镜像更新为版本支持的 Tag。
-有关更新镜像 Tag 的更多详细信息，请参阅 &lt;a href="https://github.com/envoyproxy/gateway/pull/2098">PR #2098&lt;/a>。&lt;/p></description></item><item><title>关于 Envoy Gateway</title><link>/zh/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/about/</guid><description>&lt;link rel="preload" as="image" href="/zh/about/featured-background_hu11577074925921995840.jpg" media="(max-width: 1200px)">
-&lt;link rel="preload" as="image" href="/zh/about/featured-background_hu14348371288254188965.jpg" media="(min-width: 1200px)">
+有关更新镜像 Tag 的更多详细信息，请参阅 &lt;a href="https://github.com/envoyproxy/gateway/pull/2098">PR #2098&lt;/a>。&lt;/p></description></item><item><title>关于 Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/about/</guid><description>&lt;link rel="preload" as="image" href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/about/featured-background_hu11577074925921995840.jpg" media="(max-width: 1200px)">
+&lt;link rel="preload" as="image" href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/about/featured-background_hu14348371288254188965.jpg" media="(min-width: 1200px)">
 &lt;style>
 #td-cover-block-0 {
- background-image: url(/zh/about/featured-background_hu11577074925921995840.jpg);
+ background-image: url(/eg-pr-preview/5-test-docs-preview/zh/about/featured-background_hu11577074925921995840.jpg);
 }
 @media only screen and (min-width: 1200px) {
  #td-cover-block-0 {
- background-image: url(/zh/about/featured-background_hu14348371288254188965.jpg);
+ background-image: url(/eg-pr-preview/5-test-docs-preview/zh/about/featured-background_hu14348371288254188965.jpg);
  }
 }
 &lt;/style>
@@ -1817,7 +1817,7 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
  
  &lt;p>Envoy Gateway 是一个开源项目，用于将 Envoy Proxy 作为独立或基于 Kubernetes 的 API 网关进行管理。&lt;/p>
 &lt;p>Gateway API 资源用于动态配置和管理 Envoy 代理。&lt;/p>
-&lt;p>请继续阅读以了解更多信息，或访问我们的&lt;a href="/zh/latest/">文档&lt;/a>并开始使用！&lt;/p>
+&lt;p>请继续阅读以了解更多信息，或访问我们的&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/">文档&lt;/a>并开始使用！&lt;/p>
 
  
  &lt;/div>
@@ -1834,7 +1834,7 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
 &lt;h2 id="objectives">目标&lt;a class="td-heading-self-link" href="#objectives" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;hr>
 &lt;p>Envoy Gateway 的目标是通过支持多种 Ingress 和 L7/L4 流量路由用例的 API 来降低 Envoy 的使用障碍，这种富有表现力、可扩展、面向角色的 API 可以吸引更多用户使用 Envoy。
-从而吸引更多用户使用 Envoy，并为供应商构建增值产品提供共同基础，而无需对基本交互进行重新设计。&lt;/p></description></item><item><title>兼容性表格</title><link>/zh/latest/install/matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/matrix/</guid><description>&lt;p>Envoy Gateway 依赖于 Envoy Proxy 和 Gateway API，并在 Kubernetes 集群中运行。
+从而吸引更多用户使用 Envoy，并为供应商构建增值产品提供共同基础，而无需对基本交互进行重新设计。&lt;/p></description></item><item><title>兼容性表格</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/matrix/</guid><description>&lt;p>Envoy Gateway 依赖于 Envoy Proxy 和 Gateway API，并在 Kubernetes 集群中运行。
 这些产品的所有版本并非都可以与 Envoy Gateway 一起运行。下面列出了支持的版本组合；
 &lt;strong>粗体&lt;/strong>类型表示实际编译到每个 Envoy Gateway 版本中的 Envoy Proxy 和 Gateway API 的版本。&lt;/p>
 &lt;table>
@@ -1898,7 +1898,7 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
  &lt;td>v1.29, v1.30, v1.31, v1.32&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>搜索结果</title><link>/zh/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/search/</guid><description/></item><item><title>维护者</title><link>/zh/contributions/codeowners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/codeowners/</guid><description>&lt;h2 id="the-following-maintainers-listed-in-alphabetical-order-own-everything">以下是拥有所有权限的维护者（按字母顺序排列）&lt;a class="td-heading-self-link" href="#the-following-maintainers-listed-in-alphabetical-order-own-everything" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;/table></description></item><item><title>搜索结果</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/search/</guid><description/></item><item><title>维护者</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/codeowners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/codeowners/</guid><description>&lt;h2 id="the-following-maintainers-listed-in-alphabetical-order-own-everything">以下是拥有所有权限的维护者（按字母顺序排列）&lt;a class="td-heading-self-link" href="#the-following-maintainers-listed-in-alphabetical-order-own-everything" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>@arkodg&lt;/li>
 &lt;li>@qicz&lt;/li>
@@ -1914,7 +1914,7 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
 &lt;li>@skriss&lt;/li>
 &lt;li>@youngnick&lt;/li>
 &lt;li>@Alice-Lilith&lt;/li>
-&lt;/ul></description></item><item><title>文档内容编写规范（中文）</title><link>/zh/contributions/docs_standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/docs_standard/</guid><description>&lt;p>中文内容的位置在 &lt;code>site/content/zh&lt;/code> 目录中，具体内容和结构应与英文版本保持一致。&lt;/p>
+&lt;/ul></description></item><item><title>文档内容编写规范（中文）</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/docs_standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/docs_standard/</guid><description>&lt;p>中文内容的位置在 &lt;code>site/content/zh&lt;/code> 目录中，具体内容和结构应与英文版本保持一致。&lt;/p>
 &lt;h2 id="standard">规范&lt;a class="td-heading-self-link" href="#standard" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>以下定义了一些编写规范，并提供示例和对应 Markdown 写法。&lt;/p>
 &lt;h3 id="mixed-chinese-and-english">中英文混排&lt;a class="td-heading-self-link" href="#mixed-chinese-and-english" aria-label="Heading self-link">&lt;/a>&lt;/h3>
@@ -1922,7 +1922,7 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
 中文与中文之间无需空格（即使某个中文是链路的一部分也不需要空格）：&lt;/p>
 &lt;p>&lt;strong>示例：&lt;/strong>&lt;/p>
 &lt;p>这里有中文和 English 混排。
-可以跳转到&lt;a href="/zh/contributions/docs_standard/#standard">规范&lt;/a>处重新阅读。&lt;/p>
+可以跳转到&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/docs_standard/#standard">规范&lt;/a>处重新阅读。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-md" data-lang="md">&lt;span style="display:flex;">&lt;span>这里有中文和 English 混排。
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>可以跳转到[规范](#standard)处重新阅读。
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="bold">粗体&lt;a class="td-heading-self-link" href="#bold" aria-label="Heading self-link">&lt;/a>&lt;/h3>
@@ -1947,5 +1947,5 @@ HTTPRoute bar 不是 SecurityPolicy 的目标，并且将允许未经身份验�
 &lt;p>如果内容中的英文是命令，特定专有名词，如 CRD 名称，协议名称等，请保持大小写与原本定义一致：&lt;/p>
 &lt;p>&lt;strong>示例：&lt;/strong>&lt;/p>
 &lt;p>使用 curl 命令发起 HTTP 请求。
-在 kind 集群中添加 Gateway 资源，创建 Service 和 Deployment。&lt;/p></description></item><item><title>行为准则</title><link>/zh/contributions/code_of_conduct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/contributions/code_of_conduct/</guid><description>&lt;p>Envoy Gateway 遵循
+在 kind 集群中添加 Gateway 资源，创建 Service 和 Deployment。&lt;/p></description></item><item><title>行为准则</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/code_of_conduct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/contributions/code_of_conduct/</guid><description>&lt;p>Envoy Gateway 遵循
 &lt;a href="https://github.com/cncf/foundation/blob/main/code-of-conduct-languages/zh.md">CNCF 行为准则&lt;/a>。&lt;/p></description></item></channel></rss>

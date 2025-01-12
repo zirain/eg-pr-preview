@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Announcements on Envoy Gateway</title><link>/news/releases/</link><description>Recent content in Release Announcements on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/news/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Announcing Envoy Gateway v1.2</title><link>/news/releases/v1.2/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>/news/releases/v1.2/</guid><description>&lt;p>We are thrilled to announce the arrival of Envoy Gateway v1.2.0.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Announcements on Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/</link><description>Recent content in Release Announcements on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Announcing Envoy Gateway v1.2</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v1.2/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v1.2/</guid><description>&lt;p>We are thrilled to announce the arrival of Envoy Gateway v1.2.0.&lt;/p>
 &lt;p>This release represents a significant achievement, and we extend our heartfelt gratitude to the entire Envoy Gateway community for their contributions, dedication, and support. Your collaborative efforts have been instrumental in reaching this pivotal release.&lt;/p>
-&lt;p>Thank you for being an integral part of this journey. We are excited to see how Envoy Gateway v1.2.0 will empower your operations and look forward to continuing our work together to drive the future of Cloud Native API Gateway.&lt;/p></description></item><item><title>Announcing Envoy Gateway v1.1</title><link>/news/releases/v1.1/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>/news/releases/v1.1/</guid><description>&lt;p>We are thrilled to announce the arrival of Envoy Gateway v1.1.0.&lt;/p>
+&lt;p>Thank you for being an integral part of this journey. We are excited to see how Envoy Gateway v1.2.0 will empower your operations and look forward to continuing our work together to drive the future of Cloud Native API Gateway.&lt;/p></description></item><item><title>Announcing Envoy Gateway v1.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v1.1/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v1.1/</guid><description>&lt;p>We are thrilled to announce the arrival of Envoy Gateway v1.1.0.&lt;/p>
 &lt;p>This release represents a significant achievement, and we extend our heartfelt gratitude to the entire Envoy Gateway community for their contributions, dedication, and support. Your collaborative efforts have been instrumental in reaching this pivotal release.&lt;/p>
-&lt;p>Thank you for being an integral part of this journey. We are excited to see how Envoy Gateway v1.1.0 will empower your operations and look forward to continuing our work together to drive the future of Cloud Native API Gateway.&lt;/p></description></item><item><title>Announcing Envoy Gateway v1.0</title><link>/news/releases/v1.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>/news/releases/v1.0/</guid><description>&lt;p>We are thrilled to announce the arrival of Envoy Gateway v1.0.0, marking the official General Availability (GA) milestone for the project!&lt;/p>
+&lt;p>Thank you for being an integral part of this journey. We are excited to see how Envoy Gateway v1.1.0 will empower your operations and look forward to continuing our work together to drive the future of Cloud Native API Gateway.&lt;/p></description></item><item><title>Announcing Envoy Gateway v1.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v1.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v1.0/</guid><description>&lt;p>We are thrilled to announce the arrival of Envoy Gateway v1.0.0, marking the official General Availability (GA) milestone for the project!&lt;/p>
 &lt;p>This release represents a significant achievement, and we extend our heartfelt gratitude to the entire Envoy Gateway community for their contributions, dedication, and support. Your collaborative efforts have been instrumental in reaching this pivotal release.&lt;/p>
-&lt;p>Thank you for being an integral part of this journey. We are excited to see how Envoy Gateway v1.0.0 will empower your operations and look forward to continuing our work together to drive the future of Cloud Native API Gateway.&lt;/p></description></item><item><title>Announcing Envoy Gateway v0.6</title><link>/news/releases/v0.6/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>/news/releases/v0.6/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.6!&lt;/p>
+&lt;p>Thank you for being an integral part of this journey. We are excited to see how Envoy Gateway v1.0.0 will empower your operations and look forward to continuing our work together to drive the future of Cloud Native API Gateway.&lt;/p></description></item><item><title>Announcing Envoy Gateway v0.6</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.6/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.6/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.6!&lt;/p>
 &lt;p>This is the fifth functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
 helping publish the release.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th>&lt;a href="/news/releases/notes/v0.6.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.6.0/">Release Notes&lt;/a>&lt;/th>
  &lt;th>&lt;a href="https://gateway.envoyproxy.io/v0.6">Docs&lt;/a>&lt;/th>
- &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
  &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.6.0">Download&lt;/a>&lt;/th>
  &lt;/tr>
  &lt;/thead>
@@ -75,15 +75,15 @@ helping publish the release.&lt;/p>
 &lt;li>Removed AuthenticationFilter, and replaced it with SecurityPolicy&lt;/li>
 &lt;li>Moved the EnvoyProxy CRD from &lt;code>config.gateway.envoyproxy.io&lt;/code> to &lt;code>gateway.envoyproxy.io&lt;/code>&lt;/li>
 &lt;li>Converted the &lt;code>bootstrap&lt;/code> field within &lt;code>EnvoyProxy&lt;/code> into a struct to support merge operations.&lt;/li>
-&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.5</title><link>/news/releases/v0.5/</link><pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate><guid>/news/releases/v0.5/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.5!&lt;/p>
+&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.5</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.5/</link><pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.5/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.5!&lt;/p>
 &lt;p>This is the fourth functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
 helping publish the release.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th>&lt;a href="/news/releases/notes/v0.5.0/">Release Notes&lt;/a>&lt;/th>
- &lt;th>&lt;a href="/v0.5/">Docs&lt;/a>&lt;/th>
- &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.5.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/v0.5/">Docs&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
  &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.5.0">Download&lt;/a>&lt;/th>
  &lt;/tr>
  &lt;/thead>
@@ -122,15 +122,15 @@ helping publish the release.&lt;/p>
 &lt;h2 id="envoy-proxy">Envoy Proxy&lt;a class="td-heading-self-link" href="#envoy-proxy" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Best Practices Default Edge Settings to Xds Resources&lt;/li>
-&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.4</title><link>/news/releases/v0.4/</link><pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate><guid>/news/releases/v0.4/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.4!&lt;/p>
+&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.4</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.4/</link><pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.4/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.4!&lt;/p>
 &lt;p>This is the third functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
 helping publish the release.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th>&lt;a href="/news/releases/notes/v0.4.0/">Release Notes&lt;/a>&lt;/th>
- &lt;th>&lt;a href="/v0.4/">Docs&lt;/a>&lt;/th>
- &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.4.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/v0.4/">Docs&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
  &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.4.0">Download&lt;/a>&lt;/th>
  &lt;/tr>
  &lt;/thead>
@@ -169,15 +169,15 @@ helping publish the release.&lt;/p>
 &lt;li>Envoy Proxy Pod and Container SecurityContext is now Configurable&lt;/li>
 &lt;li>Added Support for Service Method Match in GRPCRoute&lt;/li>
 &lt;li>Added EDS Support&lt;/li>
-&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.3</title><link>/news/releases/v0.3/</link><pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate><guid>/news/releases/v0.3/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.3!&lt;/p>
+&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.3</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.3/</link><pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.3/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.3!&lt;/p>
 &lt;p>This is the second functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
 helping publish the release.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th>&lt;a href="/news/releases/notes/v0.3.0/">Release Notes&lt;/a>&lt;/th>
- &lt;th>&lt;a href="/v0.3/">Docs&lt;/a>&lt;/th>
- &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.3.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/v0.3/">Docs&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
  &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.3.0">Download&lt;/a>&lt;/th>
  &lt;/tr>
  &lt;/thead>
@@ -205,15 +205,15 @@ helping publish the release.&lt;/p>
 &lt;h3 id="add-support-for-authentication">Add Support for Authentication&lt;a class="td-heading-self-link" href="#add-support-for-authentication" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>Added Support for Request Authentication&lt;/li>
-&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.2</title><link>/news/releases/v0.2/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>/news/releases/v0.2/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.2!&lt;/p>
+&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.2</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.2/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/v0.2/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.2!&lt;/p>
 &lt;p>This is the first functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
 helping publish the release.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th>&lt;a href="/news/releases/notes/v0.2.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.2.0/">Release Notes&lt;/a>&lt;/th>
  &lt;th>&lt;a href="https://gateway.envoyproxy.io/index.html">Docs&lt;/a>&lt;/th>
- &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
  &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.2.0">Download&lt;/a>&lt;/th>
  &lt;/tr>
  &lt;/thead>
@@ -223,8 +223,8 @@ helping publish the release.&lt;/p>
 &lt;h2 id="whats-new">What&amp;rsquo;s New&lt;a class="td-heading-self-link" href="#whats-new" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The release adds a ton of features and functionality. Here are some highlights:&lt;/p>
 &lt;h3 id="kubernetes-support">Kubernetes Support&lt;a class="td-heading-self-link" href="#kubernetes-support" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Run Envoy Gateway in a Kubernetes cluster. Checkout the &lt;a href="/v0.2/user/quickstart/">quickstart guide&lt;/a> to get started with Envoy Gateway in a few
-simple steps.&lt;/p></description></item><item><title>Compatibility Matrix</title><link>/news/releases/matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/news/releases/matrix/</guid><description>&lt;p>Envoy Gateway relies on the Envoy Proxy and the Gateway API, and runs within a Kubernetes cluster. Not all versions of each of these products can function together for Envoy Gateway. Supported version combinations are listed below; &lt;strong>bold&lt;/strong> type indicates the versions of the Envoy Proxy and the Gateway API actually compiled into each Envoy Gateway release.&lt;/p>
+&lt;p>Run Envoy Gateway in a Kubernetes cluster. Checkout the &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/v0.2/user/quickstart/">quickstart guide&lt;/a> to get started with Envoy Gateway in a few
+simple steps.&lt;/p></description></item><item><title>Compatibility Matrix</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/matrix/</guid><description>&lt;p>Envoy Gateway relies on the Envoy Proxy and the Gateway API, and runs within a Kubernetes cluster. Not all versions of each of these products can function together for Envoy Gateway. Supported version combinations are listed below; &lt;strong>bold&lt;/strong> type indicates the versions of the Envoy Proxy and the Gateway API actually compiled into each Envoy Gateway release.&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>

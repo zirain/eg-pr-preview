@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>安装 on Envoy Gateway</title><link>/zh/latest/install/</link><description>Recent content in 安装 on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="/zh/latest/install/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Helm 安装</title><link>/zh/latest/install/install-helm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/install-helm/</guid><description>&lt;p>&lt;a href="https://helm.sh">Helm&lt;/a> 是 Kubernetes 的包管理器，可自动在 Kubernetes 上发布和管理软件。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>安装 on Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/</link><description>Recent content in 安装 on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Helm 安装</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-helm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-helm/</guid><description>&lt;p>&lt;a href="https://helm.sh">Helm&lt;/a> 是 Kubernetes 的包管理器，可自动在 Kubernetes 上发布和管理软件。&lt;/p>
 &lt;p>Envoy Gateway 可以通过 Helm Chart 经过几个简单的步骤进行安装，
 具体取决于您是首次部署、从现有安装升级 Envoy Gateway 还是从 Envoy Gateway 迁移。&lt;/p>
 &lt;h2 id="before-you-begin">开始之前&lt;a class="td-heading-self-link" href="#before-you-begin" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -7,7 +7,7 @@
 &lt;div class="alert alert-warning" role="alert">
 &lt;h4 class="alert-heading">兼容性矩阵&lt;/h4>
 
- 请参阅&lt;a href="/zh/latest/install/matrix/">版本兼容性矩阵&lt;/a>了解更多信息。
+ 请参阅&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/install/matrix/">版本兼容性矩阵&lt;/a>了解更多信息。
 
 &lt;/div>
 
@@ -31,14 +31,14 @@
 &lt;div class="alert alert-primary" role="alert">
 &lt;h4 class="alert-heading">开发者指南&lt;/h4>
 
- 请参阅&lt;a href="/zh/contributions/develop/">开发者指南&lt;/a>了解更多信息。
+ 请参阅&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/develop/">开发者指南&lt;/a>了解更多信息。
 
 &lt;/div>
 
 &lt;p>安装 Gateway API CRD 和 Envoy Gateway：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>helm install eg oci://docker.io/envoyproxy/gateway-helm --version v0.0.0-latest -n envoy-gateway-system --create-namespace
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>等待 Envoy Gateway 变为可用：&lt;/p></description></item><item><title>使用 Kubernetes YAML 安装</title><link>/zh/latest/install/install-yaml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/install-yaml/</guid><description>&lt;p>此任务将引导您完成在 Kubernetes 集群中安装 Envoy Gateway。&lt;/p>
-&lt;p>手动安装过程不允许像 &lt;a href="/zh/latest/install/install-helm/">Helm 安装方法&lt;/a>那样对配置进行更多控制，
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>等待 Envoy Gateway 变为可用：&lt;/p></description></item><item><title>使用 Kubernetes YAML 安装</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-yaml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-yaml/</guid><description>&lt;p>此任务将引导您完成在 Kubernetes 集群中安装 Envoy Gateway。&lt;/p>
+&lt;p>手动安装过程不允许像 &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/install/install-helm/">Helm 安装方法&lt;/a>那样对配置进行更多控制，
 因此如果您需要对 Envoy Gateway 安装进行更多控制，建议您使用 Helm。&lt;/p>
 &lt;h2 id="before-you-begin">开始之前&lt;a class="td-heading-self-link" href="#before-you-begin" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Envoy Gateway 设计为在 Kubernetes 中运行以进行生产。最重要的要求是：&lt;/p>
@@ -51,7 +51,7 @@
 &lt;div class="alert alert-warning" role="alert">
 &lt;h4 class="alert-heading">兼容性矩阵&lt;/h4>
 
- 请参阅&lt;a href="/zh/latest/install/matrix/">版本兼容性矩阵&lt;/a>了解更多信息。
+ 请参阅&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/install/matrix/">版本兼容性矩阵&lt;/a>了解更多信息。
 
 &lt;/div>
 
@@ -62,7 +62,7 @@
 &lt;div class="alert alert-primary" role="alert">
 &lt;h4 class="alert-heading">开发者指南&lt;/h4>
 
- 请参阅&lt;a href="/zh/contributions/develop/">开发者指南&lt;/a>了解更多信息。
+ 请参阅&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/contributions/develop/">开发者指南&lt;/a>了解更多信息。
 
 &lt;/div>
 
@@ -73,9 +73,9 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>后续步骤&lt;/p>
-&lt;p>Envoy Gateway 现在应该已成功安装并运行，但是为了体验 Envoy Gateway 的更多功能，您可以参考&lt;a href="/zh/latest/tasks/">任务&lt;/a>。&lt;/p>
+&lt;p>Envoy Gateway 现在应该已成功安装并运行，但是为了体验 Envoy Gateway 的更多功能，您可以参考&lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/zh/latest/tasks/">任务&lt;/a>。&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>使用自定义证书的控制平面身份验证</title><link>/zh/latest/install/custom-cert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/custom-cert/</guid><description>&lt;p>Envoy Gateway 为 Envoy Gateway Pod 和 Envoy 代理队列之间的控制平面通信建立了安全的 TLS 连接。
+&lt;/ol></description></item><item><title>使用自定义证书的控制平面身份验证</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/custom-cert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/custom-cert/</guid><description>&lt;p>Envoy Gateway 为 Envoy Gateway Pod 和 Envoy 代理队列之间的控制平面通信建立了安全的 TLS 连接。
 此处使用的 TLS 证书是自签名的，并使用在创建 Envoy Gateway 之前运行的 Job 生成，
 并且这些证书被安装到 Envoy Gateway 和 Envoy 代理 Pod 上。&lt;/p>
 &lt;p>此任务将引导您完成为控制平面身份验证配置自定义证书。&lt;/p>
@@ -128,7 +128,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">EOF&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
-&lt;p>为 Envoy Gateway 控制器创建一个证书，该证书将存储在 &lt;code>envoy-gatewy&lt;/code> Secret 中。&lt;/p></description></item><item><title>Gateway Addons Helm Chart</title><link>/zh/latest/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/gateway-addons-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;p>为 Envoy Gateway 控制器创建一个证书，该证书将存储在 &lt;code>envoy-gatewy&lt;/code> Secret 中。&lt;/p></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-addons-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
 &lt;p>An Add-ons Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -822,7 +822,7 @@
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>/zh/latest/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/gateway-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -1157,7 +1157,7 @@
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>兼容性表格</title><link>/zh/latest/install/matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/install/matrix/</guid><description>&lt;p>Envoy Gateway 依赖于 Envoy Proxy 和 Gateway API，并在 Kubernetes 集群中运行。
+&lt;/table></description></item><item><title>兼容性表格</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/matrix/</guid><description>&lt;p>Envoy Gateway 依赖于 Envoy Proxy 和 Gateway API，并在 Kubernetes 集群中运行。
 这些产品的所有版本并非都可以与 Envoy Gateway 一起运行。下面列出了支持的版本组合；
 &lt;strong>粗体&lt;/strong>类型表示实际编译到每个 Envoy Gateway 版本中的 Envoy Proxy 和 Gateway API 的版本。&lt;/p>
 &lt;table>

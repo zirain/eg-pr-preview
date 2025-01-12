@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Envoy Gateway</title><link>/news/releases/notes/</link><description>Recent content in Notes on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/news/releases/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.2.4</title><link>/news/releases/notes/v1.2.4/</link><pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.2.4/</guid><description>&lt;p>Date: December 13, 2024&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/</link><description>Recent content in Notes on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.2.4</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.4/</link><pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.4/</guid><description>&lt;p>Date: December 13, 2024&lt;/p>
 &lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Fixed BackendTLSPolicy not supporting the use of a port name as the sectionName in targetRefs.&lt;/li>
@@ -10,7 +10,7 @@
 &lt;h2 id="other-changes">Other changes&lt;a class="td-heading-self-link" href="#other-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Bumped Envoy to version 1.32.2.&lt;/li>
-&lt;/ul></description></item><item><title>v1.1.4</title><link>/news/releases/notes/v1.1.4/</link><pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.1.4/</guid><description>&lt;p>Date: December 12, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.1.4</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.4/</link><pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.4/</guid><description>&lt;p>Date: December 12, 2024&lt;/p>
 &lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Fixed validate proto messages before converting them to anypb.Any&lt;/li>
@@ -24,7 +24,7 @@
 &lt;ul>
 &lt;li>Bumped Rate Limit to 49af5cca&lt;/li>
 &lt;li>Bumped golang.org/x/crypto to 0.31.0&lt;/li>
-&lt;/ul></description></item><item><title>v1.2.3</title><link>/news/releases/notes/v1.2.3/</link><pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.2.3/</guid><description>&lt;p>Date: December 2, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.2.3</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.3/</link><pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.3/</guid><description>&lt;p>Date: December 2, 2024&lt;/p>
 &lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Disabled the retry policy for the JWT provider to reduce requests sent to the JWKS endpoint. Failed async fetches will retry every 1s.&lt;/li>
@@ -34,7 +34,7 @@
 &lt;ul>
 &lt;li>EG Listens on IPv4 by default, but if IPFamily is set to IPv6 or DualStack, it listens on :: and enables ipv4_compat for DualStack.&lt;/li>
 &lt;li>Bumped Gateway API to v1.2.1.&lt;/li>
-&lt;/ul></description></item><item><title>v1.2.2</title><link>/news/releases/notes/v1.2.2/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.2.2/</guid><description>&lt;p>Date: November 28, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.2.2</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.2/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.2/</guid><description>&lt;p>Date: November 28, 2024&lt;/p>
 &lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Fixed Envoy rejecting TCP Listeners that have no attached TCPRoutes.&lt;/li>
@@ -47,11 +47,11 @@
 &lt;li>Bump the RateLimit image to 49af5cca.&lt;/li>
 &lt;li>Always use &lt;code>::&lt;/code> and &lt;code>IPv4Compact&lt;/code> enabled on dynamic listeners.&lt;/li>
 &lt;li>Use &lt;code>V4_PREFERRED&lt;/code> instead of &lt;code>V4_ONLY&lt;/code> by default for the cluster&amp;rsquo;s &lt;code>DnsLookupFamily&lt;/code>.&lt;/li>
-&lt;/ul></description></item><item><title>v1.2.1</title><link>/news/releases/notes/v1.2.1/</link><pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.2.1/</guid><description>&lt;p>Date: November 7, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.2.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.1/</link><pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.1/</guid><description>&lt;p>Date: November 7, 2024&lt;/p>
 &lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Fixed a panic in the provider goroutine when the body in the direct response configuration was nil.&lt;/li>
-&lt;/ul></description></item><item><title>v1.2.0</title><link>/news/releases/notes/v1.2.0/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.2.0/</guid><description>&lt;p>Date: November 06, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.2.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.0/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.0/</guid><description>&lt;p>Date: November 06, 2024&lt;/p>
 &lt;h2 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Gateway API GRPCRoute and ReferenceGrant v1alpha2 have been removed&lt;/li>
@@ -193,7 +193,7 @@
 &lt;li>Use grafana alloy instead of fluent-bit for e2e tests&lt;/li>
 &lt;li>Push tags without the v prefix for helm charts to support Flux HelmReleases&lt;/li>
 &lt;li>Use a stable label selector when creating Envoy Proxy fleet pods&lt;/li>
-&lt;/ul></description></item><item><title>v1.1.3</title><link>/news/releases/notes/v1.1.3/</link><pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.1.3/</guid><description>&lt;p>Date: November 1, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.1.3</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.3/</link><pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.3/</guid><description>&lt;p>Date: November 1, 2024&lt;/p>
 &lt;h2 id="breaking-changes">Breaking changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;/li>
@@ -222,7 +222,7 @@
 &lt;ul>
 &lt;li>Bumped Envoy proxy to 1.31.3&lt;/li>
 &lt;li>Bumped github.com/docker/docker to 27.3.1+incompatible&lt;/li>
-&lt;/ul></description></item><item><title>v1.2.0-rc.1</title><link>/news/releases/notes/v1.2.0-rc.1/</link><pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.2.0-rc.1/</guid><description>&lt;p>Date: October 25, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.2.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.0-rc.1/</link><pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.2.0-rc.1/</guid><description>&lt;p>Date: October 25, 2024&lt;/p>
 &lt;h2 id="breaking-changes">Breaking changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Gateway API GRPCRoute and ReferenceGrant v1alpha2 have been removed.&lt;/li>
@@ -353,7 +353,7 @@
 &lt;li>Added e2e tests for ratelimit invert matching headers&lt;/li>
 &lt;li>Reduced readinessProbe failureThreshold and periodSeconds&lt;/li>
 &lt;li>Bumped go-control-plane to v0.13.1&lt;/li>
-&lt;/ul></description></item><item><title>v1.1.2</title><link>/news/releases/notes/v1.1.2/</link><pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.1.2/</guid><description>&lt;p>Date: September 24, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.1.2</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.2/</link><pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.2/</guid><description>&lt;p>Date: September 24, 2024&lt;/p>
 &lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Fixed handling of sectionName in BackendTLSPolicy for Backend resource&lt;/li>
@@ -366,7 +366,7 @@
 &lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Fixed reconciliation of HTTPRoutes when labels change&lt;/li>
-&lt;/ul></description></item><item><title>v1.1.1</title><link>/news/releases/notes/v1.1.1/</link><pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.1.1/</guid><description>&lt;p>Date: September 11, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.1.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.1/</link><pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.1/</guid><description>&lt;p>Date: September 11, 2024&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Bumped Golang version to 1.22.7&lt;/li>
@@ -400,7 +400,7 @@
 &lt;ul>
 &lt;li>Fixed error returned when referenced Configmap or Secret is not found&lt;/li>
 &lt;li>Use component name in Envoy Gateway logs&lt;/li>
-&lt;/ul></description></item><item><title>v1.1.0</title><link>/news/releases/notes/v1.1.0/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.1.0/</guid><description>&lt;p>Date: July 22, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.1.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.0/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.0/</guid><description>&lt;p>Date: July 22, 2024&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Concepts Doc&lt;/li>
@@ -642,7 +642,7 @@
 &lt;li>Added Support for xRoute and xPolicy in egctl x status&lt;/li>
 &lt;li>Added Golang version to Envoy Gateway version command&lt;/li>
 &lt;li>Fixed egctl x status gatewayclass example message&lt;/li>
-&lt;/ul></description></item><item><title>v1.1.0-rc.1</title><link>/news/releases/notes/v1.1.0-rc.1/</link><pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.1.0-rc.1/</guid><description>&lt;p>Date: July 8, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.1.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.0-rc.1/</link><pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.1.0-rc.1/</guid><description>&lt;p>Date: July 8, 2024&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Performance Benchmarking Document&lt;/li>
@@ -871,7 +871,7 @@
 &lt;li>Added Support for xRoute and xPolicy in egctl x status&lt;/li>
 &lt;li>Added Golang version to Envoy Gateway version command&lt;/li>
 &lt;li>Fixed egctl x status gatewayclass example message&lt;/li>
-&lt;/ul></description></item><item><title>v1.0.2</title><link>/news/releases/notes/v1.0.2/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.0.2/</guid><description>&lt;p>Date: June 12, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.0.2</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.0.2/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.0.2/</guid><description>&lt;p>Date: June 12, 2024&lt;/p>
 &lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Updated EnvoyProxy to 1.29.5&lt;/li>
@@ -897,7 +897,7 @@
 &lt;li>Fixed Route extension filters with different types but the same name and namespace aren&amp;rsquo;t correctly cached&lt;/li>
 &lt;li>Fixed secrets/configmap updates to trigger a controller reconcile by removing the generationChanged predicate&lt;/li>
 &lt;li>Removed namespace restriction for EnvoyProxy parametersRef&lt;/li>
-&lt;/ul></description></item><item><title>v1.0.1</title><link>/news/releases/notes/v1.0.1/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.0.1/</guid><description>&lt;p>Date: April 9, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.0.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.0.1/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.0.1/</guid><description>&lt;p>Date: April 9, 2024&lt;/p>
 &lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Updated EnvoyProxy version to v1.29.3&lt;/li>
@@ -920,7 +920,7 @@
 &lt;h2 id="infra-manager">Infra-manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Skip creating infra resources when the InfraIR has empty listeners&lt;/li>
-&lt;/ul></description></item><item><title>v1.0.0</title><link>/news/releases/notes/v1.0.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.0.0/</guid><description>&lt;p>Date: March 13, 2024&lt;/p>
+&lt;/ul></description></item><item><title>v1.0.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.0.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.0.0/</guid><description>&lt;p>Date: March 13, 2024&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added User Guide for Local Ratelimit&lt;/li>
@@ -1093,7 +1093,7 @@
 &lt;li>Added Support for egctl experimental dashboard envoy-proxy&lt;/li>
 &lt;li>Added Support for egctl config ratelimit&lt;/li>
 &lt;li>Added Support for egctl translate from gateway-api resources to IR&lt;/li>
-&lt;/ul></description></item><item><title>v0.6.0</title><link>/news/releases/notes/v0.6.0/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.6.0/</guid><description>&lt;p>Date: Nov 1, 2023&lt;/p>
+&lt;/ul></description></item><item><title>v0.6.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.6.0/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.6.0/</guid><description>&lt;p>Date: Nov 1, 2023&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Introduced a new website based on Hugo&lt;/li>
@@ -1166,7 +1166,7 @@
 &lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Support for egctl stats command&lt;/li>
-&lt;/ul></description></item><item><title>v1.0.0-rc.1</title><link>/news/releases/notes/v1.0.0-rc.1/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>/news/releases/notes/v1.0.0-rc.1/</guid><description>&lt;p>Date: Nov 1, 2023&lt;/p>
+&lt;/ul></description></item><item><title>v1.0.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.0.0-rc.1/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v1.0.0-rc.1/</guid><description>&lt;p>Date: Nov 1, 2023&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added User Guide for local rate limit&lt;/li>
@@ -1310,7 +1310,7 @@
 &lt;li>Added Support for egctl x status&lt;/li>
 &lt;li>Added Support for egctl experimental dashboard envoy-proxy&lt;/li>
 &lt;li>Added Support for egctl config ratelimit&lt;/li>
-&lt;/ul></description></item><item><title>v0.6.0-rc.1</title><link>/news/releases/notes/v0.6.0-rc.1/</link><pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.6.0-rc.1/</guid><description>&lt;p>Date: Oct 27, 2023&lt;/p>
+&lt;/ul></description></item><item><title>v0.6.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.6.0-rc.1/</link><pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.6.0-rc.1/</guid><description>&lt;p>Date: Oct 27, 2023&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Introduced a new website based on Hugo&lt;/li>
@@ -1384,7 +1384,7 @@
 &lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Support for egctl stats command&lt;/li>
-&lt;/ul></description></item><item><title>v0.5.0</title><link>/news/releases/notes/v0.5.0/</link><pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.5.0/</guid><description>&lt;p>Date: July 26, 2023&lt;/p>
+&lt;/ul></description></item><item><title>v0.5.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.5.0/</link><pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.5.0/</guid><description>&lt;p>Date: July 26, 2023&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Docs for Installation page using Helm&lt;/li>
@@ -1460,7 +1460,7 @@
 &lt;ul>
 &lt;li>Added egctl x translate Support to generate default missing Resources&lt;/li>
 &lt;li>Added egctl x translate Support for AuthenticationFilter and EnvoyPatchPolicy&lt;/li>
-&lt;/ul></description></item><item><title>v0.5.0-rc.1</title><link>/news/releases/notes/v0.5.0-rc.1/</link><pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.5.0-rc.1/</guid><description>&lt;p>Date: July 26, 2023&lt;/p>
+&lt;/ul></description></item><item><title>v0.5.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.5.0-rc.1/</link><pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.5.0-rc.1/</guid><description>&lt;p>Date: July 26, 2023&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Docs for Installation page using Helm&lt;/li>
@@ -1536,7 +1536,7 @@
 &lt;ul>
 &lt;li>Added egctl x translate Support to generate default missing Resources&lt;/li>
 &lt;li>Added egctl x translate Support for AuthenticationFilter and EnvoyPatchPolicy&lt;/li>
-&lt;/ul></description></item><item><title>v0.4.0</title><link>/news/releases/notes/v0.4.0/</link><pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.4.0/</guid><description>&lt;p>Date: April 24, 2023&lt;/p>
+&lt;/ul></description></item><item><title>v0.4.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.4.0/</link><pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.4.0/</guid><description>&lt;p>Date: April 24, 2023&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Docs for Installing and Using egctl&lt;/li>
@@ -1598,7 +1598,7 @@
 &lt;li>Added egctl CLI Tool&lt;/li>
 &lt;li>Added egctl Support for Dry Runs of Gateway API Config&lt;/li>
 &lt;li>Added egctl Support for Dumping Envoy Proxy xDS Resources&lt;/li>
-&lt;/ul></description></item><item><title>v0.4.0-rc.1</title><link>/news/releases/notes/v0.4.0-rc.1/</link><pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.4.0-rc.1/</guid><description>&lt;p>Date: April 13, 2023&lt;/p>
+&lt;/ul></description></item><item><title>v0.4.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.4.0-rc.1/</link><pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.4.0-rc.1/</guid><description>&lt;p>Date: April 13, 2023&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Docs for Installing and Using egctl&lt;/li>
@@ -1657,7 +1657,7 @@
 &lt;li>Added egctl CLI Tool&lt;/li>
 &lt;li>Added egctl Support for Dry Runs of Gateway API Config&lt;/li>
 &lt;li>Added egctl Support for Dumping Envoy Proxy xDS Resources&lt;/li>
-&lt;/ul></description></item><item><title>v0.3.0</title><link>/news/releases/notes/v0.3.0/</link><pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.3.0/</guid><description>&lt;p>Date: February 09, 2023&lt;/p>
+&lt;/ul></description></item><item><title>v0.3.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.3.0/</link><pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.3.0/</guid><description>&lt;p>Date: February 09, 2023&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Global Rate Limit User Docs&lt;/li>
@@ -1736,7 +1736,7 @@
 &lt;ul>
 &lt;li>Fixed Start xDS Server Watchable Map Panics&lt;/li>
 &lt;li>Enabled Access Logging for xDS Components&lt;/li>
-&lt;/ul></description></item><item><title>v0.3.0-rc.1</title><link>/news/releases/notes/v0.3.0-rc.1/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.3.0-rc.1/</guid><description>&lt;p>Date: February 02, 2023&lt;/p>
+&lt;/ul></description></item><item><title>v0.3.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.3.0-rc.1/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.3.0-rc.1/</guid><description>&lt;p>Date: February 02, 2023&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Support for Multiple Release Versions&lt;/li>
@@ -1802,7 +1802,7 @@
 &lt;ul>
 &lt;li>Fixed Start xDS Server Watchable Map Panics&lt;/li>
 &lt;li>Enabled Access Logging for xDS Components&lt;/li>
-&lt;/ul></description></item><item><title>v0.2.0</title><link>/news/releases/notes/v0.2.0/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.2.0/</guid><description>&lt;p>Date: October 19, 2022&lt;/p>
+&lt;/ul></description></item><item><title>v0.2.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.2.0/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.2.0/</guid><description>&lt;p>Date: October 19, 2022&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Config API, translator, roadmap, and message bus design documentation.&lt;/li>
@@ -1860,7 +1860,7 @@
 &lt;li>Added xDS server support to configure managed Envoys using Delta xDS.&lt;/li>
 &lt;li>Added initial support for mTLS between the xDS server and managed Envoys.&lt;/li>
 &lt;li>Due to envoyproxy/go-control-plane Issue #599, Envoy Gateway logs the private key of HTTPS listeners.&lt;/li>
-&lt;/ul></description></item><item><title>v0.2.0-rc2</title><link>/news/releases/notes/v0.2.0-rc2/</link><pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.2.0-rc2/</guid><description>&lt;p>Date: September 29, 2022&lt;/p>
+&lt;/ul></description></item><item><title>v0.2.0-rc2</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.2.0-rc2/</link><pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.2.0-rc2/</guid><description>&lt;p>Date: September 29, 2022&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Updated and expanded developer documentation.&lt;/li>
@@ -1895,7 +1895,7 @@
 &lt;h2 id="infra-manager">Infra manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Separate Envoy infrastructure is created per Gateway.&lt;/li>
-&lt;/ul></description></item><item><title>v0.2.0-rc1</title><link>/news/releases/notes/v0.2.0-rc1/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.2.0-rc1/</guid><description>&lt;p>Date: August 31, 2022&lt;/p>
+&lt;/ul></description></item><item><title>v0.2.0-rc1</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.2.0-rc1/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.2.0-rc1/</guid><description>&lt;p>Date: August 31, 2022&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added a quickstart guide for users to run and use Envoy Gateway.&lt;/li>
@@ -1935,7 +1935,7 @@
 &lt;h2 id="infra-manager">Infra manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Added Kubernetes Infra Manager to manage Envoy infrastructure running in a Kubernetes cluster.&lt;/li>
-&lt;/ul></description></item><item><title>v0.1.0</title><link>/news/releases/notes/v0.1.0/</link><pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate><guid>/news/releases/notes/v0.1.0/</guid><description>&lt;p>Date: May 16, 2022&lt;/p>
+&lt;/ul></description></item><item><title>v0.1.0</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.1.0/</link><pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/news/releases/notes/v0.1.0/</guid><description>&lt;p>Date: May 16, 2022&lt;/p>
 &lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>The initial open source release describing project goals and high-level design.&lt;/li>
