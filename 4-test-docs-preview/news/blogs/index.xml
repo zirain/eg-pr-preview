@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Envoy Gateway</title><link>/news/blogs/</link><description>Recent content in Blogs on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/news/blogs/index.xml" rel="self" type="application/rss+xml"/><item><title>Announcing Envoy Gateway’s 1.0 Release!</title><link>/news/blogs/1.0-release/1.0-release/</link><pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate><guid>/news/blogs/1.0-release/1.0-release/</guid><description>&lt;p>Today we’re ecstatic to announce the 1.0 release of Envoy Gateway (EG) for Kubernetes. A mature version ready for widespread adoption in production that simplifies the use of Envoy for managing North-South traffic.&lt;/p>
+&lt;p>After nearly two years with contributions from over 90 engineers we are proud to say EG meets the goals that Matt outlined in the &lt;a href="https://blog.envoyproxy.io/introducing-envoy-gateway-ad385cc59532">original post&lt;/a> introducing the project, summarized here:&lt;/p>
+&lt;ul>
+&lt;li>Built around the (then emerging) &lt;a href="https://gateway-api.sigs.k8s.io">Kubernetes Gateway API&lt;/a>&lt;/li>
+&lt;li>Addresses common needs with a solution that is simple to configure and understand&lt;/li>
+&lt;li>Provides &lt;a href="/v1.0/tasks/">great docs&lt;/a> for common use cases to enable ease of adoption&lt;/li>
+&lt;li>Empowers the community and vendors to drive the project forward through an extensible API&lt;/li>
+&lt;/ul>
+&lt;p>Can’t wait to try it? Visit the EG &lt;a href="/v1.0/tasks/">tasks&lt;/a> to get started with Envoy Gateway 1.0&lt;/p></description></item><item><title>Welcome to new website!</title><link>/news/blogs/new-website/new-website/</link><pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate><guid>/news/blogs/new-website/new-website/</guid><description>&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Summary&lt;/h4>
+
+ Migrate from &lt;em>&lt;strong>Sphinx&lt;/strong>&lt;/em> to &lt;em>&lt;strong>Hugo&lt;/strong>&lt;/em> for Envoy Gateway Documents.
+
+&lt;/div>
+
+&lt;h2 id="introduction">Introduction&lt;a class="td-heading-self-link" href="#introduction" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>In the realm of static site generators, two names often come up: Sphinx and Hugo. While both are powerful tools, we recently made the decision to migrate our documentation from Sphinx to Hugo. This article aims to shed light on the reasons behind this move and the advantages we&amp;rsquo;ve discovered in using Hugo for static blogging.&lt;/p></description></item></channel></rss>

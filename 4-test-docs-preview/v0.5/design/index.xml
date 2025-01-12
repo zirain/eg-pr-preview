@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design on Envoy Gateway</title><link>/v0.5/design/</link><description>Recent content in Design on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/v0.5/design/index.xml" rel="self" type="application/rss+xml"/><item><title>Goals</title><link>/v0.5/design/goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/goals/</guid><description>&lt;p>The high-level goal of the Envoy Gateway project is to attract more users to Envoy by lowering barriers to adoption
+through expressive, extensible, role-oriented APIs that support a multitude of ingress and L7/L4 traffic routing
+use cases; and provide a common foundation for vendors to build value-added products without having to re-engineer
+fundamental interactions.&lt;/p>
+&lt;h2 id="objectives">Objectives&lt;a class="td-heading-self-link" href="#objectives" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="expressive-api">Expressive API&lt;a class="td-heading-self-link" href="#expressive-api" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>The Envoy Gateway project will expose a simple and expressive API, with defaults set for many capabilities.&lt;/p></description></item><item><title>System Design</title><link>/v0.5/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Define the system components needed to satisfy the requirements of Envoy Gateway.&lt;/li>
+&lt;/ul>
+&lt;h2 id="non-goals">Non-Goals&lt;a class="td-heading-self-link" href="#non-goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Create a detailed design and interface specification for each system component.&lt;/li>
+&lt;/ul>
+&lt;h2 id="terminology">Terminology&lt;a class="td-heading-self-link" href="#terminology" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Control Plane- A collection of inter-related software components for providing application gateway and routing
+functionality. The control plane is implemented by Envoy Gateway and provides services for managing the data plane.
+These services are detailed in the &lt;a href="/v0.5/design/system-design/#components">components&lt;/a> section.&lt;/li>
+&lt;li>Data Plane- Provides intelligent application-level traffic routing and is implemented as one or more Envoy proxies.&lt;/li>
+&lt;/ul>
+&lt;h2 id="architecture">Architecture&lt;a class="td-heading-self-link" href="#architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;img alt="Architecture" src="/img/architecture.png">&lt;/p></description></item><item><title>Watching Components Design</title><link>/v0.5/design/watching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/watching/</guid><description>&lt;p>Envoy Gateway is made up of several components that communicate in-process. Some of them (namely Providers) watch
+external resources, and &amp;ldquo;publish&amp;rdquo; what they see for other components to consume; others watch what another publishes and
+act on it (such as the resource translator watches what the providers publish, and then publishes its own results that
+are watched by another component). Some of these internally published results are consumed by multiple components.&lt;/p></description></item><item><title>Gateway API Translator Design</title><link>/v0.5/design/gatewayapi-translator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/gatewayapi-translator/</guid><description>&lt;p>The Gateway API translates external resources, e.g. GatewayClass, from the configured Provider to the Intermediate
+Representation (IR).&lt;/p>
+&lt;h2 id="assumptions">Assumptions&lt;a class="td-heading-self-link" href="#assumptions" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Initially target core conformance features only, to be followed by extended conformance features.&lt;/p>
+&lt;h2 id="inputs-and-outputs">Inputs and Outputs&lt;a class="td-heading-self-link" href="#inputs-and-outputs" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The main inputs to the Gateway API translator are:&lt;/p>
+&lt;ul>
+&lt;li>GatewayClass, Gateway, HTTPRoute, TLSRoute, Service, ReferenceGrant, Namespace, and Secret resources.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note:&lt;/strong> ReferenceGrant is not fully implemented as of v0.2.&lt;/p>
+&lt;p>The outputs of the Gateway API translator are:&lt;/p></description></item><item><title>Add Pprof support in Envoy Gateway</title><link>/v0.5/design/pprof/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/pprof/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Envoy Gateway exposes endpoints at &lt;code>localhost:8899/debug/pprof&lt;/code> to run Golang profiles to aid in live debugging. The endpoints are equivalent to those found in the http/pprof package. &lt;code>/debug/pprof/&lt;/code> returns an HTML page listing the available profiles.&lt;/p>
+&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Add Debug Pprof support to Envoy Gateway control plane.&lt;/li>
+&lt;li>Define an API to allow Envoy Gateway to custom debug server configuration.&lt;/li>
+&lt;/ul>
+&lt;p>The following are the different types of profiles end-user can run:&lt;/p></description></item><item><title>Bootstrap Design</title><link>/v0.5/design/bootstrap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/bootstrap/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;a href="https://github.com/envoyproxy/gateway/issues/31">Issue 31&lt;/a> specifies the need for allowing advanced users to specify their custom
+Envoy Bootstrap configuration rather than using the default Bootstrap configuration
+defined in Envoy Gateway. This allows advanced users to extend Envoy Gateway and
+support their custom use cases such setting up tracing and stats configuration
+that is not supported by Envoy Gateway.&lt;/p>
+&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Define an API field to allow a user to specify a custom Bootstrap&lt;/li>
+&lt;li>Provide tooling to allow the user to generate the default Bootstrap configuration
+as well as validate their custom Bootstrap.&lt;/li>
+&lt;/ul>
+&lt;h2 id="non-goals">Non Goals&lt;a class="td-heading-self-link" href="#non-goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Allow user to configure only a section of the Bootstrap&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Leverage the existing &lt;a href="/v0.5/api/config_types/#envoyproxy">EnvoyProxy&lt;/a> resource which can be attached to the &lt;a href="https://gateway-api.sigs.k8s.io/references/spec/#gateway.networking.k8s.io/v1beta1.GatewayClass">GatewayClass&lt;/a> using
+the &lt;a href="https://gateway-api.sigs.k8s.io/references/spec/#gateway.networking.k8s.io/v1beta1.ParametersReference">parametersRef&lt;/a> field, and define a &lt;code>Bootstrap&lt;/code> field within the resource. If this field is set,
+the value is used as the Bootstrap configuration for all managed Envoy Proxies created by Envoy Gateway.&lt;/p></description></item><item><title>Configuration API Design</title><link>/v0.5/design/config-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/config-api/</guid><description>&lt;h2 id="motivation">Motivation&lt;a class="td-heading-self-link" href="#motivation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;a href="https://github.com/envoyproxy/gateway/issues/51">Issue 51&lt;/a> specifies the need to design an API for configuring Envoy Gateway. The control plane is configured
+statically at startup and the data plane is configured dynamically through Kubernetes resources, primarily
+&lt;a href="https://gateway-api.sigs.k8s.io/">Gateway API&lt;/a> objects. Refer to the Envoy Gateway &lt;a href="https://github.com/envoyproxy/gateway/blob/main/docs/design/SYSTEM_DESIGN.md">design doc&lt;/a> for additional details regarding
+Envoy Gateway terminology and configuration.&lt;/p>
+&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Define an &lt;strong>initial&lt;/strong> API to configure Envoy Gateway at startup.&lt;/li>
+&lt;li>Define an &lt;strong>initial&lt;/strong> API for configuring the managed data plane, e.g. Envoy proxies.&lt;/li>
+&lt;/ul>
+&lt;h2 id="non-goals">Non-Goals&lt;a class="td-heading-self-link" href="#non-goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Implementation of the configuration APIs.&lt;/li>
+&lt;li>Define the &lt;code>status&lt;/code> subresource of the configuration APIs.&lt;/li>
+&lt;li>Define a &lt;strong>complete&lt;/strong> set of APIs for configuring Envoy Gateway. As stated in the &lt;a href="/v0.5/design/config-api/#goals">Goals&lt;/a>, this document
+defines the initial configuration APIs.&lt;/li>
+&lt;li>Define an API for deploying/provisioning/operating Envoy Gateway. If needed, a future Envoy Gateway operator would be
+responsible for designing and implementing this type of API.&lt;/li>
+&lt;li>Specify tooling for managing the API, e.g. generate protos, CRDs, controller RBAC, etc.&lt;/li>
+&lt;/ul>
+&lt;h2 id="control-plane-api">Control Plane API&lt;a class="td-heading-self-link" href="#control-plane-api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>EnvoyGateway&lt;/code> API defines the control plane configuration, e.g. Envoy Gateway. Key points of this API are:&lt;/p></description></item><item><title>egctl Design</title><link>/v0.5/design/egctl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/egctl/</guid><description>&lt;h2 id="motivation">Motivation&lt;a class="td-heading-self-link" href="#motivation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>EG should provide a command line tool with following capabilities:&lt;/p>
+&lt;ul>
+&lt;li>Collect configuration from envoy proxy and gateway&lt;/li>
+&lt;li>Analyse system configuration to diagnose any issues in envoy gateway&lt;/li>
+&lt;/ul>
+&lt;p>This tool is named &lt;code>egctl&lt;/code>.&lt;/p>
+&lt;h2 id="syntax">Syntax&lt;a class="td-heading-self-link" href="#syntax" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Use the following syntax to run &lt;code>egctl&lt;/code> commands from your terminal window:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-style:italic">egctl [command] [entity] [name] [flags]
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>where &lt;code>command&lt;/code>, &lt;code>name&lt;/code>, and &lt;code>flags&lt;/code> are:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>command&lt;/code>: Specifies the operation that you want to perform on one or more resources,
+for example &lt;code>config&lt;/code>, &lt;code>version&lt;/code>.&lt;/p></description></item><item><title>Envoy Gateway Extensions Design</title><link>/v0.5/design/extending-envoy-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/extending-envoy-gateway/</guid><description>&lt;p>As outlined in the &lt;a href="https://github.com/envoyproxy/gateway/blob/main/GOALS.md#extensibility">official goals&lt;/a> for the Envoy Gateway project, one of the main goals is to &amp;ldquo;provide a common foundation for vendors to build value-added products
+without having to re-engineer fundamental interactions&amp;rdquo;. Development of the Envoy Gateway project has been focused on developing the core features for the project and
+Kubernetes Gateway API conformance. This system focuses on the “common foundation for vendors” component by introducing a way for vendors to extend Envoy Gateway.&lt;/p></description></item><item><title>EnvoyPatchPolicy</title><link>/v0.5/design/envoy-patch-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/envoy-patch-policy/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>This design introduces the &lt;code>EnvoyPatchPolicy&lt;/code> API allowing users to modify the generated Envoy xDS Configuration
+that Envoy Gateway generates before sending it to Envoy Proxy.&lt;/p>
+&lt;p>Envoy Gateway allows users to configure networking and security intent using the
+upstream &lt;a href="https://gateway-api.sigs.k8s.io/">Gateway API&lt;/a> as well as implementation specific &lt;a href="/v0.5/api/extension_types/">Extension APIs&lt;/a> defined in this project
+to provide a more batteries included experience for application developers.&lt;/p>
+&lt;ul>
+&lt;li>These APIs are an abstracted version of the underlying Envoy xDS API to provide a better user experience for the application developer, exposing and setting only a subset of the fields for a specific feature, sometimes in a opinionated way (e.g &lt;a href="/v0.5/user/rate-limit/">RateLimit&lt;/a>)&lt;/li>
+&lt;li>These APIs do not expose all the features capabilities that Envoy has either because these features are desired but the API
+is not defined yet or the project cannot support such an extensive list of features.
+To alleviate this problem, and provide an interim solution for a small section of advanced users who are well versed in
+Envoy xDS API and its capabilities, this API is being introduced.&lt;/li>
+&lt;/ul>
+&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Add an API allowing users to modify the generated xDS Configuration&lt;/li>
+&lt;/ul>
+&lt;h2 id="non-goals">Non Goals&lt;a class="td-heading-self-link" href="#non-goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Support multiple patch mechanisims&lt;/li>
+&lt;/ul>
+&lt;h2 id="implementation">Implementation&lt;a class="td-heading-self-link" href="#implementation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;code>EnvoyPatchPolicy&lt;/code> is a &lt;a href="https://gateway-api.sigs.k8s.io/references/policy-attachment/#direct-policy-attachment">Direct Policy Attachment&lt;/a> type API that can be used to extend &lt;a href="https://gateway-api.sigs.k8s.io/">Gateway API&lt;/a>
+Modifications to the generated xDS configuration can be provided as a JSON Patch which is defined in
+&lt;a href="https://datatracker.ietf.org/doc/html/rfc6902">RFC 6902&lt;/a>. This patching mechanism has been adopted in &lt;a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/">Kubernetes&lt;/a> as well as &lt;a href="https://github.com/kubernetes-sigs/kustomize/blob/master/examples/jsonpatch.md">Kustomize&lt;/a> to update
+resource objects.&lt;/p></description></item><item><title>Observability: Accesslog</title><link>/v0.5/design/accesslog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/accesslog/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Envoy supports extensible accesslog to different sinks, File, gRPC etc. Envoy supports customizable access log formats using predefined fields as well as arbitrary HTTP request and response headers. Envoy supports several built-in access log filters and extension filters that are registered at runtime.&lt;/p>
+&lt;p>Envoy Gateway leverages &lt;a href="https://gateway-api.sigs.k8s.io/">Gateway API&lt;/a> for configuring managed Envoy proxies. Gateway API defines core, extended, and implementation-specific API &lt;a href="https://gateway-api.sigs.k8s.io/concepts/conformance/?h=extended#2-support-levels">support levels&lt;/a> for implementers such as Envoy Gateway to expose features. Since accesslog is not covered by &lt;code>Core&lt;/code> or &lt;code>Extended&lt;/code> APIs, EG should provide an easy to config access log formats and sinks per &lt;code>EnvoyProxy&lt;/code>.&lt;/p></description></item><item><title>Observability: Metrics</title><link>/v0.5/design/metrics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/metrics/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Envoy provide robust platform for metrics, Envoy support three different kinds of stats: counter, gauges, histograms.&lt;/p>
+&lt;p>Envoy enables prometheus format output via the &lt;code>/stats/prometheus&lt;/code> &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/operations/admin">admin endpoint&lt;/a>.&lt;/p>
+&lt;p>Envoy support different kinds of sinks, but EG will only support &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/stat_sinks/open_telemetry/v3/open_telemetry.proto">Open Telemetry sink&lt;/a>.&lt;/p>
+&lt;p>Envoy Gateway leverages &lt;a href="https://gateway-api.sigs.k8s.io/">Gateway API&lt;/a> for configuring managed Envoy proxies. Gateway API defines core, extended, and implementation-specific API &lt;a href="https://gateway-api.sigs.k8s.io/concepts/conformance/?h=extended#2-support-levels">support levels&lt;/a> for implementers such as Envoy Gateway to expose features. Since metrics is not covered by &lt;code>Core&lt;/code> or &lt;code>Extended&lt;/code> APIs, EG should provide an easy to config metrics per &lt;code>EnvoyProxy&lt;/code>.&lt;/p></description></item><item><title>Observability: Tracing</title><link>/v0.5/design/tracing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/tracing/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Envoy supports extensible tracing to different sinks, Zipkin, OpenTelemetry etc. Overview of Envoy tracing can be found &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/observability/tracing">here&lt;/a>.&lt;/p>
+&lt;p>Envoy Gateway leverages &lt;a href="https://gateway-api.sigs.k8s.io/">Gateway API&lt;/a> for configuring managed Envoy proxies. Gateway API defines core, extended, and implementation-specific API &lt;a href="https://gateway-api.sigs.k8s.io/concepts/conformance/?h=extended#2-support-levels">support levels&lt;/a> for implementers such as Envoy Gateway to expose features. Since tracing is not covered by &lt;code>Core&lt;/code> or &lt;code>Extended&lt;/code> APIs, EG should provide an easy to config tracing per &lt;code>EnvoyProxy&lt;/code>.&lt;/p>
+&lt;p>Only OpenTelemetry sink can be configured currently, you can use &lt;a href="https://opentelemetry.io/docs/collector/">OpenTelemetry Collector&lt;/a> to export to other tracing backends.&lt;/p></description></item><item><title>Rate Limit Design</title><link>/v0.5/design/rate-limit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/rate-limit/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Rate limit is a feature that allows the user to limit the number of incoming requests
+to a predefined value based on attributes within the traffic flow.&lt;/p>
+&lt;p>Here are some reasons why a user may want to implements Rate limits&lt;/p>
+&lt;ul>
+&lt;li>To prevent malicious activity such as DDoS attacks.&lt;/li>
+&lt;li>To prevent applications and its resources (such as a database) from getting overloaded.&lt;/li>
+&lt;li>To create API limits based on user entitlements.&lt;/li>
+&lt;/ul>
+&lt;h2 id="scope-types">Scope Types&lt;a class="td-heading-self-link" href="#scope-types" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The rate limit type here describes the scope of rate limits.&lt;/p></description></item><item><title>Request Authentication Design</title><link>/v0.5/design/request-authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/request-authentication/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;a href="https://github.com/envoyproxy/gateway/issues/336">Issue 336&lt;/a> specifies the need for exposing a user-facing API to configure request authentication. Request
+authentication is defined as an authentication mechanism to be enforced by Envoy on a per-request basis. A connection
+will be rejected if it contains invalid authentication information, based on the &lt;code>AuthenticationFilter&lt;/code> API type
+proposed in this design document.&lt;/p>
+&lt;p>Envoy Gateway leverages &lt;a href="https://gateway-api.sigs.k8s.io/">Gateway API&lt;/a> for configuring managed Envoy proxies. Gateway API defines core, extended, and
+implementation-specific API &lt;a href="https://gateway-api.sigs.k8s.io/concepts/conformance/?h=extended#2-support-levels">support levels&lt;/a> for implementers such as Envoy Gateway to expose features. Since
+implementing request authentication is not covered by &lt;code>Core&lt;/code> or &lt;code>Extended&lt;/code> APIs, an &lt;code>Implementation-specific&lt;/code> API will
+be created for this purpose.&lt;/p></description></item><item><title>Running Envoy Gateway locally</title><link>/v0.5/design/local-envoy-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/local-envoy-gateway/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Today, Envoy Gateway runs only on Kubernetes. This is an ideal solution
+when the applications are running in Kubernetes.
+However there might be cases when the applications are running on the host which would
+require Envoy Gateway to run locally.&lt;/p>
+&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Define an API to allow Envoy Gateway to retrieve configuration while running locally.&lt;/li>
+&lt;li>Define an API to allow Envoy Gateway to deploy the managed Envoy Proxy fleet on the host
+machine.&lt;/li>
+&lt;/ul>
+&lt;h2 id="non-goals">Non Goals&lt;a class="td-heading-self-link" href="#non-goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Support multiple ways to retrieve configuration while running locally.&lt;/li>
+&lt;li>Support multiple ways to deploy the Envoy Proxy fleet locally on the host.&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>The &lt;code>provider&lt;/code> field within the &lt;code>EnvoyGateway&lt;/code> configuration only supports
+&lt;code>Kubernetes&lt;/code> today which provides two features - the ability to retrieve
+resources from the Kubernetes API Server as well as deploy the managed
+Envoy Proxy fleet on Kubernetes.&lt;/li>
+&lt;li>This document proposes adding a new top level &lt;code>provider&lt;/code> type called &lt;code>Custom&lt;/code>
+with two fields called &lt;code>resource&lt;/code> and &lt;code>infrastructure&lt;/code> to allow the user to configure
+the sub providers for providing resource configuration and an infrastructure to deploy
+the Envoy Proxy data plane in.&lt;/li>
+&lt;li>A &lt;code>File&lt;/code> resource provider will be introduced to enable retrieving configuration locally
+by reading from the configuration from a file.&lt;/li>
+&lt;li>A &lt;code>Host&lt;/code> infrastructure provider will be introduced to allow Envoy Gateway to spawn a
+Envoy Proxy child process on the host.&lt;/li>
+&lt;/ul>
+&lt;p>Here is an example configuration&lt;/p></description></item><item><title>TCP and UDP Proxy Design</title><link>/v0.5/design/tcp-udp-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.5/design/tcp-udp-design/</guid><description>&lt;p>Even though most of the use cases for Envoy Gateway are at Layer-7, Envoy Gateway can also work at Layer-4 to proxy TCP
+and UDP traffic. This document will explore the options we have when operating Envoy Gateway at Layer-4 and explain the
+design decision.&lt;/p>
+&lt;p>Envoy can work as a non-transparent proxy or a transparent proxy for both &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/other_features/ip_transparency#arch-overview-ip-transparency-original-src-listener">TCP&lt;/a>
+and &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/udp/udp_proxy/v3/udp_proxy.proto#envoy-v3-api-msg-extensions-filters-udp-udp-proxy-v3-udpproxyconfig">UDP&lt;/a>
+, so ideally, Envoy Gateway should also be able to work in these two modes:&lt;/p></description></item></channel></rss>

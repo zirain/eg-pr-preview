@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>API on Envoy Gateway</title><link>/v1.0/api/</link><description>Recent content in API on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/v1.0/api/index.xml" rel="self" type="application/rss+xml"/><item><title>API Reference</title><link>/v1.0/api/extension_types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.0/api/extension_types/</guid><description>&lt;h2 id="packages">Packages&lt;a class="td-heading-self-link" href="#packages" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#gatewayenvoyproxyiov1alpha1">gateway.envoyproxy.io/v1alpha1&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="gatewayenvoyproxyiov1alpha1">gateway.envoyproxy.io/v1alpha1&lt;a class="td-heading-self-link" href="#gatewayenvoyproxyiov1alpha1" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Package v1alpha1 contains API schema definitions for the gateway.envoyproxy.io
+API group.&lt;/p>
+&lt;h3 id="resource-types">Resource Types&lt;a class="td-heading-self-link" href="#resource-types" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#backendtrafficpolicy">BackendTrafficPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#backendtrafficpolicylist">BackendTrafficPolicyList&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#clienttrafficpolicy">ClientTrafficPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#clienttrafficpolicylist">ClientTrafficPolicyList&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#envoygateway">EnvoyGateway&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#envoypatchpolicy">EnvoyPatchPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#envoypatchpolicylist">EnvoyPatchPolicyList&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#envoyproxy">EnvoyProxy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#securitypolicy">SecurityPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#securitypolicylist">SecurityPolicyList&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="alpnprotocol">ALPNProtocol&lt;a class="td-heading-self-link" href="#alpnprotocol" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;p>&lt;em>Underlying type:&lt;/em> &lt;em>string&lt;/em>&lt;/p>
+&lt;p>ALPNProtocol specifies the protocol to be negotiated using ALPN&lt;/p>
+&lt;p>&lt;em>Appears in:&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="/v1.0/api/extension_types/#tlssettings">TLSSettings&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="activehealthcheck">ActiveHealthCheck&lt;a class="td-heading-self-link" href="#activehealthcheck" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;p>ActiveHealthCheck defines the active health check configuration. EG supports various types of active health checking including HTTP, TCP.&lt;/p></description></item></channel></rss>
