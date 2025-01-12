@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>版本 on Envoy Gateway</title><link>/zh/latest/releases/</link><description>Recent content in 版本 on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="/zh/latest/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.2</title><link>/zh/latest/releases/v1.0.2/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><guid>/zh/latest/releases/v1.0.2/</guid><description>&lt;p>日期：2024 年 6 月 12 日&lt;/p>
+&lt;h2 id="installation">安装&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>更新 EnvoyProxy 至 1.29.5&lt;/li>
+&lt;li>对基础客户端使用 Patch API&lt;/li>
+&lt;li>对于基础客户端，使用 ServerSideApply 代替 CreateOrUpdate&lt;/li>
+&lt;/ul>
+&lt;h2 id="testing">测试&lt;a class="td-heading-self-link" href="#testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>修复了由于某个转换器测试证书过期导致的失败问题&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">转换器&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>使用 &lt;proto>-&lt;port> 来命名服务和容器端口&lt;/li>
+&lt;li>添加代理协议始终作为第一个 listenerFilter&lt;/li>
+&lt;li>为 extAuth 中的标头匹配器设置 ignoreCase&lt;/li>
+&lt;li>添加了后端 TLS SAN 验证&lt;/li>
+&lt;li>修复 ReplaceFullPath 不适用于根路径 (/)&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>修复了将重复的 xroutes 添加到 gatewayapi 资源的问题&lt;/li>
+&lt;li>修复了字段类型的安全策略引用授予问题&lt;/li>
+&lt;li>修复了具有不同类型但相同名称和命名空间的路线扩展过滤器无法正确缓存的问题&lt;/li>
+&lt;li>通过删除 generationChanged 谓词修复了 secrets/configmap 更新以触发控制器调协的问题&lt;/li>
+&lt;li>移除了 EnvoyProxy parametersRef 的命名空间限制&lt;/li>
+&lt;/ul></description></item><item><title>v1.0.1</title><link>/zh/latest/releases/v1.0.1/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>/zh/latest/releases/v1.0.1/</guid><description>&lt;p>日期：2024 年 4 月 9 日&lt;/p>
+&lt;h2 id="installation">安装&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>将 EnvoyProxy 版本更新至 v1.29.3&lt;/li>
+&lt;li>修复了 Certgen 以支持在升级期间创建 hmac 密钥&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">转换器&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>修复了 ResourceVersionTable 中的 nil Secret 问题&lt;/li>
+&lt;li>当启用 ClientTrafficPolicy 和 MergeGateway 时，将缺少的 HTTP 过滤器添加到 HTTP 过滤器链&lt;/li>
+&lt;li>启用 URL 重写时允许 WebSocket&lt;/li>
+&lt;li>设置 HTTP 健康检查器的 Host 标头&lt;/li>
+&lt;li>修复了重定向 URL 中的双斜杠&lt;/li>
+&lt;li>允许 ClientTrafficPolicy 附加到同一网关内的多个 HTTP（非 HTTPS）侦听器&lt;/li>
+&lt;li>为 HTTP Ext Auth 服务的路径设置前缀&lt;/li>
+&lt;li>设置路由匹配优先顺序为 Exact &amp;gt; RegularExpression &amp;gt; PathPrefix&lt;/li>
+&lt;li>修复了被合并网关的 infraIR 重复端口转换&lt;/li>
+&lt;li>将 SpawnUpstreamSpan 设置为 true&lt;/li>
+&lt;li>允许限流与多个监听器一起使用&lt;/li>
+&lt;/ul>
+&lt;h2 id="infra-manager">Infra-manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>当 InfraIR 具有空侦听器时跳过创建基础设施资源&lt;/li>
+&lt;/ul></description></item><item><title>v1.0.0</title><link>/zh/latest/releases/v1.0.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>/zh/latest/releases/v1.0.0/</guid><description>&lt;p>日期：2024 年 3 月 13 日&lt;/p>
+&lt;h2 id="documentation">文档&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>新增了本地限流（Local Ratelimit）的用户指南&lt;/li>
+&lt;li>新增了熔断（Circuit Breaker）的用户指南&lt;/li>
+&lt;li>新增了故障注入（Fault Injection）的用户指南&lt;/li>
+&lt;li>新增了 EnvoyProxy extraArgs 的用户指南&lt;/li>
+&lt;li>新增了在 ClientTrafficPolicy 中超时的用户指南&lt;/li>
+&lt;li>新增了基础路由的 JWT Claim 用户指南&lt;/li>
+&lt;li>新增了 HTTP 超时的用户指南&lt;/li>
+&lt;li>新增了在 BackendTrafficPolicy 中重试的用户指南&lt;/li>
+&lt;li>新增了基础身份验证（Basic Auth）的用户指南&lt;/li>
+&lt;li>新增了 OIDC 的用户指南&lt;/li>
+&lt;li>新增了 ClientTrafficPolicy 的用户指南&lt;/li>
+&lt;li>新增了 BackendTrafficPolicy 的用户指南&lt;/li>
+&lt;li>新增了使用 HTTPS 的基础身份验证（Basic Auth）的用户指南&lt;/li>
+&lt;li>新增外部鉴权（External Authorization）的用户指南&lt;/li>
+&lt;li>新增了 Kubernetes 外部路由的用户指南&lt;/li>
+&lt;li>新增了 BackendTLSPolicy 的用户指南&lt;/li>
+&lt;li>新增了从外部客户端到网关的双向 TLS 的用户指南&lt;/li>
+&lt;li>新增了使用自定义证书进行控制平面身份验证的用户指南&lt;/li>
+&lt;li>新增了多 GatewayClass 和合并 Gateway 部署模式的用户指南&lt;/li>
+&lt;li>为 CRD API 添加了 &lt;code>Type&lt;/code> 和 &lt;code>required&lt;/code> 的文档&lt;/li>
+&lt;li>重构了用户指南文档的结构&lt;/li>
+&lt;li>将设计文档移动到“参与”下并重构&lt;/li>
+&lt;li>将 crd-ref-docs 更新至 0.0.10&lt;/li>
+&lt;li>将 Envoy Proxy 镜像更新为 main 中的 envoy:distroless-dev&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">安装&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>新增了对从私有仓库中提取 envoyGateway 镜像的支持&lt;/li>
+&lt;li>新增了为 certgen Job 配置资源的支持&lt;/li>
+&lt;li>新增了为 EnvoyGateway Pod 配置亲和力的支持&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对下游 QUIC/HTTP3 的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对下游 MTLS 的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对 EnvoyHeaders 的启用支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对 DisableMergeSlash 和 escapedSlashesAction 的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对 HTTP/1.1 中的 EnableTrailers 的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对 HTTP/1 上保留标头字母大小写的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对 HTTP/1.0 和 HTTP/0.9 启用的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对使用 XFF 进行客户端 IP 检测的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对使用自定义标头进行客户端 IP 检测的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对连接超时的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对常见 TLS 配置属性的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对代理协议的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对 TCPKeepAlive 的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对本地限流（Local Ratelimit）的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对熔断（Circuit Breaker）的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对故障注入（Fault Injection）的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对被动健康检查（Passive Health Check）的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对主动健康检查（Active Health Check）的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对连接超时（Connection Timeout）的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对压缩器/解压缩器（Compressor/Decompressor）的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对重试（Retry）的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对慢启动模式的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对代理协议的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对 TCPKeepAlive 的支持&lt;/li>
+&lt;li>在 BackendTrafficPolicy CRD 中添加了对 PolicyStatus 的支持&lt;/li>
+&lt;li>在 ClientTrafficPolicy CRD 中添加了对 PolicyStatus 的支持&lt;/li>
+&lt;li>在 SecurityPolicy CRD 中添加了对 PolicyStatus 的支持&lt;/li>
+&lt;li>在 SecurityPolicy CRD 中添加了对 OIDC 的支持&lt;/li>
+&lt;li>在 SecurityPolicy CRD 中添加了对基础身份验证（Basic Auth）的支持&lt;/li>
+&lt;li>在 SecurityPolicy CRD 中添加了对 OIDC 的 RedirectURL 和 signoutPath 的支持&lt;/li>
+&lt;li>在 SecurityPolicy CRD 中添加了对 ExtractFrom 标头和参数到 JWT 的支持&lt;/li>
+&lt;li>在 SecurityPolicy CRD 中添加了对外部鉴权（External Authorization）的支持&lt;/li>
+&lt;li>在 SecurityPolicy CRD 中添加了对 JWT 的 RecomputeRoute 字段的支持&lt;/li>
+&lt;li>在 SecurityPolicy CRD 中添加了对 CORS 设置的 AllowCredentials 旋钮的支持&lt;/li>
+&lt;li>在 SecurityPolicy CRD 中添加了对从不同标识符提取到 JWT 的支持&lt;/li>
+&lt;li>在 EnvoyPatchPolicy CRD 中添加了对 Secret 资源的支持&lt;/li>
+&lt;li>在 EnvoyPatchPolicy CRD 中添加了对 JSONPatchOperation 的值可选的支持&lt;/li>
+&lt;li>在 EnvoyPatchPolicy CRD 中添加了对 JSONPatchOperation 中 &lt;code>From&lt;/code> 字段的支持&lt;/li>
+&lt;li>在 EnvoyPatchPolicy CRD 中添加了对 MergeGateways 的支持&lt;/li>
+&lt;li>通过实施 BackendTLSPolicy CRD 添加了对上游 TLS 的支持&lt;/li>
+&lt;li>在 EnvoyGateway 配置中添加了对 NamespaceSelectors 的 LabelSelector 类型的支持&lt;/li>
+&lt;li>在 EnvoyGateway 配置中添加了对 Ratelimit Prometheus 的支持&lt;/li>
+&lt;li>在 EnvoyProxy CRD 中添加了对 Pod 终止时 Envoy 关闭之前优雅地耗尽侦听器的支持&lt;/li>
+&lt;li>在 EnvoyProxy CRD 中添加了对 Envoy 服务配置 externalTrafficPolicy 的支持&lt;/li>
+&lt;li>在 EnvoyProxy CRD 中添加了对 Envoy 额外参数的支持&lt;/li>
+&lt;li>在 EnvoyProxy CRD 中添加了对 Mergepatch 到 envoyproxy/ratelimit 部署的支持&lt;/li>
+&lt;li>在 EnvoyProxy CRD 中添加了对 Mergepatch 到 envoyproxy 服务的支持&lt;/li>
+&lt;li>在 EnvoyProxy CRD 中添加了对 NodeSelector 到 PodSpec 的支持&lt;/li>
+&lt;li>在 EnvoyProxy CRD 中添加了对 HorizontalPodAutoscaler 的支持&lt;/li>
+&lt;li>在 EnvoyProxy CRD 中添加了对 PodSpec 的 TopologySpreadConstraints 支持&lt;/li>
+&lt;li>在 EnvoyProxy CRD 中添加了对 PodSpec 的 ImagePullSecrets 的支持&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">重大变化&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>使用通配符将 AllowOrigins 与 SecurityPolicy CRD 中的 CORS 进行匹配&lt;/li>
+&lt;li>删除 EnvoyProxy CRD 中的主机网络支持&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">一致性&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>将后端镜像从 gcr.io/k8s-staging-ingressconformance/echoserver 替换为 gcr.io/k8s-staging-gateway-api/echo-basic&lt;/li>
+&lt;/ul>
+&lt;h2 id="testing">测试&lt;a class="td-heading-self-link" href="#testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>添加了标头中大小写保留的 e2e 测试&lt;/li>
+&lt;li>添加了在 ClientTrafficPolicy 中超时的 e2e 测试&lt;/li>
+&lt;li>添加了 JWT Claim 基础路由的 e2e 测试&lt;/li>
+&lt;li>添加了 OIDC 的 e2e 测试&lt;/li>
+&lt;li>添加了 BackendTrafficPolicy 重试（Retry）的 e2e 测试&lt;/li>
+&lt;li>添加了后端升级的 e2e 测试&lt;/li>
+&lt;li>添加了外部鉴权（External Authorization）的 e2e 测试&lt;/li>
+&lt;li>添加了后端 TLS 策略的 e2e 测试&lt;/li>
+&lt;li>添加了 Envoy Gateway 版本升级的 e2e 测试&lt;/li>
+&lt;li>添加了加权后端的 e2e 测试&lt;/li>
+&lt;li>添加了对 LoadBalancerIP 的验证以防止拖尾周期&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">转换器&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>修复了前缀匹配，以防止具有相同前缀的路由匹配错误的问题&lt;/li>
+&lt;li>通过为 ir.Infra 实现类似接口来修复多重调谐的问题&lt;/li>
+&lt;li>修复了具有空条件 {} 的 EndpointSlice 问题&lt;/li>
+&lt;li>修复了解析 http 请求超时时的错误处理&lt;/li>
+&lt;li>修复了 EnvoyPatchPolicy 被禁用时无状态的问题&lt;/li>
+&lt;li>修复了 xDS 和 infra IR 的可打印问题&lt;/li>
+&lt;li>修复了跳过 backendRef 并将权重设置为 0 的问题&lt;/li>
+&lt;li>修复了限流中的 AND 标头匹配不起作用的问题&lt;/li>
+&lt;li>修复了不存在 GatewayClass 时的删除逻辑&lt;/li>
+&lt;li>修复了 ClientTrafficPolicy 的 mergedGateway irKey 匹配问题&lt;/li>
+&lt;li>修复了策略应仅被应用到 mergeGateway 为 true 的 Gateway 的问题&lt;/li>
+&lt;li>修复了启用 mergeGateway 时不会显示网关侦听器状态的问题&lt;/li>
+&lt;li>通过将 Web 套接字升级配置从 hcm 移动到路由，修复了 GRPCroute websocket 无法工作的问题&lt;/li>
+&lt;li>修复了在 HTTPRoute 上设置超时时配置空闲超时的问题&lt;/li>
+&lt;li>修复了 OIDC 令牌端点的放宽 HTTPS 限制&lt;/li>
+&lt;li>修复了将路由转换到空的后端时出现的 Panic 问题&lt;/li>
+&lt;li>修复了 xDS 转换应以最高效的方式完成&lt;/li>
+&lt;li>修复了从监测中删除未被使用的状态键的问题&lt;/li>
+&lt;li>修复了比较 Envoy Proxy 服务时忽略终结器的问题&lt;/li>
+&lt;li>修复了如果 HTTP/3 被启用后不会覆盖 ALPN 数组的问题&lt;/li>
+&lt;li>修复了启用 HTTP/3 时默认添加 h3 ALPN 的问题&lt;/li>
+&lt;li>修复了 SecurityPolicy/BackendTrafficPolicy 的 Merge 行为，改为 Replace&lt;/li>
+&lt;li>修复了启用 HTTP/3 时在 alt-svc 标头中使用服务端口的问题&lt;/li>
+&lt;li>修复了防止针对同一端口上的非 TLS 侦听器的策略发生冲突&lt;/li>
+&lt;li>修复了跳过所有策略的 ReasonTargetNotFound&lt;/li>
+&lt;li>修复了跳过所有策略的空发布状态&lt;/li>
+&lt;li>添加了在发送到 Envoy 之前正则表达式验证支持&lt;/li>
+&lt;li>添加了当服务类型为 ClusterIP 时将 spec.addresses.value 设置为 ClusterIP 的支持&lt;/li>
+&lt;li>为 BackendRef 中的过滤器添加了不支持的状态条件&lt;/li>
+&lt;li>为 Provider 资源添加了 List 替代 Map，以保证稳定性&lt;/li>
+&lt;li>添加了 OAuth Cookie 的后缀，以防止多个 OAuth 过滤器覆盖彼此的 Cookie&lt;/li>
+&lt;li>添加了对 BackendTrafficPolicy 和 SecurityPolicy 覆盖条件的支持&lt;/li>
+&lt;li>添加了对默认重试预计量和重试主机判断的支持&lt;/li>
+&lt;li>添加了对 gateway.spec.infrastructural 实现的支持&lt;/li>
+&lt;li>添加了对多个后端的上游 TLS 的支持&lt;/li>
+&lt;li>添加了在 ClientTrafficPolicy 中对 CA 证书验证的支持&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Provider&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>添加了对每个控制器多个 GatewayClass 的支持&lt;/li>
+&lt;li>在 Kubernetes Provider 中添加了 SecurityPolicyIndexers&lt;/li>
+&lt;li>添加了对在 CertGen Job 中生成 HMAC 密钥的支持&lt;/li>
+&lt;li>修复了删除 GatewayClass 时的 Finalizer 逻辑&lt;/li>
+&lt;li>修复了重新启动控制平面时 MergeGateway 出现 Panic 的问题&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>添加了对 EDS 缓存的支持&lt;/li>
+&lt;li>添加了对 ADS 缓存的支持，以保证规则顺序&lt;/li>
+&lt;li>修复了使用 RequestHeaderModifier 过滤器时出现的已弃用字段错误&lt;/li>
+&lt;li>修复了 Envoy 在运行时拒绝 XDS 并在重新启动时丢失所有路由的问题&lt;/li>
+&lt;li>修复了与定义的路由不匹配的请求触发每个路由过滤器的问题&lt;/li>
+&lt;li>将 go-control-plane 升级至 v0.12.0&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>添加了对 egctl x status 命令的支持&lt;/li>
+&lt;li>添加了对 egctl experimental dashboard envoy-proxy 命令的支持&lt;/li>
+&lt;li>添加了对 egctl config ratelimit 命令的支持&lt;/li>
+&lt;li>添加了对从 gateway-api 资源到 IR 的 gctl translate from gateway-api 命令的支持&lt;/li>
+&lt;/ul></description></item></channel></rss>
