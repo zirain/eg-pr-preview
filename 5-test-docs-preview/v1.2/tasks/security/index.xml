@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on Envoy Gateway</title><link>/v1.2/tasks/security/</link><description>Recent content in Security on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/v1.2/tasks/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Accelerating TLS Handshakes using Private Key Provider in Envoy</title><link>/v1.2/tasks/security/private-key-provider/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/private-key-provider/</guid><description>&lt;p>TLS operations can be accelerated or the private key can be protected using specialized hardware. This can be leveraged in Envoy using &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/transport_sockets/tls/v3/common.proto#extensions-transport-sockets-tls-v3-privatekeyprovider">Envoy Private Key Provider&lt;/a> is added to Envoy.&lt;/p>
+&lt;p>Today, there are two private key providers implemented in Envoy as contrib extensions:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/private_key_providers/qat/v3alpha/qat.proto#extensions-private-key-providers-qat-v3alpha-qatprivatekeymethodconfig">QAT in Envoy 1.24 release&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/private_key_providers/cryptomb/v3alpha/cryptomb.proto">CryptoMB in Envoy 1.20 release&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Both of them are used to accelerate the TLS handshake through the hardware capabilities.&lt;/p>
+&lt;p>This task will walk you through the steps required to configure TLS Termination mode for TCP traffic while also using the Envoy Private Key Provider to accelerate the TLS handshake by leveraging QAT and the HW accelerator available on Intel SPR/EMR Xeon server platforms.&lt;/p></description></item><item><title>Backend Mutual TLS: Gateway to Backend</title><link>/v1.2/tasks/security/backend-mtls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/backend-mtls/</guid><description>&lt;p>This task demonstrates how mTLS can be achieved between the Gateway and a backend.
+This task uses a self-signed CA, so it should be used for testing and demonstration purposes only.&lt;/p>
+&lt;p>Envoy Gateway supports the Gateway-API defined &lt;a href="https://gateway-api.sigs.k8s.io/api-types/backendtlspolicy/">BackendTLSPolicy&lt;/a> to establish TLS. For mTLS, the Gateway must authenticate by presenting a client certificate to the backend.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>OpenSSL to generate TLS assets.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/security/backend-tls/">Backend TLS&lt;/a> to install Envoy Gateway and configure TLS to the backend server.&lt;/p></description></item><item><title>Backend TLS: Gateway to Backend</title><link>/v1.2/tasks/security/backend-tls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/backend-tls/</guid><description>&lt;p>This task demonstrates how TLS can be achieved between the Gateway and a backend.
+This task uses a self-signed CA, so it should be used for testing and demonstration purposes only.&lt;/p>
+&lt;p>Envoy Gateway supports the Gateway-API defined &lt;a href="https://gateway-api.sigs.k8s.io/api-types/backendtlspolicy/">BackendTLSPolicy&lt;/a>.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>OpenSSL to generate TLS assets.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p></description></item><item><title>Basic Authentication</title><link>/v1.2/tasks/security/basic-auth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/basic-auth/</guid><description>&lt;p>This task provides instructions for configuring &lt;a href="https://tools.ietf.org/html/rfc2617">HTTP Basic authentication&lt;/a>.
+HTTP Basic authentication checks if an incoming request has a valid username and password before routing the request to
+a backend service.&lt;/p>
+&lt;p>Envoy Gateway introduces a new CRD called &lt;a href="/contributions/design/security-policy/">SecurityPolicy&lt;/a> that allows the user to configure HTTP Basic
+authentication.
+This instantiated resource can be linked to a &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway">Gateway&lt;/a>, &lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute">HTTPRoute&lt;/a> or &lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute">GRPCRoute&lt;/a> resource.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p></description></item><item><title>CORS</title><link>/v1.2/tasks/security/cors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/cors/</guid><description>&lt;p>This task provides instructions for configuring &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">Cross-Origin Resource Sharing (CORS)&lt;/a> on Envoy Gateway.
+CORS defines a way for client web applications that are loaded in one domain to interact with resources in a different
+domain.&lt;/p>
+&lt;p>Envoy Gateway introduces a new CRD called &lt;a href="/contributions/design/security-policy/">SecurityPolicy&lt;/a> that allows the user to configure CORS.
+This instantiated resource can be linked to a &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway">Gateway&lt;/a>, &lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute">HTTPRoute&lt;/a> or &lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute">GRPCRoute&lt;/a> resource.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p></description></item><item><title>External Authorization</title><link>/v1.2/tasks/security/ext-auth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/ext-auth/</guid><description>&lt;p>This task provides instructions for configuring external authentication.&lt;/p>
+&lt;p>External authorization calls an external HTTP or gRPC service to check whether an incoming HTTP request is authorized
+or not. If the request is deemed unauthorized, then the request will be denied with a 403 (Forbidden) response. If the
+request is authorized, then the request will be allowed to proceed to the backend service.&lt;/p>
+&lt;p>Envoy Gateway introduces a new CRD called &lt;a href="/contributions/design/security-policy/">SecurityPolicy&lt;/a> that allows the user to configure external authorization.
+This instantiated resource can be linked to a &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway">Gateway&lt;/a> and &lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute">HTTPRoute&lt;/a> resource.&lt;/p></description></item><item><title>IP Allowlist/Denylist</title><link>/v1.2/tasks/security/restrict-ip-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/restrict-ip-access/</guid><description>&lt;p>This task provides instructions for configuring IP allowlist/denylist on Envoy Gateway. IP allowlist/denylist
+checks if an incoming request is from an allowed IP address before routing the request to a backend service.&lt;/p>
+&lt;p>Envoy Gateway introduces a new CRD called &lt;a href="/contributions/design/security-policy/">SecurityPolicy&lt;/a> that allows the user to configure IP allowlist/denylist.
+This instantiated resource can be linked to a &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway">Gateway&lt;/a>, &lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute">HTTPRoute&lt;/a> or &lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute">GRPCRoute&lt;/a> resource.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p></description></item><item><title>JWT Authentication</title><link>/v1.2/tasks/security/jwt-authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/jwt-authentication/</guid><description>&lt;p>This task provides instructions for configuring &lt;a href="https://tools.ietf.org/html/rfc7519">JSON Web Token (JWT)&lt;/a> authentication. JWT authentication checks
+if an incoming request has a valid JWT before routing the request to a backend service. Currently, Envoy Gateway only
+supports validating a JWT from an HTTP header, e.g. &lt;code>Authorization: Bearer &amp;lt;token&amp;gt;&lt;/code>.&lt;/p>
+&lt;p>Envoy Gateway introduces a new CRD called &lt;a href="/contributions/design/security-policy/">SecurityPolicy&lt;/a> that allows the user to configure JWT authentication.
+This instantiated resource can be linked to a &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway">Gateway&lt;/a>, &lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute">HTTPRoute&lt;/a> or &lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute">GRPCRoute&lt;/a> resource.&lt;/p></description></item><item><title>JWT Claim-Based Authorization</title><link>/v1.2/tasks/security/jwt-claim-authorization/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/jwt-claim-authorization/</guid><description>&lt;p>This task provides instructions for configuring JWT claim-based authorization. JWT claim-based authorization checks if an incoming request has the required JWT claims before routing the request to a backend service.&lt;/p>
+&lt;p>Envoy Gateway introduces a new CRD called &lt;a href="/contributions/design/security-policy/">SecurityPolicy&lt;/a> that allows the user to configure JWT claim-based authorization.&lt;/p>
+&lt;p>This instantiated resource can be linked to a &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway">Gateway&lt;/a>, &lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute">HTTPRoute&lt;/a> or &lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute">GRPCRoute&lt;/a> resource.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p></description></item><item><title>Mutual TLS: External Clients to the Gateway</title><link>/v1.2/tasks/security/mutual-tls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/mutual-tls/</guid><description>&lt;p>This task demonstrates how mutual TLS can be achieved between external clients and the Gateway.
+This task uses a self-signed CA, so it should be used for testing and demonstration purposes only.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>OpenSSL to generate TLS assets.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p></description></item><item><title>OIDC Authentication</title><link>/v1.2/tasks/security/oidc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/oidc/</guid><description>&lt;p>This task provides instructions for configuring &lt;a href="https://openid.net/connect/">OpenID Connect (OIDC)&lt;/a> authentication.
+OpenID Connect (OIDC) is an authentication standard built on top of OAuth 2.0.
+It enables EG to rely on authentication that is performed by an OpenID Connect Provider (OP)
+to verify the identity of a user.&lt;/p>
+&lt;p>Envoy Gateway introduces a new CRD called &lt;a href="../../../api/extension_types#securitypolicy">SecurityPolicy&lt;/a> that allows the user to configure OIDC
+authentication.
+This instantiated resource can be linked to a &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway">Gateway&lt;/a> and &lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute">HTTPRoute&lt;/a> resource.&lt;/p></description></item><item><title>Secure Gateways</title><link>/v1.2/tasks/security/secure-gateways/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/secure-gateways/</guid><description>&lt;p>This task will help you get started using secure Gateways.
+This task uses a self-signed CA, so it should be used for testing and demonstration purposes only.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>OpenSSL to generate TLS assets.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p>
+&lt;p>Verify the Gateway status:&lt;/p>
+
+
+
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+ &lt;li class="nav-item">
+ &lt;button class="nav-link active"
+ id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+ data-td-tp-persist="kubectl" aria-controls="tabs-00-00" aria-selected="true">
+ kubectl
+ &lt;/button>
+ &lt;/li>&lt;li class="nav-item">
+ &lt;button class="nav-link"
+ id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+ data-td-tp-persist="egctl (experimental)" aria-controls="tabs-00-01" aria-selected="false">
+ egctl (experimental)
+ &lt;/button>
+ &lt;/li>
+&lt;/ul>
+
+&lt;div class="tab-content" id="tabs-0-content">
+ &lt;div class="tab-body tab-pane fade show active"
+ id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
+ &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>kubectl get gateway/eg -o yaml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+ &lt;/div>
+ &lt;div class="tab-body tab-pane fade"
+ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
+ &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>egctl x status gateway -v
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+ &lt;/div>
+&lt;/div>
+
+
+&lt;h2 id="tls-certificates">TLS Certificates&lt;a class="td-heading-self-link" href="#tls-certificates" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Generate the certificates and keys used by the Gateway to terminate client TLS connections.&lt;/p></description></item><item><title>Threat Model</title><link>/v1.2/tasks/security/threat-model/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/threat-model/</guid><description>&lt;h1 id="envoy-gateway-threat-model-and-end-user-recommendations">Envoy Gateway Threat Model and End User Recommendations&lt;a class="td-heading-self-link" href="#envoy-gateway-threat-model-and-end-user-recommendations" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h2 id="about">About&lt;a class="td-heading-self-link" href="#about" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>This work was performed by &lt;a href="https://control-plane.io/">ControlPlane&lt;/a> and commissioned by the &lt;a href="https://www.linuxfoundation.org/">Linux Foundation&lt;/a>. ControlPlane is a global cloud native and open source cybersecurity consultancy, trusted as the partner of choice in securing: multinational banks; major public clouds; international financial institutions; critical national infrastructure programs; multinational oil and gas companies, healthcare and insurance providers; and global media firms.&lt;/p>
+&lt;h2 id="threat-modelling-team">Threat Modelling Team&lt;a class="td-heading-self-link" href="#threat-modelling-team" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>James Callaghan, Torin van den Bulk, Eduardo Olarte&lt;/p></description></item><item><title>TLS Passthrough</title><link>/v1.2/tasks/security/tls-passthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/tls-passthrough/</guid><description>&lt;p>This task will walk through the steps required to configure TLS Passthrough via Envoy Gateway. Unlike configuring
+Secure Gateways, where the Gateway terminates the client TLS connection, TLS Passthrough allows the application itself
+to terminate the TLS connection, while the Gateway routes the requests to the application based on SNI headers.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>OpenSSL to generate TLS assets.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p></description></item><item><title>TLS Termination for TCP</title><link>/v1.2/tasks/security/tls-termination/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/tls-termination/</guid><description>&lt;p>This task will walk through the steps required to configure TLS Terminate mode for TCP traffic via Envoy Gateway.
+This task uses a self-signed CA, so it should be used for testing and demonstration purposes only.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>OpenSSL to generate TLS assets.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p></description></item><item><title>Using cert-manager For TLS Termination</title><link>/v1.2/tasks/security/tls-cert-manager/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v1.2/tasks/security/tls-cert-manager/</guid><description>&lt;p>This task shows how to set up &lt;a href="https://cert-manager.io/">cert-manager&lt;/a> to automatically create certificates and secrets for use by Envoy Gateway.
+It will first show how to enable the self-sign issuer, which is useful to test that cert-manager and Envoy Gateway can talk to each other.
+Then it shows how to use &lt;a href="https://letsencrypt.org/docs/staging-environment/">Let&amp;rsquo;s Encrypt&amp;rsquo;s staging environment&lt;/a>.
+Changing to the Let&amp;rsquo;s Encrypt production environment is straight-forward after that.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>A Kubernetes cluster and a configured &lt;code>kubectl&lt;/code>.&lt;/li>
+&lt;li>The &lt;code>helm&lt;/code> command.&lt;/li>
+&lt;li>The &lt;code>curl&lt;/code> command or similar for testing HTTPS requests.&lt;/li>
+&lt;li>For the ACME HTTP-01 challenge to work
+&lt;ul>
+&lt;li>your Gateway must be reachable on the public Internet.&lt;/li>
+&lt;li>the domain name you use (we use &lt;code>www.example.com&lt;/code>) must point to the Gateway&amp;rsquo;s external IP(s).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p></description></item></channel></rss>

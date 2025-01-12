@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>API on Envoy Gateway</title><link>/zh/latest/api/</link><description>Recent content in API on Envoy Gateway</description><generator>Hugo</generator><language>zh</language><atom:link href="/zh/latest/api/index.xml" rel="self" type="application/rss+xml"/><item><title>API Reference</title><link>/zh/latest/api/extension_types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/latest/api/extension_types/</guid><description>&lt;h2 id="packages">Packages&lt;a class="td-heading-self-link" href="#packages" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#gatewayenvoyproxyiov1alpha1">gateway.envoyproxy.io/v1alpha1&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="gatewayenvoyproxyiov1alpha1">gateway.envoyproxy.io/v1alpha1&lt;a class="td-heading-self-link" href="#gatewayenvoyproxyiov1alpha1" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Package v1alpha1 contains API schema definitions for the gateway.envoyproxy.io
+API group.&lt;/p>
+&lt;h3 id="resource-types">Resource Types&lt;a class="td-heading-self-link" href="#resource-types" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#backend">Backend&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#backendtrafficpolicy">BackendTrafficPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#clienttrafficpolicy">ClientTrafficPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#envoyextensionpolicy">EnvoyExtensionPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#envoygateway">EnvoyGateway&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#envoypatchpolicy">EnvoyPatchPolicy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#envoyproxy">EnvoyProxy&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#httproutefilter">HTTPRouteFilter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#securitypolicy">SecurityPolicy&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="alpnprotocol">ALPNProtocol&lt;a class="td-heading-self-link" href="#alpnprotocol" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;p>&lt;em>Underlying type:&lt;/em> &lt;em>string&lt;/em>&lt;/p>
+&lt;p>ALPNProtocol specifies the protocol to be negotiated using ALPN&lt;/p>
+&lt;p>&lt;em>Appears in:&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#backendtlsconfig">BackendTLSConfig&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#clienttlssettings">ClientTLSSettings&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/zh/latest/api/extension_types/#tlssettings">TLSSettings&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Value&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>http/1.0&lt;/code>&lt;/td>
+ &lt;td>HTTPProtocolVersion1_0 specifies that HTTP/1.0 should be negotiable with ALPN&lt;br />&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>http/1.1&lt;/code>&lt;/td>
+ &lt;td>HTTPProtocolVersion1_1 specifies that HTTP/1.1 should be negotiable with ALPN&lt;br />&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>h2&lt;/code>&lt;/td>
+ &lt;td>HTTPProtocolVersion2 specifies that HTTP/2 should be negotiable with ALPN&lt;br />&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h4 id="alsenvoyproxyaccesslog">ALSEnvoyProxyAccessLog&lt;a class="td-heading-self-link" href="#alsenvoyproxyaccesslog" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;p>ALSEnvoyProxyAccessLog defines the gRPC Access Log Service (ALS) sink.
+The service must implement the Envoy gRPC Access Log Service streaming API:
+&lt;a href="https://www.envoyproxy.io/docs/envoy/latest/api-v3/service/accesslog/v3/als.proto">https://www.envoyproxy.io/docs/envoy/latest/api-v3/service/accesslog/v3/als.proto&lt;/a>
+Access log format information is passed in the form of gRPC metadata when the
+stream is established.&lt;/p></description></item></channel></rss>

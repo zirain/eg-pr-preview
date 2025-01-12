@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Announcements on Envoy Gateway</title><link>/news/releases/</link><description>Recent content in Release Announcements on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/news/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Announcing Envoy Gateway v1.2</title><link>/news/releases/v1.2/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>/news/releases/v1.2/</guid><description>&lt;p>We are thrilled to announce the arrival of Envoy Gateway v1.2.0.&lt;/p>
+&lt;p>This release represents a significant achievement, and we extend our heartfelt gratitude to the entire Envoy Gateway community for their contributions, dedication, and support. Your collaborative efforts have been instrumental in reaching this pivotal release.&lt;/p>
+&lt;p>Thank you for being an integral part of this journey. We are excited to see how Envoy Gateway v1.2.0 will empower your operations and look forward to continuing our work together to drive the future of Cloud Native API Gateway.&lt;/p></description></item><item><title>Announcing Envoy Gateway v1.1</title><link>/news/releases/v1.1/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>/news/releases/v1.1/</guid><description>&lt;p>We are thrilled to announce the arrival of Envoy Gateway v1.1.0.&lt;/p>
+&lt;p>This release represents a significant achievement, and we extend our heartfelt gratitude to the entire Envoy Gateway community for their contributions, dedication, and support. Your collaborative efforts have been instrumental in reaching this pivotal release.&lt;/p>
+&lt;p>Thank you for being an integral part of this journey. We are excited to see how Envoy Gateway v1.1.0 will empower your operations and look forward to continuing our work together to drive the future of Cloud Native API Gateway.&lt;/p></description></item><item><title>Announcing Envoy Gateway v1.0</title><link>/news/releases/v1.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>/news/releases/v1.0/</guid><description>&lt;p>We are thrilled to announce the arrival of Envoy Gateway v1.0.0, marking the official General Availability (GA) milestone for the project!&lt;/p>
+&lt;p>This release represents a significant achievement, and we extend our heartfelt gratitude to the entire Envoy Gateway community for their contributions, dedication, and support. Your collaborative efforts have been instrumental in reaching this pivotal release.&lt;/p>
+&lt;p>Thank you for being an integral part of this journey. We are excited to see how Envoy Gateway v1.0.0 will empower your operations and look forward to continuing our work together to drive the future of Cloud Native API Gateway.&lt;/p></description></item><item><title>Announcing Envoy Gateway v0.6</title><link>/news/releases/v0.6/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>/news/releases/v0.6/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.6!&lt;/p>
+&lt;p>This is the fifth functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
+helping publish the release.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;a href="/news/releases/notes/v0.6.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://gateway.envoyproxy.io/v0.6">Docs&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.6.0">Download&lt;/a>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="whats-new">What&amp;rsquo;s New&lt;a class="td-heading-self-link" href="#whats-new" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The release adds a ton of features and functionality. Here are some highlights:&lt;/p>
+&lt;h3 id="gateway-api">Gateway API&lt;a class="td-heading-self-link" href="#gateway-api" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Upgraded to Gateway API v1.0&lt;/li>
+&lt;li>Added support for HTTPRoute Timeouts&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-control-plane-proxy-telemetry">Add Control Plane Proxy Telemetry&lt;a class="td-heading-self-link" href="#add-control-plane-proxy-telemetry" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for Metrics Telemetry&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-support-for-directly-configuring-xds">Add Support for directly configuring xDS&lt;a class="td-heading-self-link" href="#add-support-for-directly-configuring-xds" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for the EnvoyPatchPolicy API&lt;/li>
+&lt;/ul>
+&lt;h3 id="clienttrafficpolicy">ClientTrafficPolicy&lt;a class="td-heading-self-link" href="#clienttrafficpolicy" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for configuring Downstream Keep Alives&lt;/li>
+&lt;/ul>
+&lt;h3 id="backendtrafficpolicy">BackendTrafficPolicy&lt;a class="td-heading-self-link" href="#backendtrafficpolicy" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for configuring Rate limiting&lt;/li>
+&lt;li>Added Support for configuring load balancing&lt;/li>
+&lt;/ul>
+&lt;h3 id="securitypolicy">SecurityPolicy&lt;a class="td-heading-self-link" href="#securitypolicy" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for configuring JWT&lt;/li>
+&lt;li>Added Support for configuring CORS&lt;/li>
+&lt;/ul>
+&lt;h3 id="api-updates">API Updates&lt;a class="td-heading-self-link" href="#api-updates" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added support for selectively watching resources based on Namespace Selector&lt;/li>
+&lt;li>Added EnvoyGateway Metrics with Prometheus and OpenTelemetry support&lt;/li>
+&lt;li>Added Support for InitContainers in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for LoadBalancerIP in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for AllocateLoadBalancerNodePorts in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for LoadBalancerClass in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for selecting EnvoyProxy stats to be generated&lt;/li>
+&lt;li>Added Support for enabling EnvoyProxy Virtual Host metrics&lt;/li>
+&lt;li>Added Support for Merging Gateway resources onto the same infrastructure&lt;/li>
+&lt;/ul>
+&lt;h3 id="cli">CLI&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added &lt;code>egctl stats&lt;/code> command&lt;/li>
+&lt;/ul>
+&lt;h3 id="kubernetes-provider">Kubernetes Provider&lt;a class="td-heading-self-link" href="#kubernetes-provider" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Improved reconiliation by using the same enqueue request for all resources&lt;/li>
+&lt;li>Added support for reconciling ServiceImport CRD&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">Breaking changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Removed RateLimitFilter, and replaced it with BackendTrafficPolicy&lt;/li>
+&lt;li>Removed AuthenticationFilter, and replaced it with SecurityPolicy&lt;/li>
+&lt;li>Moved the EnvoyProxy CRD from &lt;code>config.gateway.envoyproxy.io&lt;/code> to &lt;code>gateway.envoyproxy.io&lt;/code>&lt;/li>
+&lt;li>Converted the &lt;code>bootstrap&lt;/code> field within &lt;code>EnvoyProxy&lt;/code> into a struct to support merge operations.&lt;/li>
+&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.5</title><link>/news/releases/v0.5/</link><pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate><guid>/news/releases/v0.5/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.5!&lt;/p>
+&lt;p>This is the fourth functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
+helping publish the release.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;a href="/news/releases/notes/v0.5.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="/v0.5/">Docs&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.5.0">Download&lt;/a>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="whats-new">What&amp;rsquo;s New&lt;a class="td-heading-self-link" href="#whats-new" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The release adds a ton of features and functionality. Here are some highlights:&lt;/p>
+&lt;h3 id="upgrade-gateway-api-dependency">Upgrade Gateway API Dependency&lt;a class="td-heading-self-link" href="#upgrade-gateway-api-dependency" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Upgraded to Gateway API v0.7.1&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-data-plane-proxy-telemetry">Add Data Plane Proxy Telemetry&lt;a class="td-heading-self-link" href="#add-data-plane-proxy-telemetry" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for Access Logging, Tracing and Metrics Telemetry&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-support-for-directly-configuring-xds">Add Support for directly configuring xDS&lt;a class="td-heading-self-link" href="#add-support-for-directly-configuring-xds" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for the EnvoyPatchPolicy API&lt;/li>
+&lt;/ul>
+&lt;h3 id="ratelimiting">Ratelimiting&lt;a class="td-heading-self-link" href="#ratelimiting" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for Distinct Ratelimiting Based On IP Addresses&lt;/li>
+&lt;li>Added Support for JWT Claim based Ratelimiting&lt;/li>
+&lt;li>Switched to Xds SOTW Server for RateLimit Service Configuration&lt;/li>
+&lt;/ul>
+&lt;h3 id="api-updates">API Updates&lt;a class="td-heading-self-link" href="#api-updates" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for configuring EnvoyProxy Pod Labels&lt;/li>
+&lt;li>Added Support for configuring EnvoyProxy Deployment Strategy Settings, Volumes and Volume Mounts&lt;/li>
+&lt;li>Added Support for configuring EnvoyProxy as a NodePort Type Service&lt;/li>
+&lt;li>Added Admin Server for Envoy Gateway&lt;/li>
+&lt;li>Added Pprof Debug Support for Envoy Gateway&lt;/li>
+&lt;li>Added Support to Watch for Resources in Select Namespaces&lt;/li>
+&lt;/ul>
+&lt;h2 id="envoy-proxy">Envoy Proxy&lt;a class="td-heading-self-link" href="#envoy-proxy" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Best Practices Default Edge Settings to Xds Resources&lt;/li>
+&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.4</title><link>/news/releases/v0.4/</link><pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate><guid>/news/releases/v0.4/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.4!&lt;/p>
+&lt;p>This is the third functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
+helping publish the release.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;a href="/news/releases/notes/v0.4.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="/v0.4/">Docs&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.4.0">Download&lt;/a>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="whats-new">What&amp;rsquo;s New&lt;a class="td-heading-self-link" href="#whats-new" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The release adds a ton of features and functionality. Here are some highlights:&lt;/p>
+&lt;h3 id="upgrade-gateway-api-dependency">Upgrade Gateway API Dependency&lt;a class="td-heading-self-link" href="#upgrade-gateway-api-dependency" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Upgraded to Gateway API v0.6.2&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-helm-support">Add Helm Support&lt;a class="td-heading-self-link" href="#add-helm-support" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Installation of Envoy Gateway can now be done through helm&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-egctl-cli-tool">Add egctl CLI Tool&lt;a class="td-heading-self-link" href="#add-egctl-cli-tool" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added egctl Support for Dry Runs of Gateway API Config&lt;/li>
+&lt;li>Added egctl Support for Dumping Envoy Proxy xDS Resources&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-support-for-extending-envoy-gateway">Add Support for extending Envoy Gateway&lt;a class="td-heading-self-link" href="#add-support-for-extending-envoy-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Initial Framework for Building an Extension on top of Envoy Gateway&lt;/li>
+&lt;/ul>
+&lt;h3 id="ratelimiting">Ratelimiting&lt;a class="td-heading-self-link" href="#ratelimiting" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for Ratelimiting Based On IP Subnet&lt;/li>
+&lt;/ul>
+&lt;h3 id="api-updates">API Updates&lt;a class="td-heading-self-link" href="#api-updates" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for Custom Envoy Proxy Bootstrap Config&lt;/li>
+&lt;li>Added Support for Configuring the Envoy Proxy Image and Service&lt;/li>
+&lt;li>Added Support for Configuring Annotations, Resources, and Securitycontext Settings on Ratelimit Infra and Envoy Proxy&lt;/li>
+&lt;li>Added Support for Using Multiple Certificates on a Single Fully Qualified Domain Name&lt;/li>
+&lt;li>Envoy Proxy Pod and Container SecurityContext is now Configurable&lt;/li>
+&lt;li>Added Support for Service Method Match in GRPCRoute&lt;/li>
+&lt;li>Added EDS Support&lt;/li>
+&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.3</title><link>/news/releases/v0.3/</link><pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate><guid>/news/releases/v0.3/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.3!&lt;/p>
+&lt;p>This is the second functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
+helping publish the release.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;a href="/news/releases/notes/v0.3.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="/v0.3/">Docs&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.3.0">Download&lt;/a>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="whats-new">What&amp;rsquo;s New&lt;a class="td-heading-self-link" href="#whats-new" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The release adds a ton of features and functionality. Here are some highlights:&lt;/p>
+&lt;h3 id="add-support-for-extended-gateway-api-fields">Add Support for extended Gateway API fields&lt;a class="td-heading-self-link" href="#add-support-for-extended-gateway-api-fields" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for HTTPRoute URLRewrite Filter&lt;/li>
+&lt;li>Added Support for HTTPRoute RequestMirror Filter&lt;/li>
+&lt;li>Added Support for HTTPRoute ResponseHeaderModifier Filter&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-support-for-experimental-gateway-apis">Add Support for experimental Gateway APIs&lt;a class="td-heading-self-link" href="#add-support-for-experimental-gateway-apis" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for the TCPRoute API&lt;/li>
+&lt;li>Added Support for the UDPRoute API&lt;/li>
+&lt;li>Added Support for the GRPCRoute API&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-support-for-rate-limiting">Add Support for Rate Limiting&lt;a class="td-heading-self-link" href="#add-support-for-rate-limiting" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for Global Rate Limiting&lt;/li>
+&lt;/ul>
+&lt;h3 id="add-support-for-authentication">Add Support for Authentication&lt;a class="td-heading-self-link" href="#add-support-for-authentication" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added Support for Request Authentication&lt;/li>
+&lt;/ul></description></item><item><title>Announcing Envoy Gateway v0.2</title><link>/news/releases/v0.2/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>/news/releases/v0.2/</guid><description>&lt;p>We are pleased to announce the release of Envoy Gateway v0.2!&lt;/p>
+&lt;p>This is the first functional release of Envoy Gateway. We would like to thank the entire Envoy Gateway community for
+helping publish the release.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;a href="/news/releases/notes/v0.2.0/">Release Notes&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://gateway.envoyproxy.io/index.html">Docs&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://github.com/envoyproxy/gateway/releases/tag/v0.2.0">Download&lt;/a>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="whats-new">What&amp;rsquo;s New&lt;a class="td-heading-self-link" href="#whats-new" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The release adds a ton of features and functionality. Here are some highlights:&lt;/p>
+&lt;h3 id="kubernetes-support">Kubernetes Support&lt;a class="td-heading-self-link" href="#kubernetes-support" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Run Envoy Gateway in a Kubernetes cluster. Checkout the &lt;a href="/v0.2/user/quickstart/">quickstart guide&lt;/a> to get started with Envoy Gateway in a few
+simple steps.&lt;/p></description></item><item><title>Compatibility Matrix</title><link>/news/releases/matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/news/releases/matrix/</guid><description>&lt;p>Envoy Gateway relies on the Envoy Proxy and the Gateway API, and runs within a Kubernetes cluster. Not all versions of each of these products can function together for Envoy Gateway. Supported version combinations are listed below; &lt;strong>bold&lt;/strong> type indicates the versions of the Envoy Proxy and the Gateway API actually compiled into each Envoy Gateway release.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Envoy Gateway version&lt;/th>
+ &lt;th>Envoy Proxy version&lt;/th>
+ &lt;th>Rate Limit version&lt;/th>
+ &lt;th>Gateway API version&lt;/th>
+ &lt;th>Kubernetes version&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>latest&lt;/td>
+ &lt;td>&lt;strong>dev-latest&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>master&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>v1.2.0&lt;/strong>&lt;/td>
+ &lt;td>v1.29, v1.30, v1.31, v1.32&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>v1.2&lt;/td>
+ &lt;td>&lt;strong>distroless-v1.32.1&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>28b1629a&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>v1.2.0&lt;/strong>&lt;/td>
+ &lt;td>v1.28, v1.29, v1.30, v1.31&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>v1.1&lt;/td>
+ &lt;td>&lt;strong>distroless-v1.31.0&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>91484c59&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>v1.1.0&lt;/strong>&lt;/td>
+ &lt;td>v1.27, v1.28, v1.29, v1.30&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>v1.0&lt;/td>
+ &lt;td>&lt;strong>distroless-v1.29.2&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>19f2079f&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>v1.0.0&lt;/strong>&lt;/td>
+ &lt;td>v1.26, v1.27, v1.28, v1.29&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>v0.6&lt;/td>
+ &lt;td>&lt;strong>distroless-v1.28-latest&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>b9796237&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>v1.0.0&lt;/strong>&lt;/td>
+ &lt;td>v1.26, v1.27, v1.28&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>v0.5&lt;/td>
+ &lt;td>&lt;strong>v1.27-latest&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>e059638d&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>v0.7.1&lt;/strong>&lt;/td>
+ &lt;td>v1.25, v1.26, v1.27&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>v0.4&lt;/td>
+ &lt;td>&lt;strong>v1.26-latest&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>542a6047&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>v0.6.2&lt;/strong>&lt;/td>
+ &lt;td>v1.25, v1.26, v1.27&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>v0.3&lt;/td>
+ &lt;td>&lt;strong>v1.25-latest&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>f28024e3&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>v0.6.1&lt;/strong>&lt;/td>
+ &lt;td>v1.24, v1.25, v1.26&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>v0.2&lt;/td>
+ &lt;td>&lt;strong>v1.23-latest&lt;/strong>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;strong>v0.5.1&lt;/strong>&lt;/td>
+ &lt;td>v1.24&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item></channel></rss>

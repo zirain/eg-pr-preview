@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Get Involved on Envoy Gateway</title><link>/v0.6/contributions/</link><description>Recent content in Get Involved on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/v0.6/contributions/index.xml" rel="self" type="application/rss+xml"/><item><title>Roadmap</title><link>/v0.6/contributions/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.6/contributions/roadmap/</guid><description>&lt;p>This document serves as a high-level reference for Envoy Gateway users and contributors to understand the direction of
+the project.&lt;/p>
+&lt;h2 id="contributing-to-the-roadmap">Contributing to the Roadmap&lt;a class="td-heading-self-link" href="#contributing-to-the-roadmap" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>To add a feature to the roadmap, create an &lt;a href="https://github.com/envoyproxy/gateway/issues">issue&lt;/a> or join a &lt;a href="https://docs.google.com/document/d/1leqwsHX8N-XxNEyTflYjRur462ukFxd19Rnk3Uzy55I/edit?usp=sharing">community meeting&lt;/a> to discuss your use
+case. If your feature is accepted, a maintainer will assign your issue to a &lt;a href="https://github.com/envoyproxy/gateway/milestones">release milestone&lt;/a> and update
+this document accordingly.&lt;/li>
+&lt;li>To help with an existing roadmap item, comment on or assign yourself to the associated issue.&lt;/li>
+&lt;li>If a roadmap item doesn&amp;rsquo;t have an issue, create one, assign yourself to the issue, and reference this document. A
+maintainer will submit a &lt;a href="https://github.com/envoyproxy/gateway/compare">pull request&lt;/a> to add the feature to the roadmap. &lt;strong>Note:&lt;/strong> The feature should be
+discussed in an issue or a community meeting before implementing it.&lt;/li>
+&lt;/ul>
+&lt;p>If you don&amp;rsquo;t know where to start contributing, help is needed to reduce technical, automation, and documentation debt.
+Look for issues with the &lt;code>help wanted&lt;/code> label to get started.&lt;/p></description></item><item><title>Developer Guide</title><link>/v0.6/contributions/develop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.6/contributions/develop/</guid><description>&lt;p>Envoy Gateway is built using a &lt;a href="https://www.gnu.org/software/make/">make&lt;/a>-based build system. Our CI is based on &lt;a href="https://docs.github.com/en/actions">Github Actions&lt;/a> using &lt;a href="https://github.com/envoyproxy/gateway/tree/main/.github/workflows">workflows&lt;/a>.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="go">go&lt;a class="td-heading-self-link" href="#go" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Version: 1.20&lt;/li>
+&lt;li>Installation Guide: &lt;a href="https://go.dev/doc/install">https://go.dev/doc/install&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="make">make&lt;a class="td-heading-self-link" href="#make" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Recommended Version: 4.0 or later&lt;/li>
+&lt;li>Installation Guide: &lt;a href="https://www.gnu.org/software/make">https://www.gnu.org/software/make&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="docker">docker&lt;a class="td-heading-self-link" href="#docker" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Optional when you want to build a Docker image or run &lt;code>make&lt;/code> inside Docker.&lt;/li>
+&lt;li>Recommended Version: 20.10.16&lt;/li>
+&lt;li>Installation Guide: &lt;a href="https://docs.docker.com/engine/install">https://docs.docker.com/engine/install&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="python3">python3&lt;a class="td-heading-self-link" href="#python3" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Need a &lt;code>python3&lt;/code> program&lt;/li>
+&lt;li>Must have a functioning &lt;code>venv&lt;/code> module; this is part of the standard
+library, but some distributions (such as Debian and Ubuntu) replace
+it with a stub and require you to install a &lt;code>python3-venv&lt;/code> package
+separately.&lt;/li>
+&lt;/ul>
+&lt;h2 id="quickstart">Quickstart&lt;a class="td-heading-self-link" href="#quickstart" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Run &lt;code>make help&lt;/code> to see all the available targets to build, test and run Envoy Gateway.&lt;/li>
+&lt;/ul>
+&lt;h3 id="building">Building&lt;a class="td-heading-self-link" href="#building" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Run &lt;code>make build&lt;/code> to build all the binaries.&lt;/li>
+&lt;li>Run &lt;code>make build BINS=&amp;quot;envoy-gateway&amp;quot;&lt;/code> to build the Envoy Gateway binary.&lt;/li>
+&lt;li>Run &lt;code>make build BINS=&amp;quot;egctl&amp;quot;&lt;/code> to build the egctl binary.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note:&lt;/strong> The binaries get generated in the &lt;code>bin/$OS/$ARCH&lt;/code> directory, for example, &lt;code>bin/linux/amd64/&lt;/code>.&lt;/p></description></item><item><title>Contributing</title><link>/v0.6/contributions/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.6/contributions/contributing/</guid><description>&lt;p>We welcome contributions from the community. Please carefully review the &lt;a href="/about/">project goals&lt;/a>
+and following guidelines to streamline your contributions.&lt;/p>
+&lt;h2 id="communication">Communication&lt;a class="td-heading-self-link" href="#communication" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Before starting work on a major feature, please contact us via GitHub or Slack. We will ensure no
+one else is working on it and ask you to open a GitHub issue.&lt;/li>
+&lt;li>A &amp;ldquo;major feature&amp;rdquo; is defined as any change that is &amp;gt; 100 LOC altered (not including tests), or
+changes any user-facing behavior. We will use the GitHub issue to discuss the feature and come to
+agreement. This is to prevent your time being wasted, as well as ours. The GitHub review process
+for major features is also important so that &lt;a href="../codeowners">affiliations with commit access&lt;/a> can
+come to agreement on the design. If it&amp;rsquo;s appropriate to write a design document, the document must
+be hosted either in the GitHub issue, or linked to from the issue and hosted in a world-readable
+location.&lt;/li>
+&lt;li>Small patches and bug fixes don&amp;rsquo;t need prior communication.&lt;/li>
+&lt;/ul>
+&lt;h2 id="inclusivity">Inclusivity&lt;a class="td-heading-self-link" href="#inclusivity" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The Envoy Gateway community has an explicit goal to be inclusive to all. As such, all PRs must adhere
+to the following guidelines for all code, APIs, and documentation:&lt;/p></description></item><item><title>Code of Conduct</title><link>/v0.6/contributions/code_of_conduct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.6/contributions/code_of_conduct/</guid><description>&lt;p>Envoy Gateway follows the &lt;a href="https://github.com/cncf/foundation/blob/main/code-of-conduct.md">CNCF Code of Conduct&lt;/a>.&lt;/p></description></item><item><title>Maintainers</title><link>/v0.6/contributions/codeowners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.6/contributions/codeowners/</guid><description>&lt;h2 id="the-following-maintainers-listed-in-alphabetical-order-own-everything">The following maintainers, listed in alphabetical order, own everything&lt;a class="td-heading-self-link" href="#the-following-maintainers-listed-in-alphabetical-order-own-everything" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>@Alice-Lilith&lt;/li>
+&lt;li>@arkodg&lt;/li>
+&lt;li>@Xunzhuo&lt;/li>
+&lt;li>@zirain&lt;/li>
+&lt;li>@qicz&lt;/li>
+&lt;/ul>
+&lt;h2 id="emeritus-maintainers">Emeritus Maintainers&lt;a class="td-heading-self-link" href="#emeritus-maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>@danehans&lt;/li>
+&lt;li>@alexgervais&lt;/li>
+&lt;li>@skriss&lt;/li>
+&lt;li>@youngnick&lt;/li>
+&lt;/ul></description></item><item><title>Release Process</title><link>/v0.6/contributions/releasing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.6/contributions/releasing/</guid><description>&lt;p>This document guides maintainers through the process of creating an Envoy Gateway release.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="/v0.6/contributions/releasing/#release-candidate">Release Candidate&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="/v0.6/contributions/releasing/#prerequisites">Prerequisites&lt;/a>&lt;/li>
+&lt;li>&lt;a href="/v0.6/contributions/releasing/#setup-cherry-picker-action">Setup cherry picker action&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="/v0.6/contributions/releasing/#minor-release">Minor Release&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="/v0.6/contributions/releasing/#prerequisites-1">Prerequisites&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="/v0.6/contributions/releasing/#announce-the-release">Announce the Release&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="release-candidate">Release Candidate&lt;a class="td-heading-self-link" href="#release-candidate" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The following steps should be used for creating a release candidate.&lt;/p>
+&lt;h3 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Permissions to push to the Envoy Gateway repository.&lt;/li>
+&lt;/ul>
+&lt;p>Set environment variables for use in subsequent steps:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">MAJOR_VERSION&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">MINOR_VERSION&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">RELEASE_CANDIDATE_NUMBER&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">GITHUB_REMOTE&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>origin
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol>
+&lt;li>
+&lt;p>Clone the repo, checkout the &lt;code>main&lt;/code> branch, ensure it’s up-to-date, and your local branch is clean.&lt;/p></description></item><item><title>Working on Envoy Gateway Docs</title><link>/v0.6/contributions/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/v0.6/contributions/docs/</guid><description>&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+
+ &lt;p>We migrated from &lt;em>&lt;strong>Sphinx&lt;/strong>&lt;/em> to &lt;em>&lt;strong>Hugo&lt;/strong>&lt;/em> for Envoy Gateway Documents.&lt;/p>
+&lt;p>Read blog: &lt;a href="/news/blogs/new-website/new-website/">Welcome to new website!&lt;/a>&lt;/p>
+
+
+&lt;/div>
+
+&lt;p>The documentation for the Envoy Gateway lives in the &lt;code>site/content/en&lt;/code> directory. Any
+individual document can be written using &lt;a href="https://daringfireball.net/projects/markdown/syntax">Markdown&lt;/a>.&lt;/p>
+&lt;h2 id="documentation-structure">Documentation Structure&lt;a class="td-heading-self-link" href="#documentation-structure" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>We supported the versioned Docs now, the directory name under docs represents
+the version of docs. The root of the latest site is in &lt;code>site/content/en/latest&lt;/code>.
+This is probably where to start if you&amp;rsquo;re trying to understand how things fit together.&lt;/p></description></item></channel></rss>
