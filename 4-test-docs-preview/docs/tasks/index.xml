@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tasks on Envoy Gateway</title><link>/docs/tasks/</link><description>Recent content in Tasks on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="/docs/tasks/index.xml" rel="self" type="application/rss+xml"/><item><title>Quickstart</title><link>/docs/tasks/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/tasks/quickstart/</guid><description>&lt;p>This &amp;ldquo;quick start&amp;rdquo; will help you get started with Envoy Gateway in a few simple steps.&lt;/p>
-&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>A Kubernetes cluster.&lt;/p>
-&lt;p>&lt;strong>Note:&lt;/strong> Refer to the &lt;a href="/news/releases/matrix/">Compatibility Matrix&lt;/a> for supported Kubernetes versions.&lt;/p>
-&lt;p>&lt;strong>Note:&lt;/strong> In case your Kubernetes cluster does not have a LoadBalancer implementation, we recommend installing one
-so the &lt;code>Gateway&lt;/code> resource has an Address associated with it. We recommend using &lt;a href="https://metallb.universe.tf/installation/">MetalLB&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>Note:&lt;/strong> For Mac user, you need install and run &lt;a href="https://github.com/chipmk/docker-mac-net-connect">Docker Mac Net Connect&lt;/a> to make the Docker network work.&lt;/p></description></item></channel></rss>
