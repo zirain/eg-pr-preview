@@ -587,7 +587,10 @@ API group.&lt;/p>
 The service must implement the Envoy gRPC Access Log Service streaming API:
 &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/api-v3/service/accesslog/v3/als.proto">https://www.envoyproxy.io/docs/envoy/latest/api-v3/service/accesslog/v3/als.proto&lt;/a>
 Access log format information is passed in the form of gRPC metadata when the
-stream is established.&lt;/p></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-addons-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+stream is established.&lt;/p></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-addons-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>An Add-ons Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -1281,7 +1284,10 @@ stream is established.&lt;/p></description></item><item><title>Gateway Addons He
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/zh/latest/install/gateway-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>

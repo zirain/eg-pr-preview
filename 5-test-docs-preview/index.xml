@@ -731,7 +731,8 @@ These services are detailed in the &lt;a href="https://zirain.github.io/eg-pr-pr
 &lt;li>Data Plane- Provides intelligent application-level traffic routing and is implemented as one or more Envoy proxies.&lt;/li>
 &lt;/ul>
 &lt;h2 id="architecture">Architecture&lt;a class="td-heading-self-link" href="#architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img alt="Architecture" src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/architecture.png">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.2/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.2/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/architecture.png" alt="Architecture">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.2/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.2/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Define the system components needed to satisfy the requirements of Envoy Gateway.&lt;/li>
 &lt;/ul>
@@ -747,7 +748,8 @@ These services are detailed in the &lt;a href="https://zirain.github.io/eg-pr-pr
 &lt;li>Data Plane- Provides intelligent application-level traffic routing and is implemented as one or more Envoy proxies.&lt;/li>
 &lt;/ul>
 &lt;h2 id="architecture">Architecture&lt;a class="td-heading-self-link" href="#architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img alt="Architecture" src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/architecture.png">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.3/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.3/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/architecture.png" alt="Architecture">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.3/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.3/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Define the system components needed to satisfy the requirements of Envoy Gateway.&lt;/li>
 &lt;/ul>
@@ -763,7 +765,8 @@ These services are detailed in the &lt;a href="https://zirain.github.io/eg-pr-pr
 &lt;li>Data Plane- Provides intelligent application-level traffic routing and is implemented as one or more Envoy proxies.&lt;/li>
 &lt;/ul>
 &lt;h2 id="architecture">Architecture&lt;a class="td-heading-self-link" href="#architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img alt="Architecture" src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/architecture.png">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.4/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.4/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/architecture.png" alt="Architecture">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.4/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.4/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Define the system components needed to satisfy the requirements of Envoy Gateway.&lt;/li>
 &lt;/ul>
@@ -779,7 +782,8 @@ These services are detailed in the &lt;a href="https://zirain.github.io/eg-pr-pr
 &lt;li>Data Plane- Provides intelligent application-level traffic routing and is implemented as one or more Envoy proxies.&lt;/li>
 &lt;/ul>
 &lt;h2 id="architecture">Architecture&lt;a class="td-heading-self-link" href="#architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img alt="Architecture" src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/architecture.png">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/architecture.png" alt="Architecture">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Define the system components needed to satisfy the requirements of Envoy Gateway.&lt;/li>
 &lt;/ul>
@@ -795,7 +799,8 @@ These services are detailed in the &lt;a href="https://zirain.github.io/eg-pr-pr
 &lt;li>Data Plane- Provides intelligent application-level traffic routing and is implemented as one or more Envoy proxies.&lt;/li>
 &lt;/ul>
 &lt;h2 id="architecture">Architecture&lt;a class="td-heading-self-link" href="#architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img alt="Architecture" src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/architecture.png">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.6/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.6/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/architecture.png" alt="Architecture">&lt;/p></description></item><item><title>System Design</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.6/design/system-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.6/design/system-design/</guid><description>&lt;h2 id="goals">Goals&lt;a class="td-heading-self-link" href="#goals" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>Define the system components needed to satisfy the requirements of Envoy Gateway.&lt;/li>
 &lt;/ul>
@@ -811,7 +816,8 @@ These services are detailed in the &lt;a href="https://zirain.github.io/eg-pr-pr
 &lt;li>Data Plane- Provides intelligent application-level traffic routing and is implemented as one or more Envoy proxies.&lt;/li>
 &lt;/ul>
 &lt;h2 id="architecture">Architecture&lt;a class="td-heading-self-link" href="#architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img alt="Architecture" src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/architecture.png">&lt;/p></description></item><item><title>Contributing</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/contributions/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/contributions/contributing/</guid><description>&lt;p>We welcome contributions from the community. Please carefully review the &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/about/">project goals&lt;/a>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/architecture.png" alt="Architecture">&lt;/p></description></item><item><title>Contributing</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/contributions/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/contributions/contributing/</guid><description>&lt;p>We welcome contributions from the community. Please carefully review the &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/about/">project goals&lt;/a>
 and following guidelines to streamline your contributions.&lt;/p>
 &lt;h2 id="communication">Communication&lt;a class="td-heading-self-link" href="#communication" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
@@ -5071,7 +5077,8 @@ Kubernetes Gateway API conformance. This system focuses on the “common foundat
 without having to re-engineer fundamental interactions&amp;rdquo;. Development of the Envoy Gateway project has been focused on developing the core features for the project and
 Kubernetes Gateway API conformance. This system focuses on the “common foundation for vendors” component by introducing a way for vendors to extend Envoy Gateway.&lt;/p></description></item><item><title>Envoy Gateway Resources</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/concepts/concepts_overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/concepts/concepts_overview/</guid><description>&lt;p>There are several resources that play a part in enabling you to meet your Kubernetes ingress traffic handling needs. This page provides a brief overview of the resources you’ll be working with.&lt;/p>
 &lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/envoy-gateway-resources-overview.png">&lt;/p>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/envoy-gateway-resources-overview.png">&lt;/p>
 &lt;p>There are several resources that play a part in enabling you to meet your Kubernetes ingress traffic handling needs. This page provides a brief overview of the resources you’ll be working with.&lt;/p>
 &lt;h3 id="kubernetes-gateway-api-resources">Kubernetes Gateway API Resources&lt;a class="td-heading-self-link" href="#kubernetes-gateway-api-resources" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
@@ -5196,7 +5203,8 @@ Kubernetes Gateway API conformance. This system focuses on the “common foundat
  &lt;/tbody>
 &lt;/table></description></item><item><title>Envoy Gateway Resources</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/concepts/concepts_overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/concepts/concepts_overview/</guid><description>&lt;p>There are several resources that play a part in enabling you to meet your Kubernetes ingress traffic handling needs. This page provides a brief overview of the resources you’ll be working with.&lt;/p>
 &lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/envoy-gateway-resources-overview.png">&lt;/p>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/envoy-gateway-resources-overview.png">&lt;/p>
 &lt;p>There are several resources that play a part in enabling you to meet your Kubernetes ingress traffic handling needs. This page provides a brief overview of the resources you’ll be working with.&lt;/p>
 &lt;h3 id="kubernetes-gateway-api-resources">Kubernetes Gateway API Resources&lt;a class="td-heading-self-link" href="#kubernetes-gateway-api-resources" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
@@ -5321,7 +5329,8 @@ Kubernetes Gateway API conformance. This system focuses on the “common foundat
  &lt;/tbody>
 &lt;/table></description></item><item><title>Envoy Gateway Resources</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/concepts/concepts_overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/concepts/concepts_overview/</guid><description>&lt;p>There are several resources that play a part in enabling you to meet your Kubernetes ingress traffic handling needs. This page provides a brief overview of the resources you’ll be working with.&lt;/p>
 &lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/envoy-gateway-resources-overview.png">&lt;/p>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/envoy-gateway-resources-overview.png">&lt;/p>
 &lt;p>There are several resources that play a part in enabling you to meet your Kubernetes ingress traffic handling needs. This page provides a brief overview of the resources you’ll be working with.&lt;/p>
 &lt;h3 id="kubernetes-gateway-api-resources">Kubernetes Gateway API Resources&lt;a class="td-heading-self-link" href="#kubernetes-gateway-api-resources" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
@@ -5438,7 +5447,8 @@ Kubernetes Gateway API conformance. This system focuses on the “common foundat
  &lt;/tbody>
 &lt;/table></description></item><item><title>Envoy Gateway Resources</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/concepts/concepts_overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/concepts/concepts_overview/</guid><description>&lt;p>There are several resources that play a part in enabling you to meet your Kubernetes ingress traffic handling needs. This page provides a brief overview of the resources you’ll be working with.&lt;/p>
 &lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/envoy-gateway-resources-overview.png">&lt;/p>
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/envoy-gateway-resources-overview.png">&lt;/p>
 &lt;p>There are several resources that play a part in enabling you to meet your Kubernetes ingress traffic handling needs. This page provides a brief overview of the resources you’ll be working with.&lt;/p>
 &lt;h3 id="kubernetes-gateway-api-resources">Kubernetes Gateway API Resources&lt;a class="td-heading-self-link" href="#kubernetes-gateway-api-resources" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
@@ -5954,7 +5964,10 @@ This instantiated resource can be linked to a &lt;a href="https://gateway-api.si
 &lt;li>&lt;strong>abort fault&lt;/strong>: inject a custom response code into the response with a certain probability to simulate abort failures.&lt;/li>
 &lt;/ul>
 &lt;p>Envoy Gateway introduces a new CRD called &lt;a href="../../../api/extension_types#backendtrafficpolicy">BackendTrafficPolicy&lt;/a> that allows the user to describe their desired fault scenarios.
-This instantiated resource can be linked to a &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway/">Gateway&lt;/a>, &lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute/">HTTPRoute&lt;/a> or &lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute/">GRPCRoute&lt;/a> resource.&lt;/p></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/install/gateway-addons-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+This instantiated resource can be linked to a &lt;a href="https://gateway-api.sigs.k8s.io/api-types/gateway/">Gateway&lt;/a>, &lt;a href="https://gateway-api.sigs.k8s.io/api-types/httproute/">HTTPRoute&lt;/a> or &lt;a href="https://gateway-api.sigs.k8s.io/api-types/grpcroute/">GRPCRoute&lt;/a> resource.&lt;/p></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/install/gateway-addons-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>An Add-ons Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -6648,7 +6661,10 @@ This instantiated resource can be linked to a &lt;a href="https://gateway-api.si
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/install/gateway-addons-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/install/gateway-addons-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>An Add-ons Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -7342,7 +7358,10 @@ This instantiated resource can be linked to a &lt;a href="https://gateway-api.si
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/install/gateway-addons-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/install/gateway-addons-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>An Add-ons Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -7941,7 +7960,10 @@ This instantiated resource can be linked to a &lt;a href="https://gateway-api.si
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/install/gateway-addons-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>Gateway Addons Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/install/gateway-addons-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/install/gateway-addons-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>An Add-ons Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -9048,7 +9070,10 @@ they all follow the design of &lt;a href="https://zirain.github.io/eg-pr-preview
 
 &lt;h2 id="watching-components">Watching Components&lt;a class="td-heading-self-link" href="#watching-components" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Resource Provider, xDS Translator and Infra Manager etc. are key components that made up of Envoy Gateway,
-they all follow the design of &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/contributions/design/watching/">Watching Components&lt;/a>.&lt;/p></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/install/gateway-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+they all follow the design of &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/contributions/design/watching/">Watching Components&lt;/a>.&lt;/p></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/docs/install/gateway-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -9383,7 +9408,10 @@ they all follow the design of &lt;a href="https://zirain.github.io/eg-pr-preview
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/install/gateway-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/latest/install/gateway-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -9718,7 +9746,10 @@ they all follow the design of &lt;a href="https://zirain.github.io/eg-pr-preview
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/install/gateway-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.1/install/gateway-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -9999,7 +10030,10 @@ they all follow the design of &lt;a href="https://zirain.github.io/eg-pr-preview
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/install/gateway-helm-api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>Gateway Helm Chart</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/install/gateway-helm-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.2/install/gateway-helm-api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -10358,7 +10392,10 @@ This task show you how to config gateway control-plane observability, includes m
 &lt;p>Follow the steps from the &lt;a href="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/eg-pr-preview/5-test-docs-preview/v1.2/tasks/quickstart/">Quickstart&lt;/a> to install Envoy Gateway and the example manifest.
 Before proceeding, you should be able to query the example backend using HTTP.&lt;/p>
 &lt;p>Envoy Gateway provides an add-ons Helm Chart, which includes all the needing components for observability.
-By default, the &lt;a href="https://opentelemetry.io/docs/collector/">OpenTelemetry Collector&lt;/a> is disabled.&lt;/p></description></item><item><title>gateway-helm</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.6/install/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.6/install/api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+By default, the &lt;a href="https://opentelemetry.io/docs/collector/">OpenTelemetry Collector&lt;/a> is disabled.&lt;/p></description></item><item><title>gateway-helm</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.6/install/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.6/install/api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -10579,7 +10616,10 @@ By default, the &lt;a href="https://opentelemetry.io/docs/collector/">OpenTeleme
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>gateway-helm</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.0/install/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.0/install/api/</guid><description>&lt;p>&lt;img alt="Version: v1.0.0" src="https://img.shields.io/badge/Version-v1.0.0-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;/table></description></item><item><title>gateway-helm</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.0/install/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v1.0/install/api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v1.0.0-informational?style=flat-square" alt="Version: v1.0.0"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -11011,7 +11051,10 @@ Before proceeding, you should be able to query the example backend using HTTP.&l
 
 
 &lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>Install the gRPC routing example resources:&lt;/p></description></item><item><title>Helm Chart Values</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/install/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/install/api/</guid><description>&lt;p>&lt;img alt="Version: v0.0.0-latest" src="https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square"> &lt;img alt="Type: application" src="https://img.shields.io/badge/Type-application-informational?style=flat-square"> &lt;img alt="AppVersion: latest" src="https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square">&lt;/p>
+&lt;p>Install the gRPC routing example resources:&lt;/p></description></item><item><title>Helm Chart Values</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/install/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/v0.5/install/api/</guid><description>&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Version-v0.0.0--latest-informational?style=flat-square" alt="Version: v0.0.0-latest"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/Type-application-informational?style=flat-square" alt="Type: application"> 
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square" alt="AppVersion: latest">&lt;/p>
 &lt;p>The Helm chart for Envoy Gateway&lt;/p>
 &lt;p>&lt;strong>Homepage:&lt;/strong> &lt;a href="https://gateway.envoyproxy.io/">https://gateway.envoyproxy.io/&lt;/a>&lt;/p>
 &lt;h2 id="maintainers">Maintainers&lt;a class="td-heading-self-link" href="#maintainers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
@@ -13637,7 +13680,8 @@ Deploying Wasm modules from OCI registries has several benefits:&lt;/p>
 &lt;li>Define the system components needed to support Wasm OCI images as remote Wasm code sources.&lt;/li>
 &lt;/ul>
 &lt;h2 id="architecture">Architecture&lt;a class="td-heading-self-link" href="#architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview/img/wasm-extension.png">&lt;/p></description></item><item><title>Working on Envoy Gateway Docs</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/contributions/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/contributions/docs/</guid><description>&lt;p>The documentation for the Envoy Gateway lives in the &lt;code>site/content/en&lt;/code> directory (the Chinese content in the &lt;code>site/content/zh&lt;/code> directory).
+&lt;p>
+&lt;img src="https://zirain.github.io/eg-pr-preview/5-test-docs-preview//img/wasm-extension.png">&lt;/p></description></item><item><title>Working on Envoy Gateway Docs</title><link>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/contributions/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/5-test-docs-preview/contributions/docs/</guid><description>&lt;p>The documentation for the Envoy Gateway lives in the &lt;code>site/content/en&lt;/code> directory (the Chinese content in the &lt;code>site/content/zh&lt;/code> directory).
 Any individual document can be written using &lt;a href="https://daringfireball.net/projects/markdown/syntax">Markdown&lt;/a>.&lt;/p>
 &lt;h2 id="documentation-structure">Documentation Structure&lt;a class="td-heading-self-link" href="#documentation-structure" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>We supported the versioned Docs now, the directory name under docs represents
