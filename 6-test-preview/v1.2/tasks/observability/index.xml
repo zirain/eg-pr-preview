@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Observability on Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/</link><description>Recent content in Observability on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/index.xml" rel="self" type="application/rss+xml"/><item><title>Gateway API Metrics</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/gateway-api-metrics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/gateway-api-metrics/</guid><description>&lt;p>Resource metrics for Gateway API objects are available using the &lt;a href="https://github.com/Kuadrant/gateway-api-state-metrics">Gateway API State Metrics&lt;/a> project.
+The project also provides example dashboard for visualising the metrics using Grafana, and example alerts using Prometheus &amp;amp; Alertmanager.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="https://zirain.github.io/eg-pr-preview/6-test-preview/eg-pr-preview/6-test-preview/v1.2/tasks/quickstart/">Quickstart&lt;/a> task to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p>
+&lt;p>Verify the Gateway status:&lt;/p>
+
+
+
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+ &lt;li class="nav-item">
+ &lt;button class="nav-link active"
+ id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+ data-td-tp-persist="kubectl" aria-controls="tabs-00-00" aria-selected="true">
+ kubectl
+ &lt;/button>
+ &lt;/li>&lt;li class="nav-item">
+ &lt;button class="nav-link"
+ id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+ data-td-tp-persist="egctl (experimental)" aria-controls="tabs-00-01" aria-selected="false">
+ egctl (experimental)
+ &lt;/button>
+ &lt;/li>
+&lt;/ul>
+
+&lt;div class="tab-content" id="tabs-0-content">
+ &lt;div class="tab-body tab-pane fade show active"
+ id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
+ &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>kubectl get gateway/eg -o yaml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+ &lt;/div>
+ &lt;div class="tab-body tab-pane fade"
+ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
+ &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>egctl x status gateway -v
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+ &lt;/div>
+&lt;/div>
+
+
+&lt;p>Run the following commands to install the metrics stack, with the Gateway API State Metrics configuration, on your kubernetes cluster:&lt;/p></description></item><item><title>Gateway Exported Metrics</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/gateway-exported-metrics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/gateway-exported-metrics/</guid><description>&lt;p>The Envoy Gateway provides a collection of self-monitoring metrics in &lt;a href="https://prometheus.io/docs/instrumenting/exposition_formats/#text-based-format">Prometheus format&lt;/a>.&lt;/p>
+&lt;p>These metrics allow monitoring of the behavior of Envoy Gateway itself (as distinct from that of the EnvoyProxy it managed).&lt;/p>
+
+
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">EnvoyProxy Metrics&lt;/h4>
+
+ For EnvoyProxy Metrics, please refer to the &lt;a href="https://zirain.github.io/eg-pr-preview/6-test-preview/eg-pr-preview/6-test-preview/v1.2/tasks/observability/proxy-metric/">EnvoyProxy Metrics&lt;/a> to learn more.
+
+&lt;/div>
+
+&lt;h2 id="watching-components">Watching Components&lt;a class="td-heading-self-link" href="#watching-components" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The Resource Provider, xDS Translator and Infra Manager etc. are key components that made up of Envoy Gateway,
+they all follow the design of &lt;a href="https://zirain.github.io/eg-pr-preview/6-test-preview/eg-pr-preview/6-test-preview/contributions/design/watching/">Watching Components&lt;/a>.&lt;/p></description></item><item><title>Gateway Observability</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/gateway-observability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/gateway-observability/</guid><description>&lt;p>Envoy Gateway provides observability for the ControlPlane and the underlying EnvoyProxy instances.
+This task show you how to config gateway control-plane observability, includes metrics.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="https://zirain.github.io/eg-pr-preview/6-test-preview/eg-pr-preview/6-test-preview/v1.2/tasks/quickstart/">Quickstart&lt;/a> to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p>
+&lt;p>Envoy Gateway provides an add-ons Helm Chart, which includes all the needing components for observability.
+By default, the &lt;a href="https://opentelemetry.io/docs/collector/">OpenTelemetry Collector&lt;/a> is disabled.&lt;/p></description></item><item><title>Proxy Access Logs</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/proxy-accesslog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/proxy-accesslog/</guid><description>&lt;p>Envoy Gateway provides observability for the ControlPlane and the underlying EnvoyProxy instances.
+This task show you how to config proxy access logs.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="https://zirain.github.io/eg-pr-preview/6-test-preview/eg-pr-preview/6-test-preview/v1.2/tasks/quickstart/">Quickstart&lt;/a> to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p>
+&lt;p>Envoy Gateway provides an add-ons Helm Chart, which includes all the needing components for observability.
+By default, the &lt;a href="https://opentelemetry.io/docs/collector/">OpenTelemetry Collector&lt;/a> is disabled.&lt;/p></description></item><item><title>Proxy Metrics</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/proxy-metric/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/proxy-metric/</guid><description>&lt;p>Envoy Gateway provides observability for the ControlPlane and the underlying EnvoyProxy instances.
+This task show you how to config proxy metrics.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="https://zirain.github.io/eg-pr-preview/6-test-preview/eg-pr-preview/6-test-preview/v1.2/tasks/quickstart/">Quickstart&lt;/a> to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p>
+&lt;p>Envoy Gateway provides an add-ons Helm Chart, which includes all the needing components for observability.
+By default, the &lt;a href="https://opentelemetry.io/docs/collector/">OpenTelemetry Collector&lt;/a> is disabled.&lt;/p></description></item><item><title>Proxy Tracing</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/proxy-trace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/proxy-trace/</guid><description>&lt;p>Envoy Gateway provides observability for the ControlPlane and the underlying EnvoyProxy instances.
+This task show you how to config proxy tracing.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="https://zirain.github.io/eg-pr-preview/6-test-preview/eg-pr-preview/6-test-preview/v1.2/tasks/quickstart/">Quickstart&lt;/a> to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p>
+&lt;p>Envoy Gateway provides an add-ons Helm Chart, which includes all the needing components for observability.
+By default, the &lt;a href="https://opentelemetry.io/docs/collector/">OpenTelemetry Collector&lt;/a> is disabled.&lt;/p></description></item><item><title>RateLimit Observability</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/rate-limit-observability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/rate-limit-observability/</guid><description>&lt;p>Envoy Gateway provides observability for the RateLimit instances.
+This guide show you how to config RateLimit observability, includes traces.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="https://zirain.github.io/eg-pr-preview/6-test-preview/eg-pr-preview/6-test-preview/v1.2/tasks/quickstart/">Quickstart&lt;/a> to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p>
+&lt;p>Envoy Gateway provides an add-ons Helm Chart, which includes all the needing components for observability.
+By default, the &lt;a href="https://opentelemetry.io/docs/collector/">OpenTelemetry Collector&lt;/a> is disabled.&lt;/p>
+&lt;p>Install the add-ons Helm Chart:&lt;/p></description></item><item><title>Visualising metrics using Grafana</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/grafana-integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/v1.2/tasks/observability/grafana-integration/</guid><description>&lt;p>Envoy Gateway provides support for exposing Envoy Gateway and Envoy Proxy metrics to a Prometheus instance.
+This task shows you how to visualise the metrics exposed to Prometheus using Grafana.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Follow the steps from the &lt;a href="https://zirain.github.io/eg-pr-preview/6-test-preview/eg-pr-preview/6-test-preview/v1.2/tasks/quickstart/">Quickstart&lt;/a> to install Envoy Gateway and the example manifest.
+Before proceeding, you should be able to query the example backend using HTTP.&lt;/p>
+&lt;p>Envoy Gateway provides an add-ons Helm Chart, which includes all the needing components for observability.
+By default, the &lt;a href="https://opentelemetry.io/docs/collector/">OpenTelemetry Collector&lt;/a> is disabled.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Presentations on Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/presentations/</link><description>Recent content in Presentations on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="https://zirain.github.io/eg-pr-preview/6-test-preview/news/presentations/index.xml" rel="self" type="application/rss+xml"/><item><title>KubeCon China 2023</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/presentations/kubecon-cn-2023/kubecon-cn-2023/</link><pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/presentations/kubecon-cn-2023/kubecon-cn-2023/</guid><description>&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Topic: Envoy Gateway: The API Gateway in the Cloud Native Era&lt;/h4>
+
+ &lt;em>&lt;strong>&amp;mdash; KubeCon China 2023&lt;/strong>&lt;/em>
+
+&lt;/div>
+
+
+
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Speaker&lt;/h4>
+
+ &lt;ul>
+&lt;li>&lt;strong>Xunzhuo Liu&lt;/strong>: Tencent, Envoy Gateway Maintainer&lt;/li>
+&lt;li>&lt;strong>Huabing Zhao&lt;/strong>: Tetrate.io, Envoy Gateway Reviewer&lt;/li>
+&lt;/ul>
+
+
+&lt;/div>
+
+
+
+&lt;div class="alert alert-info" role="alert">
+&lt;h4 class="alert-heading">Slides&lt;/h4>
+
+ Download from &lt;a href="https://static.sched.com/hosted_files/kccncosschn2023/60/KubeCon-Envoy%20Gateway_%20The%20API%20Gateway-in-the-Cloud-Native-Era.pptx?_gl=1*1aq9xw*_ga*MTM2MDcyNzI2My4xNjkwODU3ODMy*_ga_XH5XM35VHB*MTY5NjgzNjA1NC4xNS4xLjE2OTY4MzYwNjIuNTIuMC4w">Link&lt;/a>.
+
+&lt;/div>
+
+&lt;h2 id="watch-videos">Watch Videos&lt;a class="td-heading-self-link" href="#watch-videos" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/XBsDe9stMcg?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div></description></item><item><title>KubeCon Europe 2023</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/presentations/kubecon-eu-2023/kubecon-eu-2023/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/presentations/kubecon-eu-2023/kubecon-eu-2023/</guid><description>&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Topic: Envoy Gateway Update&lt;/h4>
+
+ &lt;em>&lt;strong>&amp;mdash; KubeCon Europe 2023&lt;/strong>&lt;/em>
+
+&lt;/div>
+
+
+
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Speaker&lt;/h4>
+
+ &lt;ul>
+&lt;li>&lt;strong>Alice Wasko&lt;/strong>: Ambassador Labs, Envoy Gateway Maintainer&lt;/li>
+&lt;/ul>
+
+
+&lt;/div>
+
+
+
+&lt;div class="alert alert-info" role="alert">
+&lt;h4 class="alert-heading">Slides&lt;/h4>
+
+ Download from &lt;a href="https://static.sched.com/hosted_files/kccnceu2023/58/Kubecon_EU_2023_Envoy_Gateway_Update.pptx">Link&lt;/a>.
+
+&lt;/div>
+
+&lt;h2 id="watch-videos">Watch Videos&lt;a class="td-heading-self-link" href="#watch-videos" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4vnJxt9sVho?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div></description></item><item><title>KubeCon North America 2022</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/presentations/kubecon-na-2022/kubecon-na-2022/</link><pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/presentations/kubecon-na-2022/kubecon-na-2022/</guid><description>&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Topic: Envoy Gateway Update&lt;/h4>
+
+ &lt;em>&lt;strong>&amp;mdash; KubeCon North America 2022&lt;/strong>&lt;/em>
+
+&lt;/div>
+
+
+
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Speaker&lt;/h4>
+
+ &lt;ul>
+&lt;li>&lt;strong>Daneyon Hansen&lt;/strong>: Solo.io, Envoy Gateway Maintainer&lt;/li>
+&lt;li>&lt;strong>Alice Wasko&lt;/strong>: Ambassador Labs, Envoy Gateway Maintainer&lt;/li>
+&lt;/ul>
+
+
+&lt;/div>
+
+
+
+&lt;div class="alert alert-info" role="alert">
+&lt;h4 class="alert-heading">Slides&lt;/h4>
+
+ Download from &lt;a href="https://static.sched.com/hosted_files/envoyconna22/2f/Envoy_Gateway_Project_Update_EnvoyCon_NA_2022.pptx">Link&lt;/a>.
+
+&lt;/div>
+
+&lt;h2 id="watch-videos">Watch Videos&lt;a class="td-heading-self-link" href="#watch-videos" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3MUOZc8XNCc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div></description></item></channel></rss>

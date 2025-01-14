@@ -1,0 +1,1957 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Envoy Gateway</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/</link><description>Recent content in Notes on Envoy Gateway</description><generator>Hugo</generator><language>en</language><atom:link href="https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.2.5</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.5/</link><pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.5/</guid><description>&lt;p>Date: January 14, 2025&lt;/p>
+&lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed a nil pointer error that occurred when a SecurityPolicy referred to a UDS backend.&lt;/li>
+&lt;li>Fixed an issue where the Gateway API translator did not use the TLS configuration from the BackendTLSPolicy when connecting to the OIDC provider’s well-known endpoint.&lt;/li>
+&lt;li>Fixed a validation failure that occurred when multiple HTTPRoutes referred to the same extension filter.&lt;/li>
+&lt;li>Fixed a nil pointer error caused by accessing the cookie TTL without verifying if it was valid.&lt;/li>
+&lt;li>Fixed unexpected port number shifting in standalone mode.&lt;/li>
+&lt;li>Fixed an issue where the shutdown-manager did not respect the security context of the container spec.&lt;/li>
+&lt;li>Fixed readiness checks failing for single-stack IPv6 Envoy Gateway deployments on dual-stack clusters.&lt;/li>
+&lt;li>Fixed IPv6 dual-stack support not working as intended.&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-changes">Other changes&lt;a class="td-heading-self-link" href="#other-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bumped Envoy to version 1.32.3.&lt;/li>
+&lt;/ul></description></item><item><title>v1.2.4</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.4/</link><pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.4/</guid><description>&lt;p>Date: December 13, 2024&lt;/p>
+&lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed BackendTLSPolicy not supporting the use of a port name as the sectionName in targetRefs.&lt;/li>
+&lt;li>Fixed reference grant from EnvoyExtensionPolicy to the referenced ext-proc backend not being respected.&lt;/li>
+&lt;li>Fixed BackendTrafficPolicy not applying to Gateway Routes when a Route has a Request Timeout defined.&lt;/li>
+&lt;li>Fixed proxies connected to the secondary Envoy Gateway not receiving xDS configuration.&lt;/li>
+&lt;li>Fixed traffic splitting not working when some backends were invalid.&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-changes">Other changes&lt;a class="td-heading-self-link" href="#other-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bumped Envoy to version 1.32.2.&lt;/li>
+&lt;/ul></description></item><item><title>v1.1.4</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.4/</link><pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.4/</guid><description>&lt;p>Date: December 12, 2024&lt;/p>
+&lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed validate proto messages before converting them to anypb.Any&lt;/li>
+&lt;li>Fixed BackendTlsPolicy specify multiple targetRefs of the same service, only one will work&lt;/li>
+&lt;li>Fixed Envoy rejecting TCP Listeners that have no attached TCPRoutes&lt;/li>
+&lt;li>Fixed frequent 503 errors when connecting to a Service experiencing high Pod churn&lt;/li>
+&lt;li>Fixed reference grant from EnvoyExtensionPolicy to referenced ext-proc backend not respected&lt;/li>
+&lt;li>Fixed BackendTrafficPolicy not applying to Gateway Route when Route has a Request Timeout defined&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-changes">Other changes&lt;a class="td-heading-self-link" href="#other-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bumped Rate Limit to 49af5cca&lt;/li>
+&lt;li>Bumped golang.org/x/crypto to 0.31.0&lt;/li>
+&lt;/ul></description></item><item><title>v1.2.3</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.3/</link><pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.3/</guid><description>&lt;p>Date: December 2, 2024&lt;/p>
+&lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Disabled the retry policy for the JWT provider to reduce requests sent to the JWKS endpoint. Failed async fetches will retry every 1s.&lt;/li>
+&lt;li>Used a waitGroup instead of an enabled channel in the status updater.&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-changes">Other changes&lt;a class="td-heading-self-link" href="#other-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>EG Listens on IPv4 by default, but if IPFamily is set to IPv6 or DualStack, it listens on :: and enables ipv4_compat for DualStack.&lt;/li>
+&lt;li>Bumped Gateway API to v1.2.1.&lt;/li>
+&lt;/ul></description></item><item><title>v1.2.2</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.2/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.2/</guid><description>&lt;p>Date: November 28, 2024&lt;/p>
+&lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed Envoy rejecting TCP Listeners that have no attached TCPRoutes.&lt;/li>
+&lt;li>Fixed failed to update SecurityPolicy resources with the &lt;code>backendRef&lt;/code> field specified.&lt;/li>
+&lt;li>Fixed xDS translation failed when oidc tokenEndpoint and jwt remoteJWKS are specified in the same SecurityPolicy and using the same hostname.&lt;/li>
+&lt;li>Fixed frequent 503 errors when connecting to a Service experiencing high Pod churn.&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-changes">Other changes&lt;a class="td-heading-self-link" href="#other-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bump the RateLimit image to 49af5cca.&lt;/li>
+&lt;li>Always use &lt;code>::&lt;/code> and &lt;code>IPv4Compact&lt;/code> enabled on dynamic listeners.&lt;/li>
+&lt;li>Use &lt;code>V4_PREFERRED&lt;/code> instead of &lt;code>V4_ONLY&lt;/code> by default for the cluster&amp;rsquo;s &lt;code>DnsLookupFamily&lt;/code>.&lt;/li>
+&lt;/ul></description></item><item><title>v1.2.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.1/</link><pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.1/</guid><description>&lt;p>Date: November 7, 2024&lt;/p>
+&lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed a panic in the provider goroutine when the body in the direct response configuration was nil.&lt;/li>
+&lt;/ul></description></item><item><title>v1.2.0</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.0/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.0/</guid><description>&lt;p>Date: November 06, 2024&lt;/p>
+&lt;h2 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Gateway API GRPCRoute and ReferenceGrant v1alpha2 have been removed&lt;/li>
+&lt;li>Please refer to the &lt;a href="https://github.com/kubernetes-sigs/gateway-api/releases">Gateway API v1.2.0 documentation&lt;/a> for more information&lt;/li>
+&lt;li>Removed default CPU limit of the Envoy Gateway deployment, to eliminate CPU throttling&lt;/li>
+&lt;li>Changed default Envoy shutdown settings: drain strategy has been changed to immediate, default minDrainDuration, drainTimeout and terminationGracePeriodSeconds have been set to 10s, 60s and 360s respectively&lt;/li>
+&lt;li>Set &lt;code>ignore_health_on_host_removal&lt;/code> to true for clusters with static endpoints This was done to speed up removal of static endpoints by the control plane when active health check is configured&lt;/li>
+&lt;li>Xds and Infra IR logs are logged at Debug level instead of Info level. They will now not be seen by default in Envoy Gateway logs. You can change the logging level to &lt;code>default: debug&lt;/code> to view them&lt;/li>
+&lt;/ul>
+&lt;h2 id="new-features">New Features&lt;a class="td-heading-self-link" href="#new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added support for Gateway-API v1.2.0&lt;/li>
+&lt;li>Added support for IPv4/IPv6 Dual Stack for EnvoyProxy fleet and BackendRef resources&lt;/li>
+&lt;li>Added experimental support for EG standalone(host deployment) mode&lt;/li>
+&lt;li>Added support for JWT claims based Authorization in SecurityPolicy CRD&lt;/li>
+&lt;li>Added support for Response Override in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for RequestTimeout in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for inverting header matches for Rate Limit in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for client TLS session resumption in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for HTTPRouteFilter and path regex rewrite&lt;/li>
+&lt;li>Added support for host header rewrite in HTTPRouteFilter CRD&lt;/li>
+&lt;li>Added support for Listener Access Log in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for Datadog tracing support in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for request response sizes stats in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for modifying container SecurityContext for Envoy Gateway deployment in Helm&lt;/li>
+&lt;li>Added support for wildcard matching for CORS AllowMethods and AllowHeaders settings in SecurityPolicy CRD&lt;/li>
+&lt;li>Added support for match conditions for access log in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for using BackendCluster to represent OIDCProvider&lt;/li>
+&lt;li>Added support for RecomputeRoute for ExtAuth in SecurityPolicy CRD&lt;/li>
+&lt;li>Added support for sharing token cookies between multiple domains in SecurityPolicy CRD&lt;/li>
+&lt;li>Added support for JSONPatches for proxy bootstrap modifications in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for Active Passive Failover Backends&lt;/li>
+&lt;li>Added support for configuring the GRPC Health Checker in the BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for early request header mutation in the ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for JsonPath in the EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added support for cluster settings for tracing and access log backends in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for cluster settings for non xRoute-generated backend refs&lt;/li>
+&lt;li>Added support for socket buffer limit field in ClientTrafficPolicy and BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for http2 upstream settings in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for DNS resolution settings in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for configuring service annotations in the Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for configuring priorityClassName to Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for ratelimit metrics monitoring in grafana in the addons helm chart&lt;/li>
+&lt;li>Added support for default user group and user id for the SecurityContexts in the Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for maxUnavailable in the PodDisruptionBudget in the Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for configuring NodeSelector in the Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for nonce in the OIDC auth flow&lt;/li>
+&lt;li>Added support for choosing an HTTPRoute&amp;rsquo;s non-wildcard hostname as the default Host&lt;/li>
+&lt;li>Added support for returning 500 when EnvoyExtensionTrafficPolicy translation fails&lt;/li>
+&lt;li>Added support for returning 500 when SecurityPolicy translation fails&lt;/li>
+&lt;li>Added support for multiple backendRefs for ExtAuth and ExtProc&lt;/li>
+&lt;li>Added support for session persistence in HTTPRoute rules&lt;/li>
+&lt;li>Added support for the Backend resource for ExtAuth&lt;/li>
+&lt;li>Added support for target selectors on Envoy Gateway Extension Server policies&lt;/li>
+&lt;li>Added support for non-Kubernetes Backends for TLSRoute&lt;/li>
+&lt;li>Added support for fallback to the Backend API&lt;/li>
+&lt;li>Added support for reloadable EnvoyGateway configuration&lt;/li>
+&lt;li>Added support for adding Labels to the Envoy Service&lt;/li>
+&lt;li>Added support for custom name for ratelimit deployment&lt;/li>
+&lt;li>Added default SecurityContext for EG components&lt;/li>
+&lt;li>Added startupProbe to all provisioned containers&lt;/li>
+&lt;li>Added support for local validations for egctl translate and file provider&lt;/li>
+&lt;li>Added support for egctl x collect to collect information from the cluster for debugging&lt;/li>
+&lt;li>Added support for a native prometheus metrics endpoint in the ratelimit server&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug Fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed xDS translation failing when the WASM HTTP code source was configured without an SHA&lt;/li>
+&lt;li>Fixed unsupported listener protocol types causing errors while updating Gateway status&lt;/li>
+&lt;li>Fixed unsupported listener protocol types causing errors while updating Gateway status&lt;/li>
+&lt;li>Fixed invalid sectionName in BackendTLSPolicy for Backend&lt;/li>
+&lt;li>Fixed Delay in SecurityPolicy change propagation for HTTPRoute when using targetSelectors&lt;/li>
+&lt;li>Fixed JSONPath not being correctly translated to JSONPatch paths&lt;/li>
+&lt;li>Fixed allowing an empty slowStart value when using LeastRequest&lt;/li>
+&lt;li>Fixed updating the HTTPRoute status correctly when the linked Backend resource is invalid&lt;/li>
+&lt;li>Fixed timeout settings originating from the route being lost when translating the backend traffic policy&lt;/li>
+&lt;li>Fixed Backend resources not receiving status updates&lt;/li>
+&lt;li>Fixed active health checks requiring the expectedStatuses field to function correctly&lt;/li>
+&lt;li>Fixed HTTPHeaderFilter processing not correctly supporting multiple header values&lt;/li>
+&lt;li>Fixed reconciling multiple ReferenceGrants within the same namespace&lt;/li>
+&lt;li>Fixed unwanted / appearing in the Path when using Prefix Rewrites&lt;/li>
+&lt;li>Fixed incorrect gateway being selected as the HTTPRoute parent&lt;/li>
+&lt;li>Fixed override issues for EnvoyExtensionPolicy&lt;/li>
+&lt;li>Fixed nil pointer error when translating hash load balancing&lt;/li>
+&lt;li>Fixed nil pointer if backedtls.minVersion is set but backedtls.maxVersion is not&lt;/li>
+&lt;li>Fixed empty connection limits causing xDS rejection&lt;/li>
+&lt;li>Fixed rate limiting not working with both headers and CIDR matches&lt;/li>
+&lt;li>Fixed EDS not updating when deployments were created after services&lt;/li>
+&lt;li>Fixed RBAC issue for deleting infrastructure resources&lt;/li>
+&lt;li>Fixed gateways never reaching ready/programmed status when running Envoy as a Daemonset&lt;/li>
+&lt;li>Fixed rate limit deployment ignoring pod labels and annotation merges&lt;/li>
+&lt;li>Fixed the API Server receives unnecessary requests&lt;/li>
+&lt;li>Fixed egctl experimental translate using an incorrect namespace&lt;/li>
+&lt;li>Fixed reconciliation not being triggered for Secret updates referenced by a BackendTLSPolicy&lt;/li>
+&lt;li>Fixed xDS translation failure when WASM HTTP code source was configured without an SHA&lt;/li>
+&lt;li>Fixed HTTPRoute status displaying only one parent when targeting multiple gateways from different GatewayClasses&lt;/li>
+&lt;li>Fixed Route with multiple parents having an incorrect namespace in the parentRef status&lt;/li>
+&lt;li>Fixed BackendTlsPolicy specifying multiple targetRefs for the same service, to work&lt;/li>
+&lt;/ul>
+&lt;h3 id="performance-improvements">Performance Improvements&lt;a class="td-heading-self-link" href="#performance-improvements" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Optimize memory usage by only storing distinct resources&lt;/li>
+&lt;li>SecurityPolicy translation failures will now cause routes referenced by the policy to return an immediate 500 response&lt;/li>
+&lt;li>Gateway-API BackendTLSPolicy v1alpha3 is incompatible with previous versions of the CRD&lt;/li>
+&lt;li>xPolicy targetRefs can no longer specify a namespace, since Gateway-API v1.1.0 uses LocalPolicyTargetReferenceWithSectionName in Policy resources&lt;/li>
+&lt;/ul>
+&lt;h3 id="other-changes">Other changes&lt;a class="td-heading-self-link" href="#other-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Upgraded Envoy Proxy to v1.32.1&lt;/li>
+&lt;li>Reduced the amount of configuration logging, and make it line-delimited friendly&lt;/li>
+&lt;li>Made watching alpha CRDs optional, so that Envoy Gateway can run with older Gateway Api versions&lt;/li>
+&lt;li>Removed grafana test framework from the addons helm chart&lt;/li>
+&lt;li>Disabled ALPN for non-HTTP routes&lt;/li>
+&lt;li>Added statPrefix for HCM and TCPProxy&lt;/li>
+&lt;li>Enabled GatewayHTTPListenerIsolation conformance test&lt;/li>
+&lt;li>Enabled GRPC conformance profile&lt;/li>
+&lt;li>Enabled HTTPRouteBackendRequestHeaderModifier conformance test&lt;/li>
+&lt;li>Added e2e test for Daemonset mode&lt;/li>
+&lt;li>Fixed OVS scanner wrong license warnings&lt;/li>
+&lt;li>Added e2e test for Gateway with EnvoyProxy&lt;/li>
+&lt;li>Added e2e test for TLS session resumption&lt;/li>
+&lt;li>Added heap profile into benchmark report&lt;/li>
+&lt;li>Added e2e test for RecomputeRoute in ExtAuth&lt;/li>
+&lt;li>Added benchmark memory profiles into report&lt;/li>
+&lt;li>Fixed flaky gateway_with_conflicted_listener_cannot_be_merged e2e test&lt;/li>
+&lt;li>Fixed flaky Zipkin Tracing e2e test&lt;/li>
+&lt;li>Added e2e test for cookie based consistent hash load balancing&lt;/li>
+&lt;li>Added e2e test for load balancing&lt;/li>
+&lt;li>Fixed flaky authorization tests&lt;/li>
+&lt;li>Enabled upgrade test&lt;/li>
+&lt;li>Fixed flaky basic auth e2e test&lt;/li>
+&lt;li>Enabled use-client-protocol e2e test&lt;/li>
+&lt;li>Added performance benchmarking test for 1000 HTTPRoutes&lt;/li>
+&lt;li>Added e2e test for Datadog tracing&lt;/li>
+&lt;li>Added e2e tests for ratelimit invert matching headers&lt;/li>
+&lt;li>Reduced readinessProbe failureThreshold and periodSeconds&lt;/li>
+&lt;li>Bumped go-control-plane to v0.13.1&lt;/li>
+&lt;li>Enabled e2e tests for dual stack&lt;/li>
+&lt;li>Use grafana alloy instead of fluent-bit for e2e tests&lt;/li>
+&lt;li>Push tags without the v prefix for helm charts to support Flux HelmReleases&lt;/li>
+&lt;li>Use a stable label selector when creating Envoy Proxy fleet pods&lt;/li>
+&lt;/ul></description></item><item><title>v1.1.3</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.3/</link><pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.3/</guid><description>&lt;p>Date: November 1, 2024&lt;/p>
+&lt;h2 id="breaking-changes">Breaking changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="new-features">New features&lt;a class="td-heading-self-link" href="#new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed unsupported listener protocol type causing an error while updating Gateway Status&lt;/li>
+&lt;li>Fixed some status updates were being discarded by the status updater&lt;/li>
+&lt;li>Fixed error level logging for admin and metrics modules&lt;/li>
+&lt;li>Fixed Dashboard typos&lt;/li>
+&lt;li>Fixed Ratelimit Deployment ignoring pod labels and annotation merge&lt;/li>
+&lt;li>Fixed the API Server receives unnecessary requests&lt;/li>
+&lt;li>Fixed set invalid Listener.SupportedKinds to empty list&lt;/li>
+&lt;li>Fixed losing timeout settings that originate from the route when translating the backend traffic policy&lt;/li>
+&lt;li>Fixed xds translation failure when wasm http code source configured without sha&lt;/li>
+&lt;/ul>
+&lt;h2 id="performance-improvements">Performance improvements&lt;a class="td-heading-self-link" href="#performance-improvements" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-changes">Other changes&lt;a class="td-heading-self-link" href="#other-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bumped Envoy proxy to 1.31.3&lt;/li>
+&lt;li>Bumped github.com/docker/docker to 27.3.1+incompatible&lt;/li>
+&lt;/ul></description></item><item><title>v1.2.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.0-rc.1/</link><pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.2.0-rc.1/</guid><description>&lt;p>Date: October 25, 2024&lt;/p>
+&lt;h2 id="breaking-changes">Breaking changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Gateway API GRPCRoute and ReferenceGrant v1alpha2 have been removed.&lt;/li>
+&lt;li>Please refer to the &lt;a href="https://github.com/kubernetes-sigs/gateway-api/releases">Gateway API v1.2.0 documentation&lt;/a> for more information.&lt;/li>
+&lt;li>Removed default CPU limit of the Envoy Gateway deployment&lt;/li>
+&lt;li>Changed default Envoy shutdown settings: drain strategy has been changed to immediate, default minDrainDuration, drainTimeout and terminationGracePeriodSeconds have been set to 10s, 60s and 360s respectively&lt;/li>
+&lt;/ul>
+&lt;h2 id="new-features">New features&lt;a class="td-heading-self-link" href="#new-features" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added support for Gateway-API v1.2.0&lt;/li>
+&lt;li>Added support for IPv4/IPv6 Dual Stack for Envoy listeners and BackendRef resources&lt;/li>
+&lt;li>Added support for EG standalone(host deployment) mode (experimental)&lt;/li>
+&lt;li>Added support for JWT claims based Authorization in SecurityPolicy CRD&lt;/li>
+&lt;li>Added support for Direct Response in HTTPRouteFilter CRD&lt;/li>
+&lt;li>Added support for Response Override in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for RequestTimeout in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for inverting header matches for rate limit in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for client TLS session resumption in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for HTTPRouteFilter and path regex rewrite&lt;/li>
+&lt;li>Added support for host header rewrite in HTTPRouteFilter CRD&lt;/li>
+&lt;li>Added support for Listener Access Log in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for Datadog tracing support in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for request response sizes stats in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for wildcard matching for CORS AllowMethods and AllowHeaders settings in SecurityPolicy CRD&lt;/li>
+&lt;li>Added support for match conditions for access log in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for using BackendCluster to represent OIDCProvider&lt;/li>
+&lt;li>Added support for RecomputeRoute for ExtAuth in SecurityPolicy CRD&lt;/li>
+&lt;li>Added support for sharing token cookies between multiple domains in SecurityPolicy CRD&lt;/li>
+&lt;li>Added support for JSONPatches for proxy bootstrap modifications in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for LB priority for non xRoute endpoints&lt;/li>
+&lt;li>Added support for configuring the GRPC Health Checker in the BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for early request header mutation in the ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for JsonPath in the EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added support for cluster settings for tracing and access log backends in EnvoyProxy CRD&lt;/li>
+&lt;li>Added support for cluster settings for non xRoute-generated backend refs&lt;/li>
+&lt;li>Added support for socket buffer limit field in ClientTrafficPolicy and BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for http2 upstream settings in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for DNS resolution settings in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added support for configuring service annotations in the Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for configuring priorityClassName to Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for ratelimit metrics monitoring in grafana in the addons helm chart&lt;/li>
+&lt;li>Added support for default user group and user id for the SecurityContexts in the Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for maxUnavailable in the PodDisruptionBudget in the Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for configuring NodeSelector in the Envoy Gateway helm chart&lt;/li>
+&lt;li>Added support for nonce in the OIDC auth flow&lt;/li>
+&lt;li>Added support for choosing an HTTPRoute&amp;rsquo;s non-wildcard hostname as the default Host&lt;/li>
+&lt;li>Added support for returning 500 when EnvoyExtensionTrafficPolicy translation fails&lt;/li>
+&lt;li>Added support for returning 500 when SecurityPolicy translation fails&lt;/li>
+&lt;li>Added support for multiple backendRefs for ExtAuth and ExtProc&lt;/li>
+&lt;li>Added support for session persistence in HTTPRoute rules&lt;/li>
+&lt;li>Added support for the Backend resource for ExtAuth&lt;/li>
+&lt;li>Added support for target selectors on Envoy Gateway Extension Server policies&lt;/li>
+&lt;li>Added support for non-Kubernetes Backends for TLSRoute&lt;/li>
+&lt;li>Added support for fallback to the Backend API&lt;/li>
+&lt;li>Added support for reloadable EnvoyGateway configuration&lt;/li>
+&lt;li>Added support for adding Labels to the Envoy Service&lt;/li>
+&lt;li>Added support for custom name for ratelimit deployment&lt;/li>
+&lt;li>Added default SecurityContext for EG components&lt;/li>
+&lt;li>Added startupProbe to all provisioned containers&lt;/li>
+&lt;li>Added support for local validations for egctl translate and file provider&lt;/li>
+&lt;li>Added support for egctl x collect to collect information from the cluster for debugging&lt;/li>
+&lt;li>Added support for a native prometheus metrics endpoint in the ratelimit server&lt;/li>
+&lt;/ul>
+&lt;h2 id="bug-fixes">Bug fixes&lt;a class="td-heading-self-link" href="#bug-fixes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed unsupported listener protocol type causing an error while updating Gateway Status&lt;/li>
+&lt;li>Fixed some status updates were being discarded by the status updater&lt;/li>
+&lt;li>Fixed Gateway crash adding BackendTLSPolicy to External Backend of an HTTPRoute&lt;/li>
+&lt;li>Fixed Delay in SecurityPolicy change propagation for HTTPRoute when using targetSelectors&lt;/li>
+&lt;li>Fixed JSONPath not correctly translated to JSONPatch paths&lt;/li>
+&lt;li>Fixed allow empty slowStart when using LeastRequest&lt;/li>
+&lt;li>Fixed Backends which should be rejected are still used as an HTTPRoute&amp;rsquo;s destination&lt;/li>
+&lt;li>Fixed losing timeout settings that originate from the route when translating the backend traffic policy&lt;/li>
+&lt;li>Fixed Backend resources don&amp;rsquo;t get status updates&lt;/li>
+&lt;li>Fixed Active Health check requires expectedStatuses field to work&lt;/li>
+&lt;li>Fixed HTTPHeaderFilter processing doesn&amp;rsquo;t correctly support multiple header values&lt;/li>
+&lt;li>Fixed multiple reference grants in same namespace&lt;/li>
+&lt;li>Fixed upstream get unwanted /.&lt;/li>
+&lt;li>Fixed creation of SecurityPolicy with targetSelectors fails&lt;/li>
+&lt;li>Fixed wrong gateway is chosen as HTTPRoute parent&lt;/li>
+&lt;li>Fixed override issue for EEP&lt;/li>
+&lt;li>Fixed nil pointer err translating hash load balancing&lt;/li>
+&lt;li>Fixed ratelimit does not work across multiple GatewayClasses&lt;/li>
+&lt;li>Fixed upstream mTLS only works for HTTPS listeners&lt;/li>
+&lt;li>Fixed nil pointer if backedtls.minVersion is set but backedtls.maxVersion is not&lt;/li>
+&lt;li>Fixed empty connection limit causes XDS rejection&lt;/li>
+&lt;li>Fixed ratelimit not working with both headers and cidr matches&lt;/li>
+&lt;li>Fixed EDS didn&amp;rsquo;t update when deployments was created after services&lt;/li>
+&lt;li>Fixed RBAC issue for deleting infrastructure resources&lt;/li>
+&lt;li>Fixed customized infrastructure resources not being deleted&lt;/li>
+&lt;li>Fixed Gateways never become ready/programmed when running Envoy as a Daemonset&lt;/li>
+&lt;li>Fixed Ratelimit Deployment ignoring pod labels and annotation merge&lt;/li>
+&lt;li>Fixed the API Server receives unnecessary requests&lt;/li>
+&lt;li>Fixed terminating envoy pods don&amp;rsquo;t respond with &amp;ldquo;Connection: close&amp;rdquo; (H1) or GOAWAY(H2) on shutdown, switch to an immediate drain strategy&lt;/li>
+&lt;li>Fixed ratelimit statsd not working&lt;/li>
+&lt;li>Fixed not generating selector of deployment/daemonset based on the custom label configuration of EnvoyProxy&lt;/li>
+&lt;li>Fixed egctl experimental translate using a wrong ns&lt;/li>
+&lt;/ul>
+&lt;h2 id="performance-improvements">Performance improvements&lt;a class="td-heading-self-link" href="#performance-improvements" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed repeated resources and optimize memory usage&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-changes">Other changes&lt;a class="td-heading-self-link" href="#other-changes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Removed grafana test framework from the addons helm chart&lt;/li>
+&lt;li>Disabled ALPN for non-HTTP routes&lt;/li>
+&lt;li>Added statPrefix for HCM and TCPProxy&lt;/li>
+&lt;li>Enabled GatewayHTTPListenerIsolation conformance test&lt;/li>
+&lt;li>Enabled GRPC conformance profile&lt;/li>
+&lt;li>Enabled HTTPRouteBackendRequestHeaderModifier conformance test&lt;/li>
+&lt;li>Added e2e test for Daemonset mode&lt;/li>
+&lt;li>Updated upgrades tests to use VERSION env variable&lt;/li>
+&lt;li>Fixed OVS scanner wrong license warnings&lt;/li>
+&lt;li>Added e2e test for TLS session resumption&lt;/li>
+&lt;li>Added heap profile into benchmark report&lt;/li>
+&lt;li>Added e2e test for RecomputeRoute in ExtAuth&lt;/li>
+&lt;li>Added benchmark memory profiles into report&lt;/li>
+&lt;li>Fixed flaky gateway_with_conflicted_listener_cannot_be_merged e2e test&lt;/li>
+&lt;li>Fixed flaky Zipkin Tracing e2e test&lt;/li>
+&lt;li>Added e2e test for cookie based consistent hash load balancing&lt;/li>
+&lt;li>Added e2e test for load balancing&lt;/li>
+&lt;li>Fixed flaky authorization tests&lt;/li>
+&lt;li>Enabled upgrade test&lt;/li>
+&lt;li>Fixed flaky basic auth e2e test&lt;/li>
+&lt;li>Enabled use-client-protocol e2e test&lt;/li>
+&lt;li>Added performance benchmarking test for 1000 HTTPRoutes&lt;/li>
+&lt;li>Added e2e test for Datadog tracing&lt;/li>
+&lt;li>Added e2e tests for ratelimit invert matching headers&lt;/li>
+&lt;li>Reduced readinessProbe failureThreshold and periodSeconds&lt;/li>
+&lt;li>Bumped go-control-plane to v0.13.1&lt;/li>
+&lt;/ul></description></item><item><title>v1.1.2</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.2/</link><pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.2/</guid><description>&lt;p>Date: September 24, 2024&lt;/p>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed handling of sectionName in BackendTLSPolicy for Backend resource&lt;/li>
+&lt;/ul>
+&lt;h2 id="infra-manager">Infra-manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Pin Envoy Proxy version to v1.32.2&lt;/li>
+&lt;li>Change Envoy listener drain strategy from gradual to immediate&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed reconciliation of HTTPRoutes when labels change&lt;/li>
+&lt;/ul></description></item><item><title>v1.1.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.1/</link><pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.1/</guid><description>&lt;p>Date: September 11, 2024&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bumped Golang version to 1.22.7&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Enabled GatewayHTTPListenerIsolation test&lt;/li>
+&lt;/ul>
+&lt;h2 id="testing">Testing&lt;a class="td-heading-self-link" href="#testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fix download URL of envoy proxy WASM examples used in tests&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed url rewrite to remove trailing slash&lt;/li>
+&lt;li>Isolate HTTP route tables to listener according to Gateway-API specifications&lt;/li>
+&lt;li>Fixed identification of ReferenceGrant when multiple ReferenceGrants exist in a namespace&lt;/li>
+&lt;li>Fixed added header values as a command and space delimited list&lt;/li>
+&lt;li>Fixed assertion on expected status in active HTTP healthcheck&lt;/li>
+&lt;li>Fixed rejection of invalid Backends referenced by xRoutes&lt;/li>
+&lt;li>Fixed support for empty SlowStart configuration when using LeastRequest loadbalancing&lt;/li>
+&lt;li>Fixed update of status for Backends&lt;/li>
+&lt;/ul>
+&lt;h2 id="infra-manager">Infra-manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Pin ratelimit version to 26f28d78&lt;/li>
+&lt;li>Reduce readinessProbe failureThreshold and periodSeconds of proxy&lt;/li>
+&lt;li>Expose ratelimit statsd&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed error returned when referenced Configmap or Secret is not found&lt;/li>
+&lt;li>Use component name in Envoy Gateway logs&lt;/li>
+&lt;/ul></description></item><item><title>v1.1.0</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.0/</link><pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.0/</guid><description>&lt;p>Date: July 22, 2024&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Concepts Doc&lt;/li>
+&lt;li>Added User Guide for Wasm Extension&lt;/li>
+&lt;li>Added User Guide for patching Envoy Service&lt;/li>
+&lt;li>Added User Guide for Backend MTLS&lt;/li>
+&lt;li>Added User Guide for Backend TLS Parameters&lt;/li>
+&lt;li>Added User Guide for IP Allowlist/Denylist&lt;/li>
+&lt;li>Added User Guide for Extension Server&lt;/li>
+&lt;li>Added User Guide for building Wasm image&lt;/li>
+&lt;li>Added Performance Benchmarking Document&lt;/li>
+&lt;li>Added User Guide for Zipkin Tracing&lt;/li>
+&lt;li>Added User Guide for Customizing Ordering of Filters&lt;/li>
+&lt;li>Added User Guide for External Processing Filter in EnvoyExtensionPolicy&lt;/li>
+&lt;li>Added User Guide for installation of egctl with brew&lt;/li>
+&lt;li>Added User Guide for Client Buffer Size Limit&lt;/li>
+&lt;li>Added User Guide for Client Idle Timeout&lt;/li>
+&lt;li>Added Chinese translation for release notes, roadmap, installation, development, contribution and several User Guides&lt;/li>
+&lt;li>Added User Guide for Backend resource&lt;/li>
+&lt;li>Added GA Blog Post&lt;/li>
+&lt;li>Added Threat Model&lt;/li>
+&lt;li>Added Adopters section to docs&lt;/li>
+&lt;li>Added User Guide and Dashboards for Control Plane and Resource Observability&lt;/li>
+&lt;li>Added User Guide for Connection Limits in ClientTrafficPolicy&lt;/li>
+&lt;li>Added User Guide on using Private Key Provider&lt;/li>
+&lt;li>Added Design Doc for Authorization&lt;/li>
+&lt;li>Added Design Doc for XDS Metadata&lt;/li>
+&lt;li>Added Design Doc for Backend resource&lt;/li>
+&lt;li>Added Design Doc for Control Plane Observability&lt;/li>
+&lt;li>Added Design Doc for EnvoyExtensionPolicy&lt;/li>
+&lt;li>Added Design Doc for External Processing in EnvoyExtensionPolicy&lt;/li>
+&lt;li>Updated Access Logging User Guide to include filtering with CEL Expression&lt;/li>
+&lt;li>Updated Access Logging User Guide to include Metadata&lt;/li>
+&lt;li>Updated Development Guide to require Golang 1.22&lt;/li>
+&lt;li>Updated Quickstart User Guide to fetch GATEWAY_HOST from Gateway resource&lt;/li>
+&lt;li>Updated Site to reflect GA status&lt;/li>
+&lt;li>Updated HTTP Redirect User Guide to not set a redirect port or require a BackendRef&lt;/li>
+&lt;li>Updated Observability User Guides to use gateway-addons-helm&lt;/li>
+&lt;li>Updated Gateway-API User Guide to reflect support for BackendRef filters&lt;/li>
+&lt;li>Updated HTTP Timeouts User Guide to highlight default Envoy timeouts&lt;/li>
+&lt;li>Updated Installation Guide to use server-side apply&lt;/li>
+&lt;li>Updated Installation Guide to refer to values.yaml docs&lt;/li>
+&lt;li>Updated BackendTLSPolicy User Guide to GW-API v1.1.0&lt;/li>
+&lt;li>Updated User Guides to use tabs when applying yaml from file or stdin&lt;/li>
+&lt;li>Updated OIDC User Guide to use HTTPS redirect URLs&lt;/li>
+&lt;li>Updated Order of versions in Site&lt;/li>
+&lt;li>Updated Extensbility User Gudie to use yaml-format patches&lt;/li>
+&lt;li>Updated Quickstart Guide to include next steps&lt;/li>
+&lt;li>Updated CRD docs to include enum values&lt;/li>
+&lt;li>Updated Extensibility User Guide with Envoy Patch Policy examples&lt;/li>
+&lt;li>Updated structure of docs: rename Guides to Tasks, move Contribution&lt;/li>
+&lt;li>Updated Support Matrix&lt;/li>
+&lt;li>Updated egctl x status docs for xRoute and xPolicy&lt;/li>
+&lt;li>Updated egctl User Guide with Install and Uninstall commands&lt;/li>
+&lt;li>Updated GRPCRoute docs to use v1 instead of v1alpha2&lt;/li>
+&lt;li>Fixed Rate Limiting User Guide to use correct CIDR matcher type names&lt;/li>
+&lt;li>Fixed User Guide for JWT-based routing&lt;/li>
+&lt;li>Fixed JSON Access Log Example&lt;/li>
+&lt;li>Use linkinator to detect dead links in docs&lt;/li>
+&lt;li>Use helm-docs to generate chart docs&lt;/li>
+&lt;li>Support Not-Implemented-Hide marker in API docs&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added startupProbe to all provisioned containers to reduce risk of restart&lt;/li>
+&lt;li>Added new gateway-addons-helm chart for Observability&lt;/li>
+&lt;li>Added support for global image settings for all images in Envoy Gateway helm chart&lt;/li>
+&lt;li>Added Support for PodDistruptionBudget for Envoy Gateway&lt;/li>
+&lt;li>Added Support for TopologySpreadConstraints for Envoy Gateway&lt;/li>
+&lt;li>Added Support for Tolerations for Envoy Gateway&lt;/li>
+&lt;li>Added Support for Ratelimit image pull secrets and pull policy&lt;/li>
+&lt;li>Updated ttlSecondsAfterFinished on certgen job to 30 by default&lt;/li>
+&lt;li>Updated Envoy Gateway ImagePullPolicy to IfNotPresent released charts&lt;/li>
+&lt;li>Remove envoy-gateway-metrics-service and merge its contents into envoy-gateway service&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Gateway-API v1.1.0&lt;/li>
+&lt;li>Added new Backend CRD&lt;/li>
+&lt;li>Added new EnvoyExtensionPolicy CRD&lt;/li>
+&lt;li>Added Support for Plural Target Refs and Target Selectors in xPolicy CRDs&lt;/li>
+&lt;li>Added Support for Backend CRD BackendRefs in HTTPRoute, GRPCRoute and EnvoyExtensionPolicy CRDs&lt;/li>
+&lt;li>Added Support for Custom Extension Server Policy CRDs in EnvoyGateway Config&lt;/li>
+&lt;li>Added Support for Custom ShutDownManager Image in EnvoyGateway Config&lt;/li>
+&lt;li>Added Support for Leader Election in EnvoyGateway Config&lt;/li>
+&lt;li>Added Support for Connecting to Extension Server over Unix Domain Socket in EnvoyGateway Config&lt;/li>
+&lt;li>Added Support for Proxy PodDisruptionBudget in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Running Envoy Proxy as a Daemonset in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Proxy Loadbalancer Source Ranges in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Proxy Prometheus Metrics Compression in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for BackendRefs in Access Log, Metric and Trace Sinks in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Rate Limiting Tracing in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Routing to Service IP in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Access Log CEL filters in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Access Log Formatters for File and OpenTelemetry in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Zipkin Tracing in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for using the Listener port as a the Container port in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for OpenTelemtry Sink Export Settings in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Backend Client Certificate Authentication in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Backend TLS Settings in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for HTTP Filter Ordering in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for gRPC Access Log Service (ALS) Sink in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for OpenTelelemetry Sinks as a BackendRef in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for User-Provided name for generate Kubernetes resources in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Per-Endpoint stats in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Targeting SectionNames in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Preserving X-Request-ID header in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Using Downstream Protocol in Upstream connections in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for HTTP/2 settings in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Buffer Size Limit in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for HTTP Health Check in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Optionally requiring a Client Certificate in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Headers with Underscores CRD in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for XFCC header processing in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for TCP Listener Idle Timeout in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for IdleTimeout in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Limits in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for additional OIDC settings related to Resource, Token and Cookie in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Optionally requiring a JWT in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for BackendRefs for Ext-Auth in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Authorization in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Ext-Auth failOpen in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Loadbalancer Cookie Consistent Hashing in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Disabling X-RateLimit headers in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Buffer Size Limit in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Loadbalancing Consistent Hash Table Size in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Loadbalancing Header Hash Policy in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Cluster Connection Buffer Size Limit in BackendTrafficPolicy&lt;/li>
+&lt;li>Added Support for more Rate Limit Rules in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Wasm extension in EnvoyExtensionPolicy CRD&lt;/li>
+&lt;li>Added Support for External Processing extension in EnvoyExtensionPolicy CRD&lt;/li>
+&lt;li>Removed Status Print Column from xPolicy CRDs&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>SecurityPolicy translation failures will now cause routes referenced by the policy to return an immediate 500 response&lt;/li>
+&lt;li>Gateway-API BackendTLSPolicy v1alpha3 is incompatible with previous versions of the CRD&lt;/li>
+&lt;li>xPolicy targetRefs can no longer specify a namespace, since Gateway-API v1.1.0 uses LocalPolicyTargetReferenceWithSectionName in Policy resources&lt;/li>
+&lt;/ul>
+&lt;h3 id="deprecations">Deprecations&lt;a class="td-heading-self-link" href="#deprecations" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>xPolicy targetRef is deprecated, use targetRefs instead&lt;/li>
+&lt;li>SecurityPolicy ExtAuth BackendRef is deprecated, use BackendRefs instead&lt;/li>
+&lt;li>OpenTelemetry Proxy Access Log Host and Port are deprecated, use backendRefs instead&lt;/li>
+&lt;li>OpenTelemetry Proxy Metrics Sink Host and Port are deprecated, use backendRefs instead&lt;/li>
+&lt;li>Proxy Tracing Provider Host and Port are deprecated, use backendRefs instead&lt;/li>
+&lt;li>Envoy Gateway Extension Server Host and Port are deprecated, use BackendEndpoint instead&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Supported Features to Gateway Class&lt;/li>
+&lt;/ul>
+&lt;h2 id="testing">Testing&lt;a class="td-heading-self-link" href="#testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added e2e test for Client MTLS&lt;/li>
+&lt;li>Added e2e test for Load Balancing&lt;/li>
+&lt;li>Added performance benchmarking test&lt;/li>
+&lt;li>Added e2e test for Zipking Tracing&lt;/li>
+&lt;li>Added e2e test for HTTP Health Checks&lt;/li>
+&lt;li>Added e2e test for CEL Access Log Filter&lt;/li>
+&lt;li>Added e2e test for GRPC Access Log Service Sink&lt;/li>
+&lt;li>Added e2e test for XDS Metadata&lt;/li>
+&lt;li>Added e2e test for Wasm from OCI Images and HTTP Source&lt;/li>
+&lt;li>Added e2e test for Service IP Routing&lt;/li>
+&lt;li>Added e2e test for Multiple GatewayClasses&lt;/li>
+&lt;li>Added e2e test for HTTP Full Path rewrite&lt;/li>
+&lt;li>Added e2e test for Backend API&lt;/li>
+&lt;li>Added e2e test for Backend TLS Settings&lt;/li>
+&lt;li>Added e2e test for disabling X-RateLimit Headers&lt;/li>
+&lt;li>Added e2e test for Authorization&lt;/li>
+&lt;li>Added e2e test for BackendRefs in Ext-Auth&lt;/li>
+&lt;li>Added e2e test for Using Client Protocol in Upstream Connection&lt;/li>
+&lt;li>Added e2e test for Backend Client Cert Authentication&lt;/li>
+&lt;li>Added e2e test for External Processing Filter&lt;/li>
+&lt;li>Added e2e test for Merge Gateways Feature&lt;/li>
+&lt;li>Added e2e test for Option JWT authentication&lt;/li>
+&lt;li>Added e2e test for Infrastructure using Server-Side Apply&lt;/li>
+&lt;li>Added e2e test for Connection Limits&lt;/li>
+&lt;li>Added e2e test for Envoy Graceful Shutdown&lt;/li>
+&lt;li>Updated e2e test for Limit to cover multiple listeners&lt;/li>
+&lt;li>Updated e2e test for CORS to not require access-control-expose-headers&lt;/li>
+&lt;li>Run CEL tests on all supported K8s versions&lt;/li>
+&lt;li>Added OSV Scanner for Golang Vulnerabilities and Licenses&lt;/li>
+&lt;li>Added Trivy scanner for Docker images&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for BackendRef HTTP Filters&lt;/li>
+&lt;li>Added Support for attaching EnvoyProxy to Gateways&lt;/li>
+&lt;li>Added Support for cross-namespace EnvoyProxy reference from GatewayClass&lt;/li>
+&lt;li>Added Support for Backend Traffic Policy for UDPRoute and TCPRoute&lt;/li>
+&lt;li>Added Support for ClientTrafficPolicy for UDPRoute and TCPRoute&lt;/li>
+&lt;li>Added Support for multiple BackendRefs in TCPRoute and UDPRoute&lt;/li>
+&lt;li>Added Metrics related to XDS Server, Infra Manager and Controller&lt;/li>
+&lt;li>Added Support for PolicyStatus in EnvoyPatchPolicy&lt;/li>
+&lt;li>Added Support for Websocket upgrades in HTTP/1 Routes&lt;/li>
+&lt;li>Added Support for custom controller name in egctl&lt;/li>
+&lt;li>Added Support for BackendTLSPolicy CA Certificate reference to Secret&lt;/li>
+&lt;li>Added names to Filter Chains&lt;/li>
+&lt;li>Added Support extension server hooks for TCP and UDP listeners&lt;/li>
+&lt;li>Added Support for attaching EnvoyProxy resource to Gateways&lt;/li>
+&lt;li>Added Support for Exposing Prometheus Port in Rate Limiter Service&lt;/li>
+&lt;li>Added Support for Optional Rate Limit Backend Redis&lt;/li>
+&lt;li>Updated OAuth2 filter to preserve Authorization header if OIDC token forwarding is enabled&lt;/li>
+&lt;li>Updated Default Filter Order to have Fault filter first in the HTTP Filter Chain&lt;/li>
+&lt;li>Updated Ext-Auth Per-Route config to use filter-specific Config Type&lt;/li>
+&lt;li>Updated Overload Manager configuration according to Envoy recommendations by default&lt;/li>
+&lt;li>Updated Infrastructure resource management to user Server-Side Apply&lt;/li>
+&lt;li>Updated Reflection of Errors in Gateway Status when too many addresses are assigned&lt;/li>
+&lt;li>Fixed enforcement of same-namespace for BackendTLSPolicy and target&lt;/li>
+&lt;li>Fixed processing all listeners before returning with an error&lt;/li>
+&lt;li>Fixed creation of infrastructure resources if there are no listeners&lt;/li>
+&lt;li>Fixed use GatewayClass Name for Observability if Merge Gateways is enabled&lt;/li>
+&lt;li>Fixed CORS to not forward Not-Matching Preflights to Backends&lt;/li>
+&lt;li>Fixed BackendTLSPolicy status to fully conform with PolicyStatus&lt;/li>
+&lt;li>Fixed duplication of Ext-Auth, OIDC and Basic Auth Filters&lt;/li>
+&lt;li>Fixed Proxy Protocol Filter to always be the first Listener Filter&lt;/li>
+&lt;li>Fixed Translation Consistency by sorting Gateways&lt;/li>
+&lt;li>Fixed QUIC Listener to only Advertise HTTP/3 over ALPN&lt;/li>
+&lt;li>Fixed SNI matching for TCP Routes with TLS termination&lt;/li>
+&lt;li>Fixed Reconciliation when EnvoyProxy backendRefs changes&lt;/li>
+&lt;li>Fixed Reconciliation when a referenced Secret or ConfigMap changes&lt;/li>
+&lt;li>Fixed ReplaceFullPath not working for root path&lt;/li>
+&lt;li>Fixed Default Application Protocol to TCP for Zipkin Tracing&lt;/li>
+&lt;li>Fixed not appending well-known ports (80, 443) in rediret Location header&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bumped K8s Client to v0.30.0&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bumped go-control-plane to v0.12.1&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added egctl x collect command&lt;/li>
+&lt;li>Added Support for Install and Uninstall commands to egctl&lt;/li>
+&lt;li>Added Support for xRoute and xPolicy in egctl x status&lt;/li>
+&lt;li>Added Golang version to Envoy Gateway version command&lt;/li>
+&lt;li>Fixed egctl x status gatewayclass example message&lt;/li>
+&lt;/ul></description></item><item><title>v1.1.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.0-rc.1/</link><pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.1.0-rc.1/</guid><description>&lt;p>Date: July 8, 2024&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Performance Benchmarking Document&lt;/li>
+&lt;li>Added User Guide for Zipkin Tracing&lt;/li>
+&lt;li>Added User Guide for Customizing Ordering of Filters&lt;/li>
+&lt;li>Added User Guide for External Processing Filter in EnvoyExtensionPolicy&lt;/li>
+&lt;li>Added User Guide for installation of egctl with brew&lt;/li>
+&lt;li>Added User Guide for Client Buffer Size Limit&lt;/li>
+&lt;li>Added User Guide for Client Idle Timeout&lt;/li>
+&lt;li>Added Chinese translation for release notes, roadmap, installation, development, contribution and several User Guides&lt;/li>
+&lt;li>Added User Guide for Backend resource&lt;/li>
+&lt;li>Added GA Blog Post&lt;/li>
+&lt;li>Added Threat Model&lt;/li>
+&lt;li>Added Adopters section to docs&lt;/li>
+&lt;li>Added User Guide and Dashboards for Control Plane and Resource Observability&lt;/li>
+&lt;li>Added User Guide for Connection Limits in ClientTrafficPolicy&lt;/li>
+&lt;li>Added User Guide on using Private Key Provider&lt;/li>
+&lt;li>Added Design Doc for Authorization&lt;/li>
+&lt;li>Added Design Doc for XDS Metadata&lt;/li>
+&lt;li>Added Design Doc for Backend resource&lt;/li>
+&lt;li>Added Design Doc for Control Plane Observability&lt;/li>
+&lt;li>Added Design Doc for EnvoyExtensionPolicy&lt;/li>
+&lt;li>Added Design Doc for External Processing in EnvoyExtensionPolicy&lt;/li>
+&lt;li>Updated Access Logging User Guide to include filtering with CEL Expression&lt;/li>
+&lt;li>Updated Access Logging User Guide to include Metadata&lt;/li>
+&lt;li>Updated Development Guide to require Golang 1.22&lt;/li>
+&lt;li>Updated Quickstart User Guide to fetch GATEWAY_HOST from Gateway resource&lt;/li>
+&lt;li>Updated Site to reflect GA status&lt;/li>
+&lt;li>Updated HTTP Redirect User Guide to not set a redirect port or require a BackendRef&lt;/li>
+&lt;li>Updated Observability User Guides to use gateway-addons-helm&lt;/li>
+&lt;li>Updated Gateway-API User Guide to reflect support for BackendRef filters&lt;/li>
+&lt;li>Updated HTTP Timeouts User Guide to highlight default Envoy timeouts&lt;/li>
+&lt;li>Updated Installation Guide to use server-side apply&lt;/li>
+&lt;li>Updated Installation Guide to refer to values.yaml docs&lt;/li>
+&lt;li>Updated BackendTLSPolicy User Guide to GW-API v1.1.0&lt;/li>
+&lt;li>Updated User Guides to use tabs when applying yaml from file or stdin&lt;/li>
+&lt;li>Updated OIDC User Guide to use HTTPS redirect URLs&lt;/li>
+&lt;li>Updated Order of versions in Site&lt;/li>
+&lt;li>Updated Extensbility User Gudie to use yaml-format patches&lt;/li>
+&lt;li>Updated Quickstart Guide to include next steps&lt;/li>
+&lt;li>Updated CRD docs to include enum values&lt;/li>
+&lt;li>Updated Extensibility User Guide with Envoy Patch Policy examples&lt;/li>
+&lt;li>Updated structure of docs: rename Guides to Tasks, move Contribution&lt;/li>
+&lt;li>Updated Support Matrix&lt;/li>
+&lt;li>Updated egctl x status docs for xRoute and xPolicy&lt;/li>
+&lt;li>Updated egctl User Guide with Install and Uninstall commands&lt;/li>
+&lt;li>Updated GRPCRoute docs to use v1 instead of v1alpha2&lt;/li>
+&lt;li>Fixed Rate Limiting User Guide to use correct CIDR matcher type names&lt;/li>
+&lt;li>Fixed User Guide for JWT-based routing&lt;/li>
+&lt;li>Fixed JSON Access Log Example&lt;/li>
+&lt;li>Use linkinator to detect dead links in docs&lt;/li>
+&lt;li>Use helm-docs to generate chart docs&lt;/li>
+&lt;li>Support Not-Implemented-Hide marker in API docs&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added new gateway-addons-helm chart for Observability&lt;/li>
+&lt;li>Added support for global image settings for all images in Envoy Gateway helm chart&lt;/li>
+&lt;li>Added Support for PodDistruptionBudget for Envoy Gateway&lt;/li>
+&lt;li>Added Support for TopologySpreadConstraints for Envoy Gateway&lt;/li>
+&lt;li>Added Support for Tolerations for Envoy Gateway&lt;/li>
+&lt;li>Added Support for Ratelimit image pull secrets and pull policy&lt;/li>
+&lt;li>Updated ttlSecondsAfterFinished on certgen job to 30 by default&lt;/li>
+&lt;li>Updated Envoy Gateway ImagePullPolicy to IfNotPresent released charts&lt;/li>
+&lt;li>Remove envoy-gateway-metrics-service and merge its contents into envoy-gateway service&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Gateway-API v1.1.0&lt;/li>
+&lt;li>Added new Backend CRD&lt;/li>
+&lt;li>Added new EnvoyExtensionPolicy CRD&lt;/li>
+&lt;li>Added Support for Plural Target Refs and Target Selectors in xPolicy CRDs&lt;/li>
+&lt;li>Added Support for Backend CRD BackendRefs in HTTPRoute, GRPCRoute and EnvoyExtensionPolicy CRDs&lt;/li>
+&lt;li>Added Support for Custom Extension Server Policy CRDs in EnvoyGateway Config&lt;/li>
+&lt;li>Added Support for Custom ShutDownManager Image in EnvoyGateway Config&lt;/li>
+&lt;li>Added Support for Leader Election in EnvoyGateway Config&lt;/li>
+&lt;li>Added Support for Connecting to Extension Server over Unix Domain Socket in EnvoyGateway Config&lt;/li>
+&lt;li>Added Support for Proxy PodDisruptionBudget in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Running Envoy Proxy as a Daemonset in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Proxy Loadbalancer Source Ranges in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Proxy Prometheus Metrics Compression in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for BackendRefs in Access Log, Metric and Trace Sinks in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Rate Limiting Tracing in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Routing to Service IP in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Access Log CEL filters in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Access Log Formatters for File and OpenTelemetry in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Zipkin Tracing in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for using the Listener port as a the Container port in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for OpenTelemtry Sink Export Settings in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Backend Client Certificate Authentication in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Backend TLS Settings in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for HTTP Filter Ordering in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for gRPC Access Log Service (ALS) Sink in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for OpenTelelemetry Sinks as a BackendRef in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for User-Provided name for generate Kubernetes resources in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Per-Endpoint stats in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Targeting SectionNames in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Preserving X-Request-ID header in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Using Downstream Protocol in Upstream connections in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for HTTP/2 settings in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Buffer Size Limit in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for HTTP Health Check in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Optionally requiring a Client Certificate in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Headers with Underscores CRD in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for XFCC header processing in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for TCP Listener Idle Timeout in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for IdleTimeout in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Limits in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for additional OIDC settings related to Resource, Token and Cookie in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Optionally requiring a JWT in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for BackendRefs for Ext-Auth in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Authorization in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Ext-Auth failOpen in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Loadbalancer Cookie Consistent Hashing in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Disabling X-RateLimit headers in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Buffer Size Limit in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Loadbalancing Consistent Hash Table Size in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Loadbalancing Header Hash Policy in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Cluster Connection Buffer Size Limit in BackendTrafficPolicy&lt;/li>
+&lt;li>Added Support for more Rate Limit Rules in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Wasm extension in EnvoyExtensionPolicy CRD&lt;/li>
+&lt;li>Added Support for External Processing extension in EnvoyExtensionPolicy CRD&lt;/li>
+&lt;li>Removed Status Print Column from xPolicy CRDs&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Gateway-API BackendTLSPolicy v1alpha3 is incompatible with previous versions of the CRD&lt;/li>
+&lt;li>xPolicy targetRefs can no longer specify a namespace, since Gateway-API v1.1.0 uses LocalPolicyTargetReferenceWithSectionName in Policy resources&lt;/li>
+&lt;/ul>
+&lt;h3 id="deprecations">Deprecations&lt;a class="td-heading-self-link" href="#deprecations" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>xPolicy targetRef is deprecated, use targetRefs instead&lt;/li>
+&lt;li>SecurityPolicy ExtAuth BackendRef is deprecated, use BackendRefs instead&lt;/li>
+&lt;li>OpenTelemetry Proxy Access Log Host and Port are deprecated, use backendRefs instead&lt;/li>
+&lt;li>OpenTelemetry Proxy Metrics Sink Host and Port are deprecated, use backendRefs instead&lt;/li>
+&lt;li>Proxy Tracing Provider Host and Port are deprecated, use backendRefs instead&lt;/li>
+&lt;li>Envoy Gateway Extension Server Host and Port are deprecated, use BackendEndpoint instead&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Supported Features to Gateway Class&lt;/li>
+&lt;/ul>
+&lt;h2 id="testing">Testing&lt;a class="td-heading-self-link" href="#testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added performance benchmarking test&lt;/li>
+&lt;li>Added e2e test for Zipking Tracing&lt;/li>
+&lt;li>Added e2e test for HTTP Health Checks&lt;/li>
+&lt;li>Added e2e test for CEL Access Log Filter&lt;/li>
+&lt;li>Added e2e test for GRPC Access Log Service Sink&lt;/li>
+&lt;li>Added e2e test for XDS Metadata&lt;/li>
+&lt;li>Added e2e test for Wasm from OCI Images and HTTP Source&lt;/li>
+&lt;li>Added e2e test for Service IP Routing&lt;/li>
+&lt;li>Added e2e test for Multiple GatewayClasses&lt;/li>
+&lt;li>Added e2e test for HTTP Full Path rewrite&lt;/li>
+&lt;li>Added e2e test for Backend API&lt;/li>
+&lt;li>Added e2e test for Backend TLS Settings&lt;/li>
+&lt;li>Added e2e test for disabling X-RateLimit Headers&lt;/li>
+&lt;li>Added e2e test for Authorization&lt;/li>
+&lt;li>Added e2e test for BackendRefs in Ext-Auth&lt;/li>
+&lt;li>Added e2e test for Using Client Protocol in Upstream Connection&lt;/li>
+&lt;li>Added e2e test for Backend Client Cert Authentication&lt;/li>
+&lt;li>Added e2e test for External Processing Filter&lt;/li>
+&lt;li>Added e2e test for Merge Gateways Feature&lt;/li>
+&lt;li>Added e2e test for Option JWT authentication&lt;/li>
+&lt;li>Added e2e test for Infrastructure using Server-Side Apply&lt;/li>
+&lt;li>Added e2e test for Connection Limits&lt;/li>
+&lt;li>Added e2e test for Envoy Graceful Shutdown&lt;/li>
+&lt;li>Updated e2e test for Limit to cover multiple listeners&lt;/li>
+&lt;li>Updated e2e test for CORS to not require access-control-expose-headers&lt;/li>
+&lt;li>Run CEL tests on all supported K8s versions&lt;/li>
+&lt;li>Added OSV Scanner for Golang Vulnerabilities and Licenses&lt;/li>
+&lt;li>Added Trivy scanner for Docker images&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for BackendRef HTTP Filters&lt;/li>
+&lt;li>Added Support for attaching EnvoyProxy to Gateways&lt;/li>
+&lt;li>Added Support for cross-namespace EnvoyProxy reference from GatewayClass&lt;/li>
+&lt;li>Added Support for Backend Traffic Policy for UDPRoute and TCPRoute&lt;/li>
+&lt;li>Added Support for ClientTrafficPolicy for UDPRoute and TCPRoute&lt;/li>
+&lt;li>Added Support for multiple BackendRefs in TCPRoute and UDPRoute&lt;/li>
+&lt;li>Added Metrics related to XDS Server, Infra Manager and Controller&lt;/li>
+&lt;li>Added Support for PolicyStatus in EnvoyPatchPolicy&lt;/li>
+&lt;li>Added Support for Websocket upgrades in HTTP/1 Routes&lt;/li>
+&lt;li>Added Support for custom controller name in egctl&lt;/li>
+&lt;li>Added Support for BackendTLSPolicy CA Certificate reference to Secret&lt;/li>
+&lt;li>Added names to Filter Chains&lt;/li>
+&lt;li>Added Support extension server hooks for TCP and UDP listeners&lt;/li>
+&lt;li>Added Support for attaching EnvoyProxy resource to Gateways&lt;/li>
+&lt;li>Added Support for Exposing Prometheus Port in Rate Limiter Service&lt;/li>
+&lt;li>Added Support for Optional Rate Limit Backend Redis&lt;/li>
+&lt;li>Updated OAuth2 filter to preserve Authorization header if OIDC token forwarding is enabled&lt;/li>
+&lt;li>Updated Default Filter Order to have Fault filter first in the HTTP Filter Chain&lt;/li>
+&lt;li>Updated Ext-Auth Per-Route config to use filter-specific Config Type&lt;/li>
+&lt;li>Updated Overload Manager configuration according to Envoy recommendations by default&lt;/li>
+&lt;li>Updated Infrastructure resource management to user Server-Side Apply&lt;/li>
+&lt;li>Updated Reflection of Errors in Gateway Status when too many addresses are assigned&lt;/li>
+&lt;li>Fixed enforcement of same-namespace for BackendTLSPolicy and target&lt;/li>
+&lt;li>Fixed processing all listeners before returning with an error&lt;/li>
+&lt;li>Fixed creation of infrastructure resources if there are no listeners&lt;/li>
+&lt;li>Fixed use GatewayClass Name for Observability if Merge Gateways is enabled&lt;/li>
+&lt;li>Fixed CORS to not forward Not-Matching Preflights to Backends&lt;/li>
+&lt;li>Fixed BackendTLSPolicy status to fully conform with PolicyStatus&lt;/li>
+&lt;li>Fixed duplication of Ext-Auth, OIDC and Basic Auth Filters&lt;/li>
+&lt;li>Fixed Proxy Protocol Filter to always be the first Listener Filter&lt;/li>
+&lt;li>Fixed Translation Consistency by sorting Gateways&lt;/li>
+&lt;li>Fixed QUIC Listener to only Advertise HTTP/3 over ALPN&lt;/li>
+&lt;li>Fixed SNI matching for TCP Routes with TLS termination&lt;/li>
+&lt;li>Fixed Reconciliation when EnvoyProxy backendRefs changes&lt;/li>
+&lt;li>Fixed Reconciliation when a referenced Secret or ConfigMap changes&lt;/li>
+&lt;li>Fixed ReplaceFullPath not working for root path&lt;/li>
+&lt;li>Fixed Default Application Protocol to TCP for Zipkin Tracing&lt;/li>
+&lt;li>Fixed not appending well-known ports (80, 443) in rediret Location header&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bumped K8s Client to v0.30.0&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Bumped go-control-plane to v0.12.1&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Install and Uninstall Commands to egctl&lt;/li>
+&lt;li>Added Support for xRoute and xPolicy in egctl x status&lt;/li>
+&lt;li>Added Golang version to Envoy Gateway version command&lt;/li>
+&lt;li>Fixed egctl x status gatewayclass example message&lt;/li>
+&lt;/ul></description></item><item><title>v1.0.2</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.0.2/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.0.2/</guid><description>&lt;p>Date: June 12, 2024&lt;/p>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Updated EnvoyProxy to 1.29.5&lt;/li>
+&lt;li>Use Patch API for infra-client&lt;/li>
+&lt;li>Use ServerSideApply instead of CreateOrUpdate for infra-client&lt;/li>
+&lt;/ul>
+&lt;h2 id="testing">Testing&lt;a class="td-heading-self-link" href="#testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed failures due to an expired certificate in one of the translator tests&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Use &lt;proto>-&lt;port> for naming service and container ports&lt;/li>
+&lt;li>Added proxy protocol always as first listenerFilter&lt;/li>
+&lt;li>Set ignoreCase for header matchers in extAuth&lt;/li>
+&lt;li>Added backend TLS SAN validation&lt;/li>
+&lt;li>Fixed ReplaceFullPath not working for root path (/)&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed duplicated xroutes are added to gatewayapi Resources&lt;/li>
+&lt;li>Fixed security policy reference grant from field type&lt;/li>
+&lt;li>Fixed Route extension filters with different types but the same name and namespace aren&amp;rsquo;t correctly cached&lt;/li>
+&lt;li>Fixed secrets/configmap updates to trigger a controller reconcile by removing the generationChanged predicate&lt;/li>
+&lt;li>Removed namespace restriction for EnvoyProxy parametersRef&lt;/li>
+&lt;/ul></description></item><item><title>v1.0.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.0.1/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.0.1/</guid><description>&lt;p>Date: April 9, 2024&lt;/p>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Updated EnvoyProxy version to v1.29.3&lt;/li>
+&lt;li>Fixed certgen to support creating the hmac secret during an upgrade&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed nil secret in resourceversiontable&lt;/li>
+&lt;li>Add missing http filters to the http filter chain when ClientTrafficPolicy and MergeGateways is enabled&lt;/li>
+&lt;li>Allow websockets when url rewrite is enabled&lt;/li>
+&lt;li>Set the Host header for http health checker&lt;/li>
+&lt;li>Fixed double slashes in redirect URL&lt;/li>
+&lt;li>Allow ClientTrafficPolicy to attach to multiple http (non https) listeners within the same Gateway&lt;/li>
+&lt;li>Set path prefix for the http ext auth service&lt;/li>
+&lt;li>Set the route matching precedence order to Exact &amp;gt; RegularExpression &amp;gt; PathPrefix&lt;/li>
+&lt;li>Fixed infraIR duplicate port translation for merged gateways&lt;/li>
+&lt;li>Set SpawnUpstreamSpan to true&lt;/li>
+&lt;li>Allow rate limit to work with multiple listeners&lt;/li>
+&lt;/ul>
+&lt;h2 id="infra-manager">Infra-manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Skip creating infra resources when the InfraIR has empty listeners&lt;/li>
+&lt;/ul></description></item><item><title>v1.0.0</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.0.0/</link><pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.0.0/</guid><description>&lt;p>Date: March 13, 2024&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added User Guide for Local Ratelimit&lt;/li>
+&lt;li>Added User Guide for Circuit Breaker&lt;/li>
+&lt;li>Added User Guide for fault injection&lt;/li>
+&lt;li>Added User Guide for EnvoyProxy extraArgs&lt;/li>
+&lt;li>Added User Guide for Timeouts in ClientTrafficPolicy&lt;/li>
+&lt;li>Added User Guide for JWT claim base routing&lt;/li>
+&lt;li>Added User Guide for HTTP Timeout&lt;/li>
+&lt;li>Added User Guide for Retry in BackendTrafficPolicy&lt;/li>
+&lt;li>Added User Guide for Basic Auth&lt;/li>
+&lt;li>Added User Guide for OIDC&lt;/li>
+&lt;li>Added User Guide for ClientTrafficPolicy&lt;/li>
+&lt;li>Added User Guide for BackendTrafficPolicy&lt;/li>
+&lt;li>Added User Guide for Basic Auth using HTTPS&lt;/li>
+&lt;li>Added User Guide for External Authorization&lt;/li>
+&lt;li>Added User Guide for Routing Outside Kubernetes&lt;/li>
+&lt;li>Added User Guide for BackendTLSPolicy&lt;/li>
+&lt;li>Added User Guide for Mutual TLS from External Clients to the Gateway&lt;/li>
+&lt;li>Added User Guide for Control Plane Authentication using custom certs&lt;/li>
+&lt;li>Added User Guide for Multiple Gatewayclass and Merge Gateways Deployment Mode&lt;/li>
+&lt;li>Added &lt;code>Type&lt;/code> and &lt;code>required&lt;/code> for CRD API doc&lt;/li>
+&lt;li>Refactored Structure of User Guide docs&lt;/li>
+&lt;li>Refactored Move Design docs under &amp;ldquo;Get Involved&amp;rdquo;&lt;/li>
+&lt;li>Updated crd-ref-docs to 0.0.10&lt;/li>
+&lt;li>Updated Envoy proxy image to envoy:distroless-dev in main&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Pulling envoyGateway image from a private registry&lt;/li>
+&lt;li>Added Support for Configuring resources for certgen job&lt;/li>
+&lt;li>Added Support for Configuring affinity for EnvoyGateway pod&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Downstream QUIC/HTTP3 in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Downstream MTLS in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Enabling EnvoyHeaders in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for DisableMergeSlash and escapedSlashesAction in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for EnableTrailers in HTTP/1.1 in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Preserving header letter-case on HTTP/1 in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Enabling HTTP/1.0 and HTTP/0.9 in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Client IP Detection using XFF in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Client IP Detection using Custom Header in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Timeouts in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Common TLS configuration properties in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Proxy protocol in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for TCPKeepAlive in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Local rate limit in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for CircuitBreaker in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Fault injection in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Passive Health Checks in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Active Health Checks in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Timeouts in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Compressor/Decompressor in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Retry in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Slow start mode in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Proxy protocol in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for TCPKeepAlive in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for PolicyStatus in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for PolicyStatus in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for PolicyStatus in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for OIDC in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Basic Auth in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for RedirectURL and signoutPath to OIDC in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for ExtractFrom headers and params to JWT in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for External Authorization in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for RecomputeRoute field to JWT in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for AllowCredentials knob to CORS setting in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Extract from different identifier to JWT in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Secret resource in EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added Support for Making the value optional for JSONPatchOperation in EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added Support for &lt;code>From&lt;/code> field to JSONPatchOperation in EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added Support for MergeGateways in EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added Support for Upstream TLS by implementing BackendTLSPolicy CRD&lt;/li>
+&lt;li>Added Support for LabelSelector type for NamespaceSelectors in EnvoyGateway Configuration&lt;/li>
+&lt;li>Added Support for Ratelimit prometheus in EnvoyGateway Configuration&lt;/li>
+&lt;li>Added Support for Gracefully drain listeners before envoy shutdown on pod termination in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Configuring externalTrafficPolicy to the envoy service in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Envoy extra args in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Mergepatch to envoyproxy/ratelimit deployment in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Mergepatch to envoyproxy service in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for NodeSelector to PodSpec in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for HorizontalPodAutoscaler in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for TopologySpreadConstraints to PodSpec in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for ImagePullSecrets to PodSpec in EnvoyProxy CRD&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Use wildcard to match AllowOrigins to CORS in SecurityPolicy CRD&lt;/li>
+&lt;li>Remove Hostnetwork support in EnvoyProxy CRD&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Replaced backend image from gcr.io/k8s-staging-ingressconformance/echoserver to gcr.io/k8s-staging-gateway-api/echo-basic&lt;/li>
+&lt;/ul>
+&lt;h2 id="testing">Testing&lt;a class="td-heading-self-link" href="#testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added e2e test for Header Case-Preserving&lt;/li>
+&lt;li>Added e2e test for Timeout in ClientTrafficPolicy&lt;/li>
+&lt;li>Added e2e test for JWT claim base routing&lt;/li>
+&lt;li>Added e2e test for OIDC&lt;/li>
+&lt;li>Added e2e test for BackendTrafficPolicy Retry&lt;/li>
+&lt;li>Added e2e test for Backend Upgrade&lt;/li>
+&lt;li>Added e2e test for External Authorization&lt;/li>
+&lt;li>Added e2e test for Backend TLS policy&lt;/li>
+&lt;li>Added e2e test for Envoy Gateway Release Upgrade&lt;/li>
+&lt;li>Added e2e test for Weighted backend&lt;/li>
+&lt;li>Added validation for LoadBalancerIP to prevent trailing period&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed Prefix match to prevent mismatching routes with the same prefix&lt;/li>
+&lt;li>Fixed Multiple reconciling by implementing comparable interface for ir.Infra&lt;/li>
+&lt;li>Fixed EndpointSlice with empty conditions {}&lt;/li>
+&lt;li>Fixed Error handling when parsing the http request timeout&lt;/li>
+&lt;li>Fixed No status when EnvoyPatchPolicy is disabled&lt;/li>
+&lt;li>Fixed Printable for xds and infra IRs&lt;/li>
+&lt;li>Fixed Skip backendRefs with weight set to 0&lt;/li>
+&lt;li>Fixed AND Header matches in ratelimiting not working&lt;/li>
+&lt;li>Fixed Deletion logics when no gatewayclasses exist&lt;/li>
+&lt;li>Fixed Match mergedGateways irKey for ClientTrafficPolicy&lt;/li>
+&lt;li>Fixed Policies should apply only to gateways they were attached to when mergeGateways is true&lt;/li>
+&lt;li>Fixed Listener status is not surfaced for gateways when MergeGateways enabled&lt;/li>
+&lt;li>Fixed GRPCroute websocket not working by moving web socket upgrade config from hcm to route&lt;/li>
+&lt;li>Fixed Configure idle timeout when timeout is set on HTTPRoute&lt;/li>
+&lt;li>Fixed Relaxing HTTPS restriction for OIDC token endpoint&lt;/li>
+&lt;li>Fixed Panic when translating routes with empty backends&lt;/li>
+&lt;li>Fixed Xds translation should be done in a best-effort manner&lt;/li>
+&lt;li>Fixed Delete unused status keys from watchable&lt;/li>
+&lt;li>Fixed Ignoring finalizers when comparing envoy proxy service&lt;/li>
+&lt;li>Fixed Don&amp;rsquo;t override the ALPN array if HTTP/3 is enabled&lt;/li>
+&lt;li>Fixed Add h3 ALPN by default if HTTP/3 is enabled&lt;/li>
+&lt;li>Fixed Change the Merge behavior to Replace for SecurityPolicy/BackendTrafficPolicy&lt;/li>
+&lt;li>Fixed Use service port in alt-svc header if HTTP/3 is enabled&lt;/li>
+&lt;li>Fixed Prevent policies targeting non-TLS listeners on the same port from conflicting&lt;/li>
+&lt;li>Fixed Skip the ReasonTargetNotFound for all policies&lt;/li>
+&lt;li>Fixed Skip publishing empty status for all policies&lt;/li>
+&lt;li>Added Support for validating regex before sending to Envoy&lt;/li>
+&lt;li>Added Support for setting spec.addresses.value into ClusterIP when Service Type is ClusterIP&lt;/li>
+&lt;li>Added Unsupported status condition for filters within BackendRef&lt;/li>
+&lt;li>Added List instead of map for Provider Resources for order stability&lt;/li>
+&lt;li>Added Suffix for oauth cookies to prevent multiple oauth filters from overwriting each other&amp;rsquo;s cookies&lt;/li>
+&lt;li>Added Support for overriding condition to BackendTrafficPolicy and SecurityPolicy&lt;/li>
+&lt;li>Added Support for default retry budget and retry host predicate&lt;/li>
+&lt;li>Added Support for implementing gateway.spec.infrastructure&lt;/li>
+&lt;li>Added Support for Upstream TLS to multiple Backends&lt;/li>
+&lt;li>Added Validation for CA Cert in ClientTrafficPolicy&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for multiple GatewayClass per controller&lt;/li>
+&lt;li>Added SecurityPolicyIndexers in Kubernetes Provider&lt;/li>
+&lt;li>Added Support for generating HMAC secret in CertGen Job&lt;/li>
+&lt;li>Fixed Finalizer logic when deleting Gatewayclasses&lt;/li>
+&lt;li>Fixed MergeGateways panics when restarting control plane&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for EDS cache&lt;/li>
+&lt;li>Added Support for ADS cache to ensure the rule order&lt;/li>
+&lt;li>Fixed Deprecated field error when using RequestHeaderModifier filter&lt;/li>
+&lt;li>Fixed Envoy rejects XDS at runtime losing all routes on restart&lt;/li>
+&lt;li>Fixed Requests not matching defined routes trigger per-route filters&lt;/li>
+&lt;li>Bumped go-control-plane to v0.12.0&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for egctl x status&lt;/li>
+&lt;li>Added Support for egctl experimental dashboard envoy-proxy&lt;/li>
+&lt;li>Added Support for egctl config ratelimit&lt;/li>
+&lt;li>Added Support for egctl translate from gateway-api resources to IR&lt;/li>
+&lt;/ul></description></item><item><title>v0.6.0</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.6.0/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.6.0/</guid><description>&lt;p>Date: Nov 1, 2023&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Introduced a new website based on Hugo&lt;/li>
+&lt;li>Added Grafana dashboards and integration docs for EnvoyProxy metrics&lt;/li>
+&lt;li>Added Grafana integration docs for Gateway API metrics&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Updated EnvoyProxy image to be a distroless variant.&lt;/li>
+&lt;li>Removed resources around kube-rbac-proxy&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Upgraded to Gateway API v1.0.0&lt;/li>
+&lt;li>Added the ClientTrafficPolicy CRD with Keep Alive Support&lt;/li>
+&lt;li>Added the BackendTrafficPolicy CRD with RateLimit and LoadBalancer Support&lt;/li>
+&lt;li>Added the SecurityPolicy CRD with CORS and JWT Support&lt;/li>
+&lt;li>Added EnvoyGateway Metrics with Prometheus and OpenTelemetry support&lt;/li>
+&lt;li>Added Support for InitContainers in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for LoadBalancerIP in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for AllocateLoadBalancerNodePorts in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for LoadBalancerClass in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for selecting EnvoyProxy stats to be generated&lt;/li>
+&lt;li>Added Support for enabling EnvoyProxy Virtual Host metrics&lt;/li>
+&lt;li>Added Support for Merging Gateway resources onto the same infrastructure&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Removed the AuthenticationFilter CRD&lt;/li>
+&lt;li>Removed the RateLimitFilter CRD&lt;/li>
+&lt;li>Moved EnvoyProxy CRD from &lt;code>config.gateway.envoyproxy.io&lt;/code> to &lt;code>gateway.envoyproxy.io&lt;/code>&lt;/li>
+&lt;li>Enabled EnvoyProxy Prometheus Endpoint by default with an option to disable it&lt;/li>
+&lt;li>Updated the Bootstrap field within the EnvoyProxy CRD with an additional value&lt;/li>
+&lt;li>field to specify bootstrap config&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for HTTPRouteBackendProtocolH2C Test&lt;/li>
+&lt;li>Added Support for HTTPRouteBackendProtocolWebSocket Test&lt;/li>
+&lt;li>Added Support for HTTPRouteRequestMultipleMirrors Test&lt;/li>
+&lt;li>Added Support for HTTPRouteTimeoutRequest Test&lt;/li>
+&lt;li>Added Support for HTTPRouteTimeoutBackendRequest Test&lt;/li>
+&lt;li>Added Support for HTTPRouteRedirectPortAndScheme Test&lt;/li>
+&lt;/ul>
+&lt;h2 id="watchable">Watchable&lt;a class="td-heading-self-link" href="#watchable" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Improved caching of resource by implementing a compare function agnostic of resource order&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added support for routing to EndpointSlice endpoints&lt;/li>
+&lt;li>Added support for HTTPRoute Timeouts&lt;/li>
+&lt;li>Added support for multiple RequestMirror filters per HTTPRoute rule&lt;/li>
+&lt;li>Use / instead of - in IR Route Names&lt;/li>
+&lt;li>Added Support to ignore ports in Host header&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added the generationChangedPredicate to most resources to limit resource reconiliation&lt;/li>
+&lt;li>Improved reconiliation by using the same enqueue request for all resources&lt;/li>
+&lt;li>Added support for reconciling ServiceImport CRD&lt;/li>
+&lt;li>Added support for selectively watching resources based on Namespace Selector&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed Layered Runtime warnings&lt;/li>
+&lt;li>Upgraded to the latest version of go-control-plane that fixed xDS Resource ordering issues for ADS.&lt;/li>
+&lt;li>Added HTTP2 Keep Alives to the xds connection&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for egctl stats command&lt;/li>
+&lt;/ul></description></item><item><title>v1.0.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.0.0-rc.1/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v1.0.0-rc.1/</guid><description>&lt;p>Date: Nov 1, 2023&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added User Guide for local rate limit&lt;/li>
+&lt;li>Added User Guide for circuit breaker&lt;/li>
+&lt;li>Added User Guide for fault injection&lt;/li>
+&lt;li>Added User Guide for EnvoyProxy extraArgs&lt;/li>
+&lt;li>Added User Guide for Timeouts in ClientTrafficPolicy&lt;/li>
+&lt;li>Added User Guide for JWT claim base routing&lt;/li>
+&lt;li>Added User Guide for HTTP Timeout&lt;/li>
+&lt;li>Added User Guide for Retry in BackendTrafficPolicy&lt;/li>
+&lt;li>Added User Guide for basic auth&lt;/li>
+&lt;li>Added User Guide for OIDC&lt;/li>
+&lt;li>Added User Guide for ClientTrafficPolicy&lt;/li>
+&lt;li>Added User Guide for BackendTrafficPolicy&lt;/li>
+&lt;li>Added &lt;code>Type&lt;/code> and &lt;code>required&lt;/code> for CRD API doc&lt;/li>
+&lt;li>Updated crd-ref-docs to 0.0.10&lt;/li>
+&lt;li>Updated Envoy proxy image to envoy:distroless-dev in main&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Pulling envoyGateway image from a private registry&lt;/li>
+&lt;li>Added Support for Configuring resources for certgen job&lt;/li>
+&lt;li>Added Support for Configuring affinity for EnvoyGateway pod&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Downstream QUIC/HTTP3 in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Downstream MTLS in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for enabling EnvoyHeaders in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for DisableMergeSlash and escapedSlashesAction in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for EnableTrailers in HTTP/1.1 in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Preserving header letter-case on HTTP/1 in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for enabling HTTP/1.0 and HTTP/0.9 in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Client IP Detection using XFF in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Client IP Detection using Custom Header in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Timeouts in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Common TLS configuration properties in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Proxy protocol in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for TCPKeepAlive in ClientTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Local rate limit in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for CircuitBreaker in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Fault injection in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Passive Health Checks in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Active Health Checks in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Connection Timeouts in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Compressor/Decompressor in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Retry in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Slow start mode in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for Proxy protocol in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for TCPKeepAlive in BackendTrafficPolicy CRD&lt;/li>
+&lt;li>Added Support for OIDC in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Basic Auth in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for RedirectURL and signoutPath to OIDC in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for ExtractFrom headers and params to JWT in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for External authorization in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for RecomputeRoute field to JWT in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for AllowCredentials knob to CORS setting in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Extract from different identifier to JWT in SecurityPolicy CRD&lt;/li>
+&lt;li>Added Support for Secret resource in EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added Support for Making the value optional for JSONPatchOperation in EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added Support for &lt;code>From&lt;/code> field to JSONPatchOperation in EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added Support for MergeGateways in EnvoyPatchPolicy CRD&lt;/li>
+&lt;li>Added Support for Upstream TLS by implementing BackendTLSPolicy CRD&lt;/li>
+&lt;li>Added Support for LabelSelector type for NamespaceSelectors in EnvoyGateway Configuration&lt;/li>
+&lt;li>Added Support for ratelimit prometheus in EnvoyGateway Configuration&lt;/li>
+&lt;li>Added Support for Gracefully drain listeners before envoy shutdown on pod termination in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Configuring externalTrafficPolicy to the envoy service in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Envoy extra args in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Mergepatch to envoyproxy/ratelimit deployment in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for Mergepatch to envoyproxy service in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for NodeSelector to PodSpec in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for HorizontalPodAutoscaler in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for TopologySpreadConstraints to PodSpec in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for ImagePullSecrets to PodSpec in EnvoyProxy CRD&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Use wildcard to match AllowOrigins to CORS in SecurityPolicy CRD&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Replaced backend image from gcr.io/k8s-staging-ingressconformance/echoserver to gcr.io/k8s-staging-gateway-api/echo-basic&lt;/li>
+&lt;/ul>
+&lt;h2 id="testing">Testing&lt;a class="td-heading-self-link" href="#testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added e2e test for header case-preserving&lt;/li>
+&lt;li>Added LoadBalancerIP validation to prevent trailing period&lt;/li>
+&lt;li>Added e2e test for Timeout in ClientTrafficPolicy&lt;/li>
+&lt;li>Added e2e test for jwt claim base routing&lt;/li>
+&lt;li>Added e2e test for OIDC&lt;/li>
+&lt;li>Added e2e test for BackendTrafficPolicy Retry&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed Prefix match to prevent mismatching routes with the same prefix&lt;/li>
+&lt;li>Fixed Multiple reconciling by implementing comparable interface for ir.Infra&lt;/li>
+&lt;li>Fixed EndpointSlice with empty conditions {}&lt;/li>
+&lt;li>Fixed Error handling when parsing the http request timeout&lt;/li>
+&lt;li>Fixed No status when EnvoyPatchPolicy is disabled&lt;/li>
+&lt;li>Fixed Printable for xds and infra IRs&lt;/li>
+&lt;li>Fixed Skip backendRefs with weight set to 0&lt;/li>
+&lt;li>Fixed AND Header matches in ratelimiting not working&lt;/li>
+&lt;li>Fixed Deletion logics when no gatewayclasses exist&lt;/li>
+&lt;li>Fixed Match mergedGateways irKey for ClientTrafficPolicy&lt;/li>
+&lt;li>Fixed Policies should apply only to gateways they were attached to when mergeGateways is true&lt;/li>
+&lt;li>Fixed Listener status is not surfaced for gateways when MergeGateways enabled&lt;/li>
+&lt;li>Fixed GRPCroute websocket not working by moving web socket upgrade config from hcm to route&lt;/li>
+&lt;li>Fixed Configure idle timeout when timeout is set on HTTPRoute&lt;/li>
+&lt;li>Fixed Relaxing HTTPS restriction for OIDC token endpoint&lt;/li>
+&lt;li>Fixed Panic when translating routes with empty backends&lt;/li>
+&lt;li>Fixed Xds translation should be done in a best-effort manner&lt;/li>
+&lt;li>Added Support for validating regex before sending to Envoy&lt;/li>
+&lt;li>Added Support for setting spec.addresses.value into ClusterIP when Service Type is ClusterIP&lt;/li>
+&lt;li>Added Unsupported status condition for filters within BackendRef&lt;/li>
+&lt;li>Added List instead of map for Provider Resources for order stability&lt;/li>
+&lt;li>Added Suffix for oauth cookies to prevent multiple oauth filters from overwriting each other&amp;rsquo;s cookies&lt;/li>
+&lt;li>Added Support for overriding condition to BackendTrafficPolicy and SecurityPolicy&lt;/li>
+&lt;li>Added Support for default retry budget and retry host predicate&lt;/li>
+&lt;li>Added Support for implementing gateway.spec.infrastructure&lt;/li>
+&lt;li>Added Validation for CA Cert in ClientTrafficPolicy&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for multiple GatewayClass per controller&lt;/li>
+&lt;li>Added SecurityPolicyIndexers in Kubernetes Provider&lt;/li>
+&lt;li>Added Support for generating HMAC secret in CertGen Job&lt;/li>
+&lt;li>Fixed Finalizer logic when deleting Gatewayclasses&lt;/li>
+&lt;li>Fixed MergeGateways panics when restarting control plane&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for EDS cache&lt;/li>
+&lt;li>Added Support for ADS cache to ensure the rule order&lt;/li>
+&lt;li>Fixed Deprecated field error when using RequestHeaderModifier filter&lt;/li>
+&lt;li>Fixed Envoy rejects XDS at runtime losing all routes on restart&lt;/li>
+&lt;li>Fixed Requests not matching defined routes trigger per-route filters&lt;/li>
+&lt;li>Bumped go-control-plane to v0.12.0&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for egctl x status&lt;/li>
+&lt;li>Added Support for egctl experimental dashboard envoy-proxy&lt;/li>
+&lt;li>Added Support for egctl config ratelimit&lt;/li>
+&lt;/ul></description></item><item><title>v0.6.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.6.0-rc.1/</link><pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.6.0-rc.1/</guid><description>&lt;p>Date: Oct 27, 2023&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Introduced a new website based on Hugo&lt;/li>
+&lt;li>Added Grafana dashboards and integration docs for EnvoyProxy metrics&lt;/li>
+&lt;li>Added Grafana integration docs for Gateway API metrics&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for configuring Envoy Gateway Label and Annotations using Helm&lt;/li>
+&lt;li>Increased default Resource defaults for Envoy Gateway to 100m CPU and 256Mi Memory&lt;/li>
+&lt;li>Fixes Helm values for EnvoyGateway startup configuration&lt;/li>
+&lt;li>Added opt-in field to skip creating control plane TLS Certificates allowing users to bring their own certificates.&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Upgraded to Gateway API v1.0.0&lt;/li>
+&lt;li>Added the ClientTrafficPolicy CRD with Keep Alive Support&lt;/li>
+&lt;li>Added the BackendTrafficPolicy CRD with RateLimit and LoadBalancer Support&lt;/li>
+&lt;li>Added the SecurityPolicy CRD with CORS and JWT Support&lt;/li>
+&lt;li>Added EnvoyGateway Metrics with Prometheus and OpenTelemetry support&lt;/li>
+&lt;li>Added Support for InitContainers in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for LoadBalancerIP in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for AllocateLoadBalancerNodePorts in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for LoadBalancerClass in EnvoyProxy CRD&lt;/li>
+&lt;li>Added Support for selecting EnvoyProxy stats to be generated&lt;/li>
+&lt;li>Added Support for enabling EnvoyProxy Virtual Host metrics&lt;/li>
+&lt;li>Added Support for Merging Gateway resources onto the same infrastructure&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Removed the AuthenticationFilter CRD&lt;/li>
+&lt;li>Removed the RateLimitFilter CRD&lt;/li>
+&lt;li>Enabled EnvoyProxy Prometheus Endpoint by default with an option to disable it&lt;/li>
+&lt;li>Updated the Bootstrap field within the EnvoyProxy CRD with an additional value&lt;/li>
+&lt;li>field to specify bootstrap config&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci-tooling-testing">Ci tooling testing&lt;a class="td-heading-self-link" href="#ci-tooling-testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="watchable">Watchable&lt;a class="td-heading-self-link" href="#watchable" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Improved caching of resource by implementing a compare function agnostic of resource order&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="breaking-changes-1">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes-1" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Added support for routing to EndpointSlice endpoints&lt;/li>
+&lt;li>Added support for HTTPRoute Timeouts&lt;/li>
+&lt;li>Added support for multiple RequestMirror filters per HTTPRoute rule&lt;/li>
+&lt;li>Use / instead of - in IR Route Names&lt;/li>
+&lt;li>Added Support to ignore ports in Host header&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added the generationChangedPredicate to most resources to limit resource reconiliation&lt;/li>
+&lt;li>Improved reconiliation by using the same enqueue request for all resources&lt;/li>
+&lt;li>Added support for reconciling ServiceImport CRD&lt;/li>
+&lt;li>Added support for selectively watching resources based on Namespace Selector&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed Layered Runtime warnings&lt;/li>
+&lt;li>Upgraded to the latest version of go-control-plane that fixed xDS Resource ordering issues for ADS.&lt;/li>
+&lt;li>Added HTTP2 Keep Alives to the xds connection&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for egctl stats command&lt;/li>
+&lt;/ul></description></item><item><title>v0.5.0</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.5.0/</link><pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.5.0/</guid><description>&lt;p>Date: July 26, 2023&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Docs for Installation page using Helm&lt;/li>
+&lt;li>Added Docs for Cert Manager Integration&lt;/li>
+&lt;li>Added Docs for Presentation Links&lt;/li>
+&lt;li>Added Docs for configuring multiple TLS Certificates per Listener&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for configuring Envoy Gateway Label and Annotations using Helm&lt;/li>
+&lt;li>Increased default Resource defaults for Envoy Gateway to 100m CPU and 256Mi Memory&lt;/li>
+&lt;li>Fixes Helm values for EnvoyGateway startup configuration&lt;/li>
+&lt;li>Added opt-in field to skip creating control plane TLS Certificates allowing users to bring their own certificates.&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Upgraded to Gateway API v0.7.1&lt;/li>
+&lt;li>Added Support for EnvoyPatchPolicy&lt;/li>
+&lt;li>Added Support for EnvoyProxy Telemetry - Access Logging, Traces and Metrics&lt;/li>
+&lt;li>Added Support for configuring EnvoyProxy Pod Labels&lt;/li>
+&lt;li>Added Support for configuring EnvoyProxy Deployment Strategy Settings, Volumes and Volume Mounts&lt;/li>
+&lt;li>Added Support for configuring EnvoyProxy as a NodePort Type Service&lt;/li>
+&lt;li>Added Support for Distinct RateLimiting for IP Addresses&lt;/li>
+&lt;li>Added Support for converting JWT Claims to Headers, to be used for RateLimiting&lt;/li>
+&lt;li>Added Admin Server for Envoy Gateway&lt;/li>
+&lt;li>Added Pprof Debug Support for Envoy Gateway&lt;/li>
+&lt;li>Added Support to Watch for Resources in Select Namespaces&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Renamed field in EnvoyGateway API from Extension to ExtensionManager&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci-tooling-testing">Ci tooling testing&lt;a class="td-heading-self-link" href="#ci-tooling-testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Retest Github Action&lt;/li>
+&lt;li>Added CherryPick Github Action&lt;/li>
+&lt;li>Added E2E Step in Github CI Workflow&lt;/li>
+&lt;li>Added RateLimit E2E Tests&lt;/li>
+&lt;li>Added JWT Claim based RateLimit E2E Tests&lt;/li>
+&lt;li>Added Access Logging E2E tests&lt;/li>
+&lt;li>Added Metrics E2E tests&lt;/li>
+&lt;li>Added Tracing E2E tests&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Enabled GatewayWithAttachedRoutes Test&lt;/li>
+&lt;li>Enabled HttpRouteRequestMirror Test&lt;/li>
+&lt;li>Skipped HTTPRouteRedirectPortAndScheme Test&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="breaking-changes-1">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes-1" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Renamed IR resources from &lt;namespace>-&lt;name> to &lt;namespace>/&lt;name>&lt;/li>
+&lt;li>which also affects generated Xds Resources&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Reconcile Node resources to be able to compute Status Addresses for Gateway&lt;/li>
+&lt;li>Discard Status before publishing Provider resources to reduce memory consumption&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fix Init Race in Xds Runner when starting Xds Server and receiving Xds Input&lt;/li>
+&lt;li>Switched to Xds SOTW Server for RateLimit Service Configuration&lt;/li>
+&lt;li>Added Control Plane TLS between EnvoyProxy and RateLimit Service&lt;/li>
+&lt;li>Enabled adding RateLimit Headers when RateLimit is set&lt;/li>
+&lt;li>Allowed GRPCRoute and HTTPRoute to be linked to the same HTTPS Listener&lt;/li>
+&lt;li>Set ALPN in the Xds Listener with TLS enabled.&lt;/li>
+&lt;li>Added Best Practices Default Edge Settings to Xds Resources&lt;/li>
+&lt;li>Compute and Publish EnvoyPatchPolicy status from xds-translator runner&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added egctl x translate Support to generate default missing Resources&lt;/li>
+&lt;li>Added egctl x translate Support for AuthenticationFilter and EnvoyPatchPolicy&lt;/li>
+&lt;/ul></description></item><item><title>v0.5.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.5.0-rc.1/</link><pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.5.0-rc.1/</guid><description>&lt;p>Date: July 26, 2023&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Docs for Installation page using Helm&lt;/li>
+&lt;li>Added Docs for Cert Manager Integration&lt;/li>
+&lt;li>Added Docs for Presentation Links&lt;/li>
+&lt;li>Added Docs for configuring multiple TLS Certificates per Listener&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for configuring Envoy Gateway Label and Annotations using Helm&lt;/li>
+&lt;li>Increased default Resource defaults for Envoy Gateway to 100m CPU and 256Mi Memory&lt;/li>
+&lt;li>Fixes Helm values for EnvoyGateway startup configuration&lt;/li>
+&lt;li>Added opt-in field to skip creating control plane TLS Certificates allowing users to bring their own certificates.&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Upgraded to Gateway API v0.7.1&lt;/li>
+&lt;li>Added Support for EnvoyPatchPolicy&lt;/li>
+&lt;li>Added Support for EnvoyProxy Telemetry - Access Logging, Traces and Metrics&lt;/li>
+&lt;li>Added Support for configuring EnvoyProxy Pod Labels&lt;/li>
+&lt;li>Added Support for configuring EnvoyProxy Deployment Strategy Settings, Volumes and Volume Mounts&lt;/li>
+&lt;li>Added Support for configuring EnvoyProxy as a NodePort Type Service&lt;/li>
+&lt;li>Added Support for Distinct RateLimiting for IP Addresses&lt;/li>
+&lt;li>Added Support for converting JWT Claims to Headers, to be used for RateLimiting&lt;/li>
+&lt;li>Added Admin Server for Envoy Gateway&lt;/li>
+&lt;li>Added Pprof Debug Support for Envoy Gateway&lt;/li>
+&lt;li>Added Support to Watch for Resources in Select Namespaces&lt;/li>
+&lt;/ul>
+&lt;h3 id="breaking-changes">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Renamed field in EnvoyGateway API from Extension to ExtensionManager&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci-tooling-testing">Ci tooling testing&lt;a class="td-heading-self-link" href="#ci-tooling-testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Retest Github Action&lt;/li>
+&lt;li>Added CherryPick Github Action&lt;/li>
+&lt;li>Added E2E Step in Github CI Workflow&lt;/li>
+&lt;li>Added RateLimit E2E Tests&lt;/li>
+&lt;li>Added JWT Claim based RateLimit E2E Tests&lt;/li>
+&lt;li>Added Access Logging E2E tests&lt;/li>
+&lt;li>Added Metrics E2E tests&lt;/li>
+&lt;li>Added Tracing E2E tests&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Enabled GatewayWithAttachedRoutes Test&lt;/li>
+&lt;li>Enabled HttpRouteRequestMirror Test&lt;/li>
+&lt;li>Skipped HTTPRouteRedirectPortAndScheme Test&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="breaking-changes-1">Breaking Changes&lt;a class="td-heading-self-link" href="#breaking-changes-1" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Renamed IR resources from &lt;namespace>-&lt;name> to &lt;namespace>/&lt;name>&lt;/li>
+&lt;li>which also affects generated Xds Resources&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Reconcile Node resources to be able to compute Status Addresses for Gateway&lt;/li>
+&lt;li>Discard Status before publishing Provider resources to reduce memory consumption&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fix Init Race in Xds Runner when starting Xds Server and receiving Xds Input&lt;/li>
+&lt;li>Switched to Xds SOTW Server for RateLimit Service Configuration&lt;/li>
+&lt;li>Added Control Plane TLS between EnvoyProxy and RateLimit Service&lt;/li>
+&lt;li>Enabled adding RateLimit Headers when RateLimit is set&lt;/li>
+&lt;li>Allowed GRPCRoute and HTTPRoute to be linked to the same HTTPS Listener&lt;/li>
+&lt;li>Set ALPN in the Xds Listener with TLS enabled.&lt;/li>
+&lt;li>Added Best Practices Default Edge Settings to Xds Resources&lt;/li>
+&lt;li>Compute and Publish EnvoyPatchPolicy status from xds-translator runner&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added egctl x translate Support to generate default missing Resources&lt;/li>
+&lt;li>Added egctl x translate Support for AuthenticationFilter and EnvoyPatchPolicy&lt;/li>
+&lt;/ul></description></item><item><title>v0.4.0</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.4.0/</link><pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.4.0/</guid><description>&lt;p>Date: April 24, 2023&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Docs for Installing and Using egctl&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Helm Installation Support&lt;/li>
+&lt;li>Added Support for Ratelimiting Based On IP Subnet&lt;/li>
+&lt;li>Added Gateway API Support Doc&lt;/li>
+&lt;li>Added Namespace Resource to Helm Templates&lt;/li>
+&lt;li>Updated Installation Yaml to Use the envoy-gateway-system Namespace&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Upgraded to Gateway API v0.6.2&lt;/li>
+&lt;li>Added Support for Custom Envoy Proxy Bootstrap Config&lt;/li>
+&lt;li>Added Support for Configuring the Envoy Proxy Image and Service&lt;/li>
+&lt;li>Added Support for Configuring Annotations, Resources, and Securitycontext Settings on Ratelimit Infra and Envoy Proxy&lt;/li>
+&lt;li>Added Support for Using Multiple Certificates on a Single Fully Qualified Domain Name&lt;/li>
+&lt;li>Gateway Status Address is now Populated for ClusterIP type Envoy Services&lt;/li>
+&lt;li>Envoy Proxy Pod and Container SecurityContext is now Configurable&lt;/li>
+&lt;li>Added Custom Envoy Gateway Extensions Framework&lt;/li>
+&lt;li>Added Support for Service Method Match in GRPCRoute&lt;/li>
+&lt;li>Fixed a Bug in the Extension Hooks for xDS Virtual Hosts and Routes&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci-tooling-testing">Ci tooling testing&lt;a class="td-heading-self-link" href="#ci-tooling-testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed CI Flakes During Helm Install&lt;/li>
+&lt;li>Added Test To Ensure Static xDS Cluster Has Same Field Values as Dynamic Cluster&lt;/li>
+&lt;li>Added egctl to Build and Test CI Workflow&lt;/li>
+&lt;li>Code Coverage Thresholds are now Enforced by CI&lt;/li>
+&lt;li>Fixed latest-release-check CI Job Failures&lt;/li>
+&lt;li>Added Auto Release Tooling for Charts&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Enabled GatewayWithAttachedRoutes Test&lt;/li>
+&lt;li>Enabled Enable HTTPRouteInvalidParentRefNotMatchingSectionName Test&lt;/li>
+&lt;li>Enabled Enable HTTPRouteDisallowedKind Test&lt;/li>
+&lt;li>Re-Enabled Gateway/HTTPRouteObservedGenerationBump Test&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Dynamic GatewayControllerName in Route Status&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Update GatewayClass Status Based on EnvoyProxy Config Validation&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added EDS Support&lt;/li>
+&lt;li>Fixed PathSeparatedPrefix and Optimized Logic for Prefixes Ending With Trailing Slash&lt;/li>
+&lt;li>Updated Deprecated RegexMatcher&lt;/li>
+&lt;li>Refactored Authn and Ratelimit Features to Reuse buildXdsCluster&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added egctl CLI Tool&lt;/li>
+&lt;li>Added egctl Support for Dry Runs of Gateway API Config&lt;/li>
+&lt;li>Added egctl Support for Dumping Envoy Proxy xDS Resources&lt;/li>
+&lt;/ul></description></item><item><title>v0.4.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.4.0-rc.1/</link><pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.4.0-rc.1/</guid><description>&lt;p>Date: April 13, 2023&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Docs for Installing and Using egctl&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;a class="td-heading-self-link" href="#installation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Helm Installation Support&lt;/li>
+&lt;li>Added Support for Ratelimiting Based On IP Subnet&lt;/li>
+&lt;li>Added Gateway API Support Doc&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Upgraded to Gateway API v0.6.2&lt;/li>
+&lt;li>Added Support for Custom Envoy Proxy Bootstrap Config&lt;/li>
+&lt;li>Added Support for Configuring the Envoy Proxy Image and Service&lt;/li>
+&lt;li>Added Support for Configuring Annotations, Resources, and Securitycontext Settings on Ratelimit Infra and Envoy Proxy&lt;/li>
+&lt;li>Added Support for Using Multiple Certificates on a Single Fully Qualified Domain Name&lt;/li>
+&lt;li>Gateway Status Address is now Populated for ClusterIP type Envoy Services&lt;/li>
+&lt;li>Envoy Proxy Pod and Container SecurityContext is now Configurable&lt;/li>
+&lt;li>Added Custom Envoy Gateway Extensions Framework&lt;/li>
+&lt;li>Added Support for Service Method Match in GRPCRoute&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci-tooling-testing">Ci tooling testing&lt;a class="td-heading-self-link" href="#ci-tooling-testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed CI Flakes During Helm Install&lt;/li>
+&lt;li>Added Test To Ensure Static xDS Cluster Has Same Field Values as Dynamic Cluster&lt;/li>
+&lt;li>Added egctl to Build and Test CI Workflow&lt;/li>
+&lt;li>Code Coverage Thresholds are now Enforced by CI&lt;/li>
+&lt;li>Fixed latest-release-check CI Job Failures&lt;/li>
+&lt;li>Added Auto Release Tooling for Charts&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Enabled GatewayWithAttachedRoutes Test&lt;/li>
+&lt;li>Enabled Enable HTTPRouteInvalidParentRefNotMatchingSectionName Test&lt;/li>
+&lt;li>Enabled Enable HTTPRouteDisallowedKind Test&lt;/li>
+&lt;li>Re-Enabled Gateway/HTTPRouteObservedGenerationBump Test&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Dynamic GatewayControllerName in Route Status&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Update GatewayClass Status Based on EnvoyProxy Config Validation&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added EDS Support&lt;/li>
+&lt;li>Fixed PathSeparatedPrefix and Optimized Logic for Prefixes Ending With Trailing Slash&lt;/li>
+&lt;li>Updated Deprecated RegexMatcher&lt;/li>
+&lt;li>Refactored Authn and Ratelimit Features to Reuse buildXdsCluster&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli">Cli&lt;a class="td-heading-self-link" href="#cli" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added egctl CLI Tool&lt;/li>
+&lt;li>Added egctl Support for Dry Runs of Gateway API Config&lt;/li>
+&lt;li>Added egctl Support for Dumping Envoy Proxy xDS Resources&lt;/li>
+&lt;/ul></description></item><item><title>v0.3.0</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.3.0/</link><pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.3.0/</guid><description>&lt;p>Date: February 09, 2023&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Global Rate Limit User Docs&lt;/li>
+&lt;li>Added Request Authentication User Docs&lt;/li>
+&lt;li>Added TCP Routing User Docs&lt;/li>
+&lt;li>Added UDP Routing User Docs&lt;/li>
+&lt;li>Added GRPC Routing User Docs&lt;/li>
+&lt;li>Added HTTP Response Headers User Docs&lt;/li>
+&lt;li>Added TCP and UDP Proxy Design Docs&lt;/li>
+&lt;li>Added egctl Design Docs&lt;/li>
+&lt;li>Added Rate Limit Design Docs&lt;/li>
+&lt;li>Added Request Authentication Design Docs&lt;/li>
+&lt;li>Added Support for Versioned Docs&lt;/li>
+&lt;li>Added Support for Multiple Release Versions&lt;/li>
+&lt;li>Added Release Details Docs&lt;/li>
+&lt;li>Added API Docs Generating Tooling&lt;/li>
+&lt;li>Refactored Layout for User Docs&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Upgraded to v0.6.1 Gateway API&lt;/li>
+&lt;li>Added Support for the TCPRoute API&lt;/li>
+&lt;li>Added Support for the UDPRoute API&lt;/li>
+&lt;li>Added Support for the GRPCRoute API&lt;/li>
+&lt;li>Added Support for HTTPRoute URLRewrite Filter&lt;/li>
+&lt;li>Added Support for HTTPRoute RequestMirror Filter&lt;/li>
+&lt;li>Added Support for HTTPRoute ResponseHeaderModifier Filter&lt;/li>
+&lt;li>Added Support for Request Authentication&lt;/li>
+&lt;li>Added Support for Global Rate Limiting&lt;/li>
+&lt;li>Added Support for Routes ReferenceGrant&lt;/li>
+&lt;li>Added Support for Namespace Server Config Type&lt;/li>
+&lt;li>Added initial management of Envoy Proxy deployment via EnvoyProxy API&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci-tooling-testing">Ci tooling testing&lt;a class="td-heading-self-link" href="#ci-tooling-testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed Make Image Failed in Darwin&lt;/li>
+&lt;li>Fixed Wait for Job Succeeded before conformance test&lt;/li>
+&lt;li>Upgraded Echoserver Image Tag&lt;/li>
+&lt;li>Added Support for User-Facing Version&lt;/li>
+&lt;li>Added Support for Testing EG against Multiple Kubernetes Versions&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Enabled GatewayClassObservedGenerationBump conformance test&lt;/li>
+&lt;li>Enabled GatewayInvalidTLSConfiguration conformance test&lt;/li>
+&lt;li>Enabled GatewayInvalidRouteKind conformance test&lt;/li>
+&lt;li>Enabled HTTPRouteReferenceGrant conformance test&lt;/li>
+&lt;li>Enabled HTTPRouteMethodMatching conformance test&lt;/li>
+&lt;li>Enabled HTTPRoutePartiallyInvalidViaInvalidReferenceGrant conformance test&lt;/li>
+&lt;li>Enabled HTTPRouteInvalidParentRefNotMatchingListenerPort conformance test&lt;/li>
+&lt;li>(Currently EG passes all conformance tests except redirect and gateway/httproute ObservedGenerationBump tests. Redirect tests are failing due to a possible issue with the way upstream conformance tests have made assumptions. Skip them for now until below issues #992 #993 #994 are resolved)&lt;/li>
+&lt;/ul>
+&lt;h2 id="ir">IR&lt;a class="td-heading-self-link" href="#ir" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added TCP Listener per TLSRoute&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixes Remove Stale Listener Condition&lt;/li>
+&lt;li>Added Support for Suffix Matches for Headers&lt;/li>
+&lt;li>Added Support for HTTP Method Matching to HTTPRoute&lt;/li>
+&lt;li>Added Support for Regex Match Type&lt;/li>
+&lt;li>Added Support for HTTPQueryParamMatch&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Refactored Kubernetes Provider to Single Reconciler&lt;/li>
+&lt;li>Upgraded Kube Provider Test Data Manifests to v0.6.1&lt;/li>
+&lt;li>Removed Duplicate Settings from Bootstrap Config&lt;/li>
+&lt;li>Updated Certgen to Use EG Namespace Env&lt;/li>
+&lt;li>Added EnvoyProxy to Translator and Kube Infra Manager&lt;/li>
+&lt;li>Upgraded Envoyproxy Image to envoy-dev latest in Main&lt;/li>
+&lt;li>Removed EG Logs Private Key&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed Start xDS Server Watchable Map Panics&lt;/li>
+&lt;li>Enabled Access Logging for xDS Components&lt;/li>
+&lt;/ul></description></item><item><title>v0.3.0-rc.1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.3.0-rc.1/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.3.0-rc.1/</guid><description>&lt;p>Date: February 02, 2023&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Support for Multiple Release Versions&lt;/li>
+&lt;li>Added Support for Versioned Docs&lt;/li>
+&lt;li>Added Release Details Docs&lt;/li>
+&lt;li>Refactored Layout for User Docs&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Upgraded to v0.6.0 Gateway API&lt;/li>
+&lt;li>Added Support for the TCPRoute API&lt;/li>
+&lt;li>Added Support for the UDPRoute API&lt;/li>
+&lt;li>Added Support for the GRPCRoute API (Add to the ListenerStatus.SupportedKinds Field until &lt;a href="https://github.com/envoyproxy/gateway/issues/950">https://github.com/envoyproxy/gateway/issues/950&lt;/a> is fixed.)&lt;/li>
+&lt;li>Added Support for HTTPRoute URLRewrite Filter&lt;/li>
+&lt;li>Added Support for HTTPRoute RequestMirror Filter&lt;/li>
+&lt;li>Added Support for HTTPRoute ResponseHeaderModifier Filter&lt;/li>
+&lt;li>Added APIs to Manage Envoy Deployment&lt;/li>
+&lt;li>Added Support for Request Authentication&lt;/li>
+&lt;li>Added Support for Global Rate Limiting&lt;/li>
+&lt;li>Added Support for Routes ReferenceGrant&lt;/li>
+&lt;li>Added Support for Namespace Server Config Type&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci-tooling-testing">Ci tooling testing&lt;a class="td-heading-self-link" href="#ci-tooling-testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixes Make Image Failed in Darwin&lt;/li>
+&lt;li>Fixes Wait for Job Succeeded before conformance test&lt;/li>
+&lt;li>Upgraded Echoserver Image Tag&lt;/li>
+&lt;li>Added Support for User-Facing Version&lt;/li>
+&lt;li>Added Support for Testing EG against Multiple Kubernetes Versions&lt;/li>
+&lt;/ul>
+&lt;h2 id="conformance">Conformance&lt;a class="td-heading-self-link" href="#conformance" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Enabled HTTPRouteInvalidParentRefNotMatchingListenerPort conformance test&lt;/li>
+&lt;li>Enabled GatewayInvalidTLSConfiguration conformance test&lt;/li>
+&lt;li>Enabled GatewayInvalidRouteKind conformance test&lt;/li>
+&lt;li>Enabled HTTPRoutePartiallyInvalidViaInvalidReferenceGrant conformance test&lt;/li>
+&lt;li>Enabled HTTPRouteReferenceGrant conformance test&lt;/li>
+&lt;li>Enabled HTTPRouteMethodMatching conformance test&lt;/li>
+&lt;/ul>
+&lt;h2 id="ir">IR&lt;a class="td-heading-self-link" href="#ir" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added TCP Listener per TLSRoute&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixes Remove Stale Listener Condition&lt;/li>
+&lt;li>Added Support for Suffix Matches for Headers&lt;/li>
+&lt;li>Added Support for HTTP Method Matching to HTTPRoute&lt;/li>
+&lt;li>Added Support for Regex Match Type&lt;/li>
+&lt;li>Added Support for HTTPQueryParamMatch&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Refactored Kubernetes Provider to Single Reconciler&lt;/li>
+&lt;li>Upgraded Kube Provider Test Data Manifests to v0.6.0&lt;/li>
+&lt;li>Removed Duplicate Settings from Bootstrap Config&lt;/li>
+&lt;li>Updated Certgen to Use EG Namespace Env&lt;/li>
+&lt;li>Added EnvoyProxy to Translator and Kube Infra Manager&lt;/li>
+&lt;li>Upgraded Envoyproxy Image to envoy-dev latest in Main&lt;/li>
+&lt;li>Removed EG Logs Private Key&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Fixed Start xDS Server Watchable Map Panics&lt;/li>
+&lt;li>Enabled Access Logging for xDS Components&lt;/li>
+&lt;/ul></description></item><item><title>v0.2.0</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.2.0/</link><pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.2.0/</guid><description>&lt;p>Date: October 19, 2022&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Config API, translator, roadmap, and message bus design documentation.&lt;/li>
+&lt;li>Added documentation for releasing Envoy Gateway.&lt;/li>
+&lt;li>Added user guides for configuring common tasks, e.g. HTTP request routing.&lt;/li>
+&lt;li>Added support for the Sphinx documentation generator.&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added the EnvoyGateway API type for configuring Envoy Gateway.&lt;/li>
+&lt;li>Added the EnvoyProxy API type for configuring managed Envoys.&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci-tooling-testing">Ci tooling testing&lt;a class="td-heading-self-link" href="#ci-tooling-testing" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added tooling to build, run, etc. Envoy Gateway.&lt;/li>
+&lt;li>Added Gateway API conformance tests.&lt;/li>
+&lt;li>Added Make-based tooling to fetch all tools so checks (code lint, spellchecks) and tests can be run locally.&lt;/li>
+&lt;li>Added support for releasing latest artifacts to GitHub.&lt;/li>
+&lt;li>Added code coverage with a minimum 60% threshold.&lt;/li>
+&lt;/ul>
+&lt;h2 id="ir">IR&lt;a class="td-heading-self-link" href="#ir" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added xds and infra IRs to decouple user-facing APIs from Envoy Gateway.&lt;/li>
+&lt;li>Added IR validation.&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added the gatewayapi translator to translate Gateway API and associated resources to the IR and manage the&lt;/li>
+&lt;li>status of Gateway API resources.&lt;/li>
+&lt;li>Added the xDS translator to translate the xds IR to xDS resources.&lt;/li>
+&lt;/ul>
+&lt;h2 id="message-service">Message-service&lt;a class="td-heading-self-link" href="#message-service" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added infra and xds IR watchable map messages for inter-component communication.&lt;/li>
+&lt;li>Added a Runner to each Envoy Gateway component to support pub/sub between components.&lt;/li>
+&lt;li>Added support for managing multiple separate Envoy proxy fleets.&lt;/li>
+&lt;/ul>
+&lt;h2 id="infra-manager">Infra-manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Kubernetes Infra Manager to manage Envoy infrastructure running in a Kubernetes cluster.&lt;/li>
+&lt;li>Added support for managing a separate Envoy infrastructure per Gateway.&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added the Kubernetes provider with support for managing GatewayClass, Gateway, HTTPRoute, ReferenceGrant, and&lt;/li>
+&lt;li>TLSRoute resources.&lt;/li>
+&lt;li>Due to Issue #539, a ReferenceGrant is not removed from the system when unreferenced.&lt;/li>
+&lt;li>Due to Issue #577, TLSRoute is not being tested for Gateway API conformance.&lt;/li>
+&lt;li>Added watchers for dependent resources of managed Envoy infrastructure to trigger reconciliation.&lt;/li>
+&lt;li>Added support for labeling managed infrastructure using Gateway namespace/name labels.&lt;/li>
+&lt;li>Added support for finalizing the managed GatewayClass.&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added xDS server support to configure managed Envoys using Delta xDS.&lt;/li>
+&lt;li>Added initial support for mTLS between the xDS server and managed Envoys.&lt;/li>
+&lt;li>Due to envoyproxy/go-control-plane Issue #599, Envoy Gateway logs the private key of HTTPS listeners.&lt;/li>
+&lt;/ul></description></item><item><title>v0.2.0-rc2</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.2.0-rc2/</link><pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.2.0-rc2/</guid><description>&lt;p>Date: September 29, 2022&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Updated and expanded developer documentation.&lt;/li>
+&lt;li>Added &lt;code>kube-demo&lt;/code> target to demonstrate Envoy Gateway functionality.&lt;/li>
+&lt;li>Added developer debugging documentation.&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci">Ci&lt;a class="td-heading-self-link" href="#ci" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Gateway API conformance tests.&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added watchers for dependent resources of managed Envoy infrastructure.&lt;/li>
+&lt;li>Added Gateway namespace/name labels to managed resources.&lt;/li>
+&lt;li>Added support for finalizing the managed GatewayClass.&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Updated xds server and Envoy bootstrap config to use Delta xDS.&lt;/li>
+&lt;li>Added initial support for mTLS between the xDS server and Envoy.&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Expanded support for Gateway API status.&lt;/li>
+&lt;li>Added support for request modifier and redirect filters.&lt;/li>
+&lt;li>Added support to return 500 responses for invalid backends.&lt;/li>
+&lt;/ul>
+&lt;h2 id="message-service">Message service&lt;a class="td-heading-self-link" href="#message-service" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Updated IRs to support managing multiple Envoy fleets.&lt;/li>
+&lt;/ul>
+&lt;h2 id="infra-manager">Infra manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Separate Envoy infrastructure is created per Gateway.&lt;/li>
+&lt;/ul></description></item><item><title>v0.2.0-rc1</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.2.0-rc1/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.2.0-rc1/</guid><description>&lt;p>Date: August 31, 2022&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added a quickstart guide for users to run and use Envoy Gateway.&lt;/li>
+&lt;/ul>
+&lt;h2 id="api">API&lt;a class="td-heading-self-link" href="#api" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added the EnvoyGateway API type for configuring Envoy Gateway.&lt;/li>
+&lt;li>Added the EnvoyProxy API type for configuring managed Envoys.&lt;/li>
+&lt;/ul>
+&lt;h2 id="ci">Ci&lt;a class="td-heading-self-link" href="#ci" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added tooling to build, run, etc. Envoy Gateway.&lt;/li>
+&lt;/ul>
+&lt;h2 id="providers">Providers&lt;a class="td-heading-self-link" href="#providers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added the Kubernetes provider.&lt;/li>
+&lt;/ul>
+&lt;h2 id="xds">xDS&lt;a class="td-heading-self-link" href="#xds" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added xDS server to configure managed Envoys.&lt;/li>
+&lt;/ul>
+&lt;h2 id="ir">IR&lt;a class="td-heading-self-link" href="#ir" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added xds and infra IRs to decouple user-facing APIs from Envoy Gateway.&lt;/li>
+&lt;li>Added IR validation.&lt;/li>
+&lt;/ul>
+&lt;h2 id="translator">Translator&lt;a class="td-heading-self-link" href="#translator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added the gatewayapi translator to translate Gateway API and associated resources to the IR and manage&lt;/li>
+&lt;li>Gateway API status.&lt;/li>
+&lt;/ul>
+&lt;h2 id="message-service">Message service&lt;a class="td-heading-self-link" href="#message-service" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added infra and xds IR watchable map messages for inter-component communication.&lt;/li>
+&lt;li>Added a Runner to each component to support pub/sub between components.&lt;/li>
+&lt;/ul>
+&lt;h2 id="infra-manager">Infra manager&lt;a class="td-heading-self-link" href="#infra-manager" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Added Kubernetes Infra Manager to manage Envoy infrastructure running in a Kubernetes cluster.&lt;/li>
+&lt;/ul></description></item><item><title>v0.1.0</title><link>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.1.0/</link><pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate><guid>https://zirain.github.io/eg-pr-preview/6-test-preview/news/releases/notes/v0.1.0/</guid><description>&lt;p>Date: May 16, 2022&lt;/p>
+&lt;h2 id="documentation">Documentation&lt;a class="td-heading-self-link" href="#documentation" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>The initial open source release describing project goals and high-level design.&lt;/li>
+&lt;/ul></description></item></channel></rss>
